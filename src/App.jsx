@@ -14,12 +14,27 @@ import KeyPlayBV from "./pages/Navbar/KeyPlayBV";
 import LayOut from "./pages/Navbar/LayOut";
 import Development from "./pages/Navbar/Development";
 import KeyPlanCF from "./pages/Navbar/KeyPlanCF";
+import SkyLine from "./pages/Navbar/SkyLine";
+import LayOutCF from "./pages/Navbar/LayOutCF";
+import UpcomingPJ from "./pages/Navbar/UpcomingPJ";
+import NoidaInternational from "./pages/Navbar/NoidaInternational";
+import InternationalFilmCity from "./pages/Navbar/InternationalFilmCity";
+import MedicalDevicePark from "./pages/Navbar/MedicalDevicePark";
+import LogisticsPark from "./pages/Navbar/LogisticsPark";
+import PersonalRapidTransit from "./pages/Navbar/PersonalRapidTransit";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import Popup from "./pages/Popup";
+import FloatingChatbot from "./components/FloatingChatbot";
+import UsePageTitle from "./components/UsePageTitle";
 
 function App() {
   return (
     <Router>
       {/* <SmoothScroll> */}
+      <UsePageTitle/>
       <Navbar />
+      <FloatingChatbot/>
+      <Popup/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -31,6 +46,18 @@ function App() {
          <Route path="/layout" element={<LayOut/>} />
          <Route path="/development" element={<Development/>} />
          <Route path="/keyplanCF" element={<KeyPlanCF/>} />
+         <Route path="/skyline" element={<SkyLine/>} />
+         <Route path="/layoutCF" element={<LayOutCF/>} />
+         <Route path="/upcomingPJ" element={<UpcomingPJ/>} />
+         <Route path="/noida-international" element={<NoidaInternational/>} />
+          <Route path="/international-film-city" element={<InternationalFilmCity/>} />
+           <Route path="/medical-device-Park" element={<MedicalDevicePark/>} />
+           <Route path="/logistics-park" element={<LogisticsPark/>} />
+           <Route path="/personal-rapid-transit" element={<PersonalRapidTransit/>} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy/>} />
+
+
+
 
 
       </Routes>

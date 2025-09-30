@@ -19,20 +19,20 @@ export default function Navbar() {
       ]},
       { name: "The Club Farm", href: "#", sub: [
         { name: "Key Plan", href: "/keyplanCF" },
-        { name: "Farm Features", href: "#" }
+        { name: "Layout", href: "/layoutCF" }
       ]},
       { name: "Upcoming Projects", href: "#" ,sub: [
-        { name: "Skyline Township", href: "/keyplanCF" },
-        { name: "Leafshade", href: "#" },
+        { name: "Skyline Township", href: "/skyline" },
+        { name: "Leafshade", href: "/upcomingPJ" },
         { name: "Amrit Garh", href: "#" }
       ]},
     ],
     developments: [
-      { name: "Noida International Airport", href: "#" },
-      { name: "International Film City", href: "#" },
-      { name: "Media Device Park", href: "#" },
-      { name: "Logistics Park", href: "#" },
-      { name: "Personal Rapid Transit - pod Taxi", href: "#" }
+      { name: "Noida International Airport", href: "/noida-international" },
+      { name: "International Film City", href: "/international-film-city" },
+      { name: "Media Device Park", href: "/medical-device-Park" },
+      { name: "Logistics Park", href: "/logistics-park" },
+      { name: "Personal Rapid Transit - pod Taxi", href: "/personal-rapid-transit" }
     ],
     news: [
       { name: "Blogs", href: "/news" },
