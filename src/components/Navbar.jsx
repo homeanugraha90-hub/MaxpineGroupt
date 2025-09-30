@@ -10,7 +10,7 @@ export default function Navbar() {
 
   const menuData = {
     projects: [
-      { name: "Anugrah home", href: "#" },
+      { name: "Anugrah home", href: "https://anugrahhomes.com/" },
       { name: "Brij Brinda", href: "#", sub: [
         { name: "Key Play - Brij Vrinda", href: "#" },
         { name: "Layout - Brij Vrinda", href: "#" },
@@ -58,7 +58,7 @@ export default function Navbar() {
       <div className="py-2">
         {items.map((item, i) => (
           <div key={i} className="relative" onMouseEnter={() => item.sub && setDesktop(p => ({ ...p, nested: item.name }))}>
-            <a href={item.href} className="flex items-center justify-between px-6 py-3 text-gray-700 hover:bg-[#90cc35] hover:text-white transition-colors duration-200">
+            <a href={item.href} target="_blank" className="flex items-center justify-between px-6 py-3 text-gray-700 hover:bg-[#90cc35] hover:text-white transition-colors duration-200">
               <span>{item.name}</span>
               {item.sub && <ChevronRight className="w-4 h-4" />}
             </a>
@@ -68,7 +68,7 @@ export default function Navbar() {
               }`}>
                 <div className="py-2">
                   {item.sub.map((s, j) => (
-                    <a key={j} href={s.href} className="block px-6 py-3 text-gray-700 hover:bg-[#90cc35] hover:text-white transition-colors duration-200">
+                    <a key={j} target="_blank" href={s.href} className="block px-6 py-3 text-gray-700 hover:bg-[#90cc35] hover:text-white transition-colors duration-200">
                       {s.name}
                     </a>
                   ))}
@@ -140,11 +140,13 @@ export default function Navbar() {
 
       <nav className="bg-[#272b24] relative">
         <div className="flex items-stretch min-h-[90px]">
-          <div className=" flex items-center px-6 lg:px-28">
-            <span className="text-2xl lg:text-3xl font-bold text-white whitespace-nowrap">
+            <Link to="/">
+          <div className=" flex justify-center h-full  items-center px-6 lg:px-28">
+            <span className="text-2xl  lg:text-3xl font-bold text-white whitespace-nowrap">
               <img src="/maxpin_logo.png" className="md:max-w-24 max-w-18 " alt="Maxpine logo"  />
             </span>
           </div>
+            </Link>
 
           <div className="hidden lg:flex flex-1">
             <div className="bg-[#90cc35] flex items-stretch justify-center flex-1 px-8">

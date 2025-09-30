@@ -34,7 +34,7 @@ export default function Testimonial() {
     <section className="py-24 bg-gradient-to-r from-gray-900 to-gray-700 text-white relative">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         {/* Header */}
-        <p className="text-indigo-400 font-semibold uppercase tracking-widest text-sm mb-2">
+        <p className="text-[#90cc35] font-semibold uppercase tracking-widest text-sm mb-2">
           Maxpine Customer Reviews
         </p>
         <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-16 text-white drop-shadow-xl">
@@ -42,9 +42,9 @@ export default function Testimonial() {
         </h2>
 
         {/* Testimonial Card */}
-        <div className="relative bg-gray-800 rounded-3xl p-10 sm:p-14 lg:p-16 shadow-2xl border-2 border-indigo-500">
+        <div className="relative bg-gray-800 rounded-3xl p-10 sm:p-14 lg:p-16 shadow-2xl border-2 border-[#90cc35]">
           {/* Quote Icon */}
-          <div className="text-indigo-400 text-6xl sm:text-7xl lg:text-8xl mb-6">❝</div>
+          <div className="text-[#90cc35] text-6xl sm:text-7xl lg:text-8xl mb-6">❝</div>
 
           {/* Testimonial Text */}
           <p className="text-lg sm:text-xl lg:text-2xl mb-8 leading-relaxed">

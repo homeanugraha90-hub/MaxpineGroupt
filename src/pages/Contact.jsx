@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { MapPin, Phone, Mail, Clock, Send, Home } from 'lucide-react';
+import img1 from "../assets/All home imgs/people-1.jpg"
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -28,16 +29,16 @@ export default function ContactPage() {
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100">
       {/* Hero Header with Background Image */}
       <div className="relative h-96 bg-cover bg-center" style={{
-        backgroundImage: 'url(https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200)',
+        backgroundImage: `url(${img1})`,
         backgroundPosition: 'center'
       }}>
-        <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div className="absolute inset-0 bg-black/60 bg-opacity-50"></div>
         <div className="relative h-full flex flex-col items-center justify-center text-white">
           <h1 className="text-5xl md:text-6xl font-bold mb-6">Contact Us</h1>
           <div className="flex items-center gap-3 text-lg">
             <a href="/" className="hover:text-blue-400 transition-colors">Home</a>
             <span>›</span>
-            <span className="text-blue-400">Contact</span>
+            <span className="text-[#90cc35]">Contact</span>
           </div>
         </div>
       </div>
@@ -46,12 +47,12 @@ export default function ContactPage() {
         <div className="grid md:grid-cols-3 gap-8">
           {/* Contact Info Cards */}
           <div className="md:col-span-1 space-y-6">
-            <div className="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition-shadow">
-              <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
-                <MapPin className="w-6 h-6 text-blue-600" />
+            <div className="bg-white flex items-center flex-col rounded-xl shadow-md p-6 hover:shadow-lg transition-shadow">
+              <div className="w-12 h-12 bg-[#e0ead1] rounded-lg flex items-center justify-center mb-4">
+                <MapPin className="w-6 h-6 text-[#8de011]" />
               </div>
               <h3 className="text-lg font-semibold text-slate-900 mb-2">Visit Us</h3>
-              <p className="text-slate-600">123 Real Estate Ave<br />Suite 456<br />City, State 12345</p>
+              <p className="text-slate-600">123 Real Estate Ave Suite 456<br />City, State 12345</p>
             </div>
 
             <div className="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition-shadow">
@@ -101,7 +102,7 @@ export default function ContactPage() {
                       name="name"
                       value={formData.name}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition"
+                      className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-[#90cc35] focus:border-transparent outline-none transition"
                       placeholder="John Doe"
                     />
                   </div>
@@ -115,7 +116,7 @@ export default function ContactPage() {
                       name="email"
                       value={formData.email}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition"
+                      className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-[#90cc35] focus:border-transparent outline-none transition"
                       placeholder="john@example.com"
                     />
                   </div>
@@ -131,7 +132,7 @@ export default function ContactPage() {
                       name="phone"
                       value={formData.phone}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition"
+                      className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-[#90cc35] focus:border-transparent outline-none transition"
                       placeholder="+1 (555) 000-0000"
                     />
                   </div>
@@ -144,7 +145,7 @@ export default function ContactPage() {
                       name="propertyType"
                       value={formData.propertyType}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition"
+                      className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-[#90cc35] focus:border-transparent outline-none transition"
                     >
                       <option value="buy">Buying a Property</option>
                       <option value="sell">Selling a Property</option>
@@ -164,14 +165,14 @@ export default function ContactPage() {
                     value={formData.message}
                     onChange={handleChange}
                     rows="6"
-                    className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition resize-none"
+                    className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-[#90cc35] focus:border-transparent outline-none transition resize-none"
                     placeholder="Tell us about your requirements..."
                   ></textarea>
                 </div>
 
                 <button
                   onClick={handleSubmit}
-                  className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-4 px-6 rounded-lg transition-colors flex items-center justify-center gap-2 shadow-lg hover:shadow-xl"
+                  className="w-full bg-[#90cc35] hover:bg-[#afdd6a] text-white font-semibold py-4 px-6 rounded-lg transition-colors flex items-center justify-center gap-2 shadow-lg hover:shadow-xl"
                 >
                   <Send className="w-5 h-5" />
                   Send Message
@@ -181,7 +182,7 @@ export default function ContactPage() {
 
             {/* Map Placeholder */}
             <div className="mt-8 bg-white rounded-xl shadow-md overflow-hidden">
-              <div className="bg-gradient-to-r from-blue-500 to-blue-600 h-64 flex items-center justify-center">
+              <div className="bg-gradient-to-r from-[#90cc35] to-[#72af16] h-64 flex items-center justify-center">
                 <div className="text-center text-white">
                   <MapPin className="w-16 h-16 mx-auto mb-4 opacity-80" />
                   <p className="text-xl font-semibold">Our Location</p>
