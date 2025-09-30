@@ -1,0 +1,124 @@
+import { Home, Handshake, Key, Star, ArrowUp } from "lucide-react";
+import { useState } from "react";
+
+export default function WhyChoose() {
+  const [showScrollTop, setShowScrollTop] = useState(false);
+
+  const customerImages = [
+    "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=50&h=50&fit=crop&crop=face",
+    "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=50&h=50&fit=crop&crop=face",
+    "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=50&h=50&fit=crop&crop=face"
+  ];
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  return (
+    <section className="relative min-h-screen px-10 md:px-20 bg-cover bg-center bg-no-repeat" 
+             style={{
+               backgroundImage: "linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=2073&auto=format&fit=crop')"
+             }}>
+      <div className="container mx-auto px-4 py-16 lg:py-24">
+        {/* Header Section */}
+        <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-16">
+          <div className="mb-8 lg:mb-0">
+            <div className="flex items-center gap-2 mb-4">
+              <div className="w-8 h-0.5 bg-[#90cc35]"></div>
+              <span className="text-[#90cc35] font-medium text-sm lg:text-base">Why Choose Us</span>
+              <div className="w-8 h-0.5 bg-[#90cc35]"></div>
+            </div>
+            <h2 className="text-2xl md:text-3xl lg:text-5xl font-bold text-white leading-tight">
+              Why Maxpine Group?
+            </h2>
+          </div>
+
+          {/* Trustpilot Style */}
+          <div className="flex flex-col sm:flex-row items-center gap-6">
+            <div className="flex items-center gap-2 bg-white px-4 py-2 rounded">
+              <Star className="w-5 h-5 text-[#90cc35] fill-current" />
+              <span className="font-bold text-gray-800">Trustpilot</span>
+            </div>
+
+            <div className="flex items-center">
+              <div className="flex -space-x-2">
+                {customerImages.map((img, index) => (
+                  <div key={index} className="w-12 h-12 rounded-full border-2 border-white overflow-hidden">
+                    <img src={img} alt={`Customer ${index + 1}`} className="w-full h-full object-cover" />
+                  </div>
+                ))}
+                <div className="w-12 h-12 rounded-full bg-[#6ca01d] border-2 border-white flex items-center justify-center text-white font-semibold text-sm">
+                  +2K
+                </div>
+              </div>
+            </div>
+
+            <div className="text-center">
+              <div className="flex items-center gap-1 mb-1">
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} className="w-4 h-4 text-yellow-400 fill-current" />
+                ))}
+              </div>
+              <p className="text-white text-sm">1.5k+ satisfied clients</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Cards Section */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+          {/* Find Your Home */}
+          <div className="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+            <div className="mb-6 flex items-center flex-col  justify-center px-5">
+              <div className="w-16 h-16  bg-red-50 rounded-full flex items-center  justify-center mb-4">
+                <Home className="w-8 h-8 text-[#90cc35]" />
+              </div>
+              
+              <h3 className="text-xl   md:text-2xl font-bold text-gray-800 mb-4   w-full">Find Your Perfect Dream <br/> Home Today</h3>
+              <p className="text-gray-600 leading-relaxed">
+                Browse premium apartments, villas, and townhouses in prime locations.
+              </p>
+            </div>
+            <button className="w-full bg-[#90cc35] hover:bg-[#8fe114] text-[#3c3d3b] font-semibold py-3 px-6 rounded-lg transition-colors duration-200">
+              Explore Homes
+            </button>
+          </div>
+
+          {/* Sell Property */}
+          <div className="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+            <div className="mb-6 flex items-center flex-col  justify-center px-5">
+              <div className="w-16 h-16 bg-red-50 rounded-full flex items-center justify-center mb-4">
+                <Handshake className="w-8 h-8 text-[#90cc35]" />
+              </div>
+              <h3 className="text-2xl text-left   w-full font-bold text-gray-800 mb-4">Your Trusted Real Estate Partner</h3>
+              <p className="text-gray-600 leading-relaxed">
+                Get the best market value with our expert property evaluation and selling services.
+              </p>
+            </div>
+            <button className="w-full bg-[#90cc35] hover:bg-[#8fe114] text-[#3c3d3b] font-semibold py-3 px-6 rounded-lg transition-colors duration-200">
+              Explore Homes
+            </button>
+          </div>
+
+          {/* Rent a Home */}
+          <div className="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+            <div className="mb-6 flex items-center flex-col  justify-center px-5">
+              <div className="w-16 h-16 bg-red-50 rounded-full flex items-center justify-center mb-4">
+                <Key className="w-8 h-8 text-[#90cc35]" />
+              </div>
+              <h3 className="text-2xl text-left  w-full  font-bold text-gray-800 mb-4">Prime Locations, Premium Returns</h3>
+              <p className="text-gray-600 leading-relaxed">
+                Flexible rental options for apartments, villas, and commercial spaces with trusted agreements.
+              </p>
+            </div>
+            <button className="w-full bg-[#90cc35] hover:bg-[#8fe114] text-[#3c3d3b] font-semibold py-3 px-6 rounded-lg transition-colors duration-200">
+              Explore Homes
+            </button>
+          </div>
+        </div>
+      </div>
+
+      {/* Scroll to Top Button */}
+     
+    </section>
+  );
+}
