@@ -13,7 +13,7 @@ export default function About() {
         
         {/* Left Image with Badge */}
         <div className="relative   lg:h-[70vh]">
-          {/* <div className="absolute -top-6 -left-6 w-60 h-6 bg-[#90cc35] opacity-30"></div> */}
+          {/* <div className="absolute -top-6 -left-6 w-60 h-6 bg-[#29aa8a] opacity-30"></div> */}
           <img
             src={img1}
             effect="blur"
@@ -21,37 +21,37 @@ export default function About() {
             className="w-full h-full rounded-lg shadow-lg border-8 border-white "
           />
           {/* Badge */}
-          <div className="absolute bottom-1 -left-10 bg-[#90cc35] px-6 py-4 text-white font-medium shadow-lg">
+          <div className="absolute bottom-1 -left-10 bg-[#29aa8a] px-6 py-4 text-white font-medium shadow-lg">
           20+ years of <br /> experience
           </div>
         </div>
 
         {/* Right Content */}
-        <div className=" ">
-          <p className="text-[#90cc35] uppercase tracking-wide font-semibold mb-2">
+        <div className="  ">
+          <p className="text-[#29aa8a] uppercase tracking-wide font-semibold mb-2">
             About Us
           </p>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
             Building Dreams, <br /> Shaping Communities
           </h2>
           <p className="text-lg text-gray-700 font-medium mb-6 flex items-center">
-            <span className="w-8 h-[2px] bg-[#90cc35] mr-3"></span>
+            <span className="w-8 h-[2px] bg-[#29aa8a] mr-3"></span>
             We provide an essential service for you
           </p>
-          <p className="text-gray-600 leading-relaxed mb-6 md:pr-32">
+          <p className="text-gray-600 w-full  leading-relaxed mb-6 ">
             Maxpine Group is a premier real estate company with over 20 years of experience
             in developing premium residential and commercial properties. We are committed
             to delivering excellence, innovative designs, and sustainable living solutions
             that enrich communities and elevate lifestyles.
           </p>
-          <p className="text-gray-600 leading-relaxed mb-6 md:pr-32">
+          <p className="text-gray-600 leading-relaxed mb-6 ">
             Our portfolio includes luxury apartments, townships, and commercial spaces
             across prime locations. Every project reflects our dedication to quality,
             attention to detail, and customer satisfaction.
           </p>
           <Link to="/about">
-          <button className="bg-[#90cc35] text-white font-medium px-8 py-3 rounded-full shadow hover:bg-[#8cdb15] transition">
-            Get Started
+          <button className="bg-[#29aa8a] text-white font-medium px-8 py-3 rounded-full shadow hover:bg-[#29aa8a] transition">
+            Read More...
           </button>
           </Link>
         </div>

@@ -1,6 +1,7 @@
 import { Phone, Mail, Clock, Lock, Menu, X, ChevronDown, ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import Anugrah from "../pages/Navbar/Anugrah";
 
 export default function Navbar() {
   const [mobile, setMobile] = useState({ menu: false, open: {} });
@@ -10,17 +11,21 @@ export default function Navbar() {
 
   const menuData = {
     projects: [
-      { name: "Anugrah home", href: "https://anugrahhomes.com/" },
+      { name: "Anugrah home", href: "https://anugrahhomes.com/" ,hoverCard:<Anugrah/>},
       { name: "Brij Brinda", href: "#", sub: [
-        { name: "Key Play - Brij Vrinda", href: "#" },
-        { name: "Layout - Brij Vrinda", href: "#" },
-        { name: "Development Updates", href: "#" }
+        { name: "Key Play - Brij Vrinda", href: "/keyPlan" },
+        { name: "Layout - Brij Vrinda", href: "/layout" },
+        { name: "Development Updates", href: "/development" }
       ]},
       { name: "The Club Farm", href: "#", sub: [
-        { name: "Club Facilities", href: "#" },
+        { name: "Key Plan", href: "/keyplanCF" },
         { name: "Farm Features", href: "#" }
       ]},
-      { name: "Upcoming Projects", href: "#" },
+      { name: "Upcoming Projects", href: "#" ,sub: [
+        { name: "Skyline Township", href: "/keyplanCF" },
+        { name: "Leafshade", href: "#" },
+        { name: "Amrit Garh", href: "#" }
+      ]},
     ],
     developments: [
       { name: "Noida International Airport", href: "#" },
@@ -52,26 +57,50 @@ export default function Navbar() {
   ];
 
   const Dropdown = ({ items, active, width }) => (
-    <div className={`absolute top-full left-0 ${width} bg-white shadow-lg border-t-3 border-[#90cc35] transition-all duration-300 z-50 ${
+    <div className={`absolute top-full left-0 ${width} bg-white shadow-lg border-t-3 border-[#29aa8a] transition-all duration-300 z-50 ${
       active ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-2'
     }`}>
       <div className="py-2">
         {items.map((item, i) => (
-          <div key={i} className="relative" onMouseEnter={() => item.sub && setDesktop(p => ({ ...p, nested: item.name }))}>
-            <a href={item.href} target="_blank" className="flex items-center justify-between px-6 py-3 text-gray-700 hover:bg-[#90cc35] hover:text-white transition-colors duration-200">
+          <div 
+            key={i} 
+            className="relative" 
+            onMouseEnter={() => {
+              if (item.sub) {
+                setDesktop(p => ({ ...p, nested: item.name, hoverCard: null }));
+              } else if (item.hoverCard) {
+                setDesktop(p => ({ ...p, hoverCard: item.name, nested: null }));
+              } else {
+                setDesktop(p => ({ ...p, nested: null, hoverCard: null }));
+              }
+            }}
+            onMouseLeave={() => {
+              setDesktop(p => ({ ...p, nested: null, hoverCard: null }));
+            }}
+          >
+            <a href={item.href} target="_blank" className="flex items-center justify-between px-6 py-3 text-gray-700 hover:bg-[#29aa8a] hover:text-white transition-colors duration-200">
               <span>{item.name}</span>
               {item.sub && <ChevronRight className="w-4 h-4" />}
             </a>
             {item.sub && (
-              <div className={`absolute left-full top-0 w-56 bg-white shadow-lg border-l-3 border-[#90cc35] transition-all duration-300 ${
+              <div className={`absolute left-full top-0 w-56 bg-white shadow-lg border-l-3 border-[#29aa8a] transition-all duration-300 ${
                 desktop.nested === item.name ? 'opacity-100 visible' : 'opacity-0 invisible'
               }`}>
                 <div className="py-2">
                   {item.sub.map((s, j) => (
-                    <a key={j} target="_blank" href={s.href} className="block px-6 py-3 text-gray-700 hover:bg-[#90cc35] hover:text-white transition-colors duration-200">
+                    <a key={j} target="_blank" href={s.href} className="block px-6 py-3 text-gray-700 hover:bg-[#29aa8a] hover:text-white transition-colors duration-200">
                       {s.name}
                     </a>
                   ))}
+                </div>
+              </div>
+            )}
+            {item.hoverCard && (
+              <div className={`absolute  left-full top-0 w-90 bg-white shadow-lg border-l-3 border-[#29aa8a] transition-all duration-300 ${
+                desktop.hoverCard === item.name ? 'opacity-100 visible' : 'opacity-0 invisible'
+              }`}>
+                <div className="p-4">
+                  {item.hoverCard}
                 </div>
               </div>
             )}
@@ -138,24 +167,24 @@ export default function Navbar() {
         </div>
       </div>
 
-      <nav className="bg-[#272b24] relative">
+      <nav className="bg-[#eaece9] relative">
         <div className="flex items-stretch min-h-[90px]">
             <Link to="/">
           <div className=" flex justify-center h-full  items-center px-6 lg:px-28">
             <span className="text-2xl  lg:text-3xl font-bold text-white whitespace-nowrap">
-              <img src="/maxpin_logo.png" className="md:max-w-24 max-w-18 " alt="Maxpine logo"  />
+              <img src="/Maxpine_logo_2.png" className="md:max-w-24  max-w-18 " alt="Maxpine logo"  />
             </span>
           </div>
             </Link>
 
           <div className="hidden lg:flex flex-1">
-            <div className="bg-[#90cc35] flex items-stretch justify-center flex-1 px-8">
+            <div className="bg-[#29aa8a] flex items-stretch justify-center flex-1 px-8">
               <div className="flex items-stretch space-x-4 text-white font-medium">
                 {navConfig.map((item, i) => (
                   item.type === "link" ? (
-                    <a key={i} href={item.url} className="flex items-center hover:bg-[#272b24] px-4 transition-colors duration-200">
+                    <a key={i} href={item.url} className="flex items-center hover:bg-[#4a4c4c] px-4 transition-colors duration-200 " >
                       {item.label}
-                    </a>
+                    </a> 
                   ) : (
                     <div 
                       key={i}
@@ -163,7 +192,7 @@ export default function Navbar() {
                       onMouseEnter={() => setDesktop({ main: item.key, nested: null })}
                       onMouseLeave={() => setDesktop({ main: null, nested: null })}
                     >
-                      <a href={item.url} className="flex items-center gap-1 hover:bg-[#272b24] px-4 transition-colors duration-200">
+                      <a href={item.url} className="flex items-center gap-1 hover:bg-[#4a4c4c] px-4 transition-colors duration-200">
                         {item.label}
                         <ChevronDown className="w-4 h-4" />
                       </a>
@@ -174,7 +203,7 @@ export default function Navbar() {
               </div>
             </div>
 
-            <div className="bg-[#272b24] flex items-center px-10 text-white font-semibold cursor-pointer hover:bg-black transition-colors duration-200">
+            <div className="bg-[#eaece9] flex items-center px-10 text-black font-bold cursor-pointer hover:bg-white transition-colors duration-200 text-xl">
                 <Link to="/site-visit">
               <div className="flex items-center gap-2">
                 <Lock className="w-4 h-4" />
@@ -185,13 +214,13 @@ export default function Navbar() {
           </div>
 
           <div className="lg:hidden flex items-center px-4 ml-auto">
-            <button onClick={() => setMobile(p => ({ ...p, menu: !p.menu }))} className="text-white hover:text-[#90cc35] transition-colors duration-200">
+            <button onClick={() => setMobile(p => ({ ...p, menu: !p.menu }))} className="text-white hover:text-[#29aa8a] transition-colors duration-200">
               {mobile.menu ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
           </div>
         </div>
 
-        <div className={`lg:hidden bg-[#90cc35] transition-all duration-300 ${mobile.menu ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0 overflow-hidden'}`}>
+        <div className={`lg:hidden bg-[#29aa8a] transition-all duration-300 ${mobile.menu ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0 overflow-hidden'}`}>
           <div className="px-4 py-6 space-y-2">
             {navConfig.filter(item => item.type === "link" || item.type === "dropdown").map((item, i) => (
               item.type === "link" ? (

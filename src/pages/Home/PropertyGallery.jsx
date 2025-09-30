@@ -75,7 +75,7 @@ export default function PropertyGallery() {
         {/* Header */}
         <div className="text-center mb-12">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-800 mb-8">
-            maxpine & anugrahHome
+            Maxpine | Anugrah | SkyLine
           </h2>
 
           {/* Filter Buttons */}
@@ -86,7 +86,7 @@ export default function PropertyGallery() {
                 onClick={() => setActiveFilter(filter.id)}
                 className={`px-6 py-3 rounded-full font-medium transition-all duration-300 ${
                   activeFilter === filter.id
-                    ? "bg-[#90cc35] text-white shadow-lg transform scale-105"
+                    ? "bg-[#29aa8a] text-white shadow-lg transform scale-105"
                     : "bg-white text-gray-600 hover:bg-gray-100 shadow-md"
                 }`}
               >
@@ -125,14 +125,14 @@ export default function PropertyGallery() {
                     <h3 className="text-white font-semibold text-lg mb-2">
                       {item.title}
                     </h3>
-                    <span className="text-[#90cc35] text-sm font-medium uppercase tracking-wider">
+                    <span className="text-[#29aa8a] text-sm font-medium uppercase tracking-wider">
                       {item.category}
                     </span>
                   </div>
                 </div>
 
                 {/* Hover Effect Border */}
-                <div className="absolute inset-0 border-4 border-[#90cc35] opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl"></div>
+                <div className="absolute inset-0 border-4 border-[#29aa8a] opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl"></div>
               </div>
             </div>
           ))}
@@ -140,7 +140,7 @@ export default function PropertyGallery() {
 
         {/* Load More Button */}
         {/* <div className="text-center mt-12">
-          <button className="bg-[#90cc35] hover:bg-[#b8834a] text-white font-semibold px-8 py-4 rounded-full transition-all duration-300 hover:shadow-lg hover:scale-105">
+          <button className="bg-[#29aa8a] hover:bg-[#b8834a] text-white font-semibold px-8 py-4 rounded-full transition-all duration-300 hover:shadow-lg hover:scale-105">
             Load More Images
           </button>
         </div> */}

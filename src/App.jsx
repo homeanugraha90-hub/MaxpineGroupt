@@ -10,6 +10,10 @@ import News from "./pages/News";
 import Contact from "./pages/Contact";
 import SiteVisit from "./pages/SiteVisit";
 import Projects from "./pages/Projects";
+import KeyPlayBV from "./pages/Navbar/KeyPlayBV";
+import LayOut from "./pages/Navbar/LayOut";
+import Development from "./pages/Navbar/Development";
+import KeyPlanCF from "./pages/Navbar/KeyPlanCF";
 
 function App() {
   return (
@@ -23,6 +27,10 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/site-visit" element={<SiteVisit />} />
         <Route path="/projects" element={<Projects />} />
+         <Route path="/KeyPlan" element={<KeyPlayBV />} />
+         <Route path="/layout" element={<LayOut/>} />
+         <Route path="/development" element={<Development/>} />
+         <Route path="/keyplanCF" element={<KeyPlanCF/>} />
 
 
       </Routes>

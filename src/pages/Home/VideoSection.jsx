@@ -114,9 +114,9 @@ export default function VideoSection() {
                 <div className="absolute inset-0 flex items-center justify-center">
                   <button
                     onClick={handlePlayPause}
-                    className="group relative w-20 h-20 lg:w-24 lg:h-24 bg-[#90cc35] hover:bg-[#8ede17] rounded-full flex items-center justify-center transition-all duration-300 transform hover:scale-110 shadow-lg hover:shadow-xl"
+                    className="group relative w-20 h-20 lg:w-24 lg:h-24 bg-[#29aa8a] hover:bg-[#4ebda1] rounded-full flex items-center justify-center transition-all duration-300 transform hover:scale-110 shadow-lg hover:shadow-xl"
                   >
-                    <div className="absolute inset-0 bg-[#90cc35] rounded-full animate-ping opacity-75"></div>
+                    <div className="absolute inset-0 bg-[#29aa8a] rounded-full animate-ping opacity-75"></div>
                     <Play
                       className="w-8 h-8 lg:w-10 lg:h-10 text-white ml-1 relative z-10"
                       fill="currentColor"
@@ -133,7 +133,7 @@ export default function VideoSection() {
                   onClick={handleSeek}
                 >
                   <div
-                    className="h-full bg-[#90cc35] rounded"
+                    className="h-full bg-[#29aa8a] rounded"
                     style={{ width: `${progress}%` }}
                   ></div>
                   <div

@@ -22,8 +22,8 @@ const slides = [
     id: 2,
     img: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80",
     title: "Invest in Excellence",
-    subtitle: "Maxpine Group - Building Your Future",
-    price: "₹65,00,000",
+    subtitle: "Anugrah Homes - Building Your Future",
+    price: "₹52,00,000",
     description: "Strategic locations with high appreciation potential and premium amenities",
     video: vid,
   },
@@ -31,7 +31,7 @@ const slides = [
     id: 3,
     img: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1600&q=80",
     title: "Luxury Redefined",
-    subtitle: "Where Comfort Meets Elegance",
+    subtitle: "Where Comfort Meets Elegance SkyLine",
     price: "₹85,00,000",
     description: "Spacious layouts, modern design, and premium finishes in every detail",
     video: vid,
@@ -87,9 +87,9 @@ export default function Banner() {
                   initial={{ opacity: 0, x: -50 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.8 }}
-                  className="border-4 border-[#90cc35] p-8 md:p-10 max-w-2xl bg-black/20 backdrop-blur-sm"
+                  className="border-4 border-[#29aa8a] p-8 md:p-10 max-w-2xl bg-black/20 backdrop-blur-sm"
                 >
-                  <span className="text-[#90cc35] font-semibold text-lg tracking-wide mb-2 inline-block">
+                  <span className="text-[#29aa8a] font-semibold text-lg tracking-wide mb-2 inline-block">
                     {slide.subtitle}
                   </span>
                   <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-4">
@@ -99,7 +99,7 @@ export default function Banner() {
 
                   <div className="flex items-center gap-4">
                     <Link to="/site-visit">
-                    <button className="bg-[#90cc35] text-white font-semibold px-8 py-3 rounded-lg shadow-lg hover:bg-[#a3cb69] hover:text-black transition-all duration-300 hover:shadow-xl">
+                    <button className="bg-[#29aa8a] text-white font-semibold px-8 py-3 rounded-lg shadow-lg hover:bg-[#4fc3a6] hover:text-black transition-all duration-300 hover:shadow-xl">
                       Schedule a Visit
                     </button>
                     </Link>
@@ -120,11 +120,11 @@ export default function Banner() {
                   transition={{ duration: 0.8, delay: 0.3 }}
                   className="text-left md:text-right"
                 >
-                  <div className="inline-block bg-black/40 backdrop-blur-sm border-2 border-[#90cc35] p-8 rounded-lg">
+                  <div className="inline-block bg-black/40 backdrop-blur-sm border-2 border-[#29aa8a] p-8 rounded-lg">
                     <p className="text-xl text-gray-300 font-medium mb-2">
                       Starting Price
                     </p>
-                    <p className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#90cc35] mb-3">
+                    <p className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#29aa8a] mb-3">
                       {slide.price}
                     </p>
                     <p className="text-gray-400 text-sm">

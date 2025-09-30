@@ -24,44 +24,17 @@ export default function WhyChoose() {
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-16">
           <div className="mb-8 lg:mb-0">
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-0.5 bg-[#90cc35]"></div>
-              <span className="text-[#90cc35] font-medium text-sm lg:text-base">Why Choose Us</span>
-              <div className="w-8 h-0.5 bg-[#90cc35]"></div>
+              <div className="w-8 h-0.5 bg-[#29aa8a]"></div>
+              <span className="text-[#29aa8a] font-medium text-sm lg:text-base">Why Choose Us</span>
+              <div className="w-8 h-0.5 bg-[#29aa8a]"></div>
             </div>
             <h2 className="text-2xl md:text-3xl lg:text-5xl font-bold text-white leading-tight">
               Why Maxpine Group?
             </h2>
           </div>
 
-          {/* Trustpilot Style */}
-          <div className="flex flex-col sm:flex-row items-center gap-6">
-            <div className="flex items-center gap-2 bg-white px-4 py-2 rounded">
-              <Star className="w-5 h-5 text-[#90cc35] fill-current" />
-              <span className="font-bold text-gray-800">Trustpilot</span>
-            </div>
-
-            <div className="flex items-center">
-              <div className="flex -space-x-2">
-                {customerImages.map((img, index) => (
-                  <div key={index} className="w-12 h-12 rounded-full border-2 border-white overflow-hidden">
-                    <img src={img} alt={`Customer ${index + 1}`} className="w-full h-full object-cover" />
-                  </div>
-                ))}
-                <div className="w-12 h-12 rounded-full bg-[#6ca01d] border-2 border-white flex items-center justify-center text-white font-semibold text-sm">
-                  +2K
-                </div>
-              </div>
-            </div>
-
-            <div className="text-center">
-              <div className="flex items-center gap-1 mb-1">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-4 h-4 text-yellow-400 fill-current" />
-                ))}
-              </div>
-              <p className="text-white text-sm">1.5k+ satisfied clients</p>
-            </div>
-          </div>
+         
+          
         </div>
 
         {/* Cards Section */}
@@ -70,7 +43,7 @@ export default function WhyChoose() {
           <div className="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
             <div className="mb-6 flex items-center flex-col  justify-center px-5">
               <div className="w-16 h-16  bg-red-50 rounded-full flex items-center  justify-center mb-4">
-                <Home className="w-8 h-8 text-[#90cc35]" />
+                <Home className="w-8 h-8 text-[#29aa8a]" />
               </div>
               
               <h3 className="text-xl   md:text-2xl font-bold text-gray-800 mb-4   w-full">Find Your Perfect Dream <br/> Home Today</h3>
@@ -78,7 +51,7 @@ export default function WhyChoose() {
                 Browse premium apartments, villas, and townhouses in prime locations.
               </p>
             </div>
-            <button className="w-full bg-[#90cc35] hover:bg-[#8fe114] text-[#3c3d3b] font-semibold py-3 px-6 rounded-lg transition-colors duration-200">
+            <button className="w-full bg-[#29aa8a] hover:bg-[#59c0a6] text-[#f8f9f6] hover:text-black font-semibold py-3 px-6 rounded-lg transition-colors duration-200">
               Explore Homes
             </button>
           </div>
@@ -87,14 +60,14 @@ export default function WhyChoose() {
           <div className="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
             <div className="mb-6 flex items-center flex-col  justify-center px-5">
               <div className="w-16 h-16 bg-red-50 rounded-full flex items-center justify-center mb-4">
-                <Handshake className="w-8 h-8 text-[#90cc35]" />
+                <Handshake className="w-8 h-8 text-[#29aa8a]" />
               </div>
               <h3 className="text-2xl text-left   w-full font-bold text-gray-800 mb-4">Your Trusted Real Estate Partner</h3>
               <p className="text-gray-600 leading-relaxed">
                 Get the best market value with our expert property evaluation and selling services.
               </p>
             </div>
-            <button className="w-full bg-[#90cc35] hover:bg-[#8fe114] text-[#3c3d3b] font-semibold py-3 px-6 rounded-lg transition-colors duration-200">
+            <button className="w-full bg-[#29aa8a] hover:bg-[#59c0a6] text-[#f8f9f6] hover:text-black font-semibold py-3 px-6 rounded-lg transition-colors duration-200">
               Explore Homes
             </button>
           </div>
@@ -103,14 +76,14 @@ export default function WhyChoose() {
           <div className="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
             <div className="mb-6 flex items-center flex-col  justify-center px-5">
               <div className="w-16 h-16 bg-red-50 rounded-full flex items-center justify-center mb-4">
-                <Key className="w-8 h-8 text-[#90cc35]" />
+                <Key className="w-8 h-8 text-[#29aa8a]" />
               </div>
               <h3 className="text-2xl text-left  w-full  font-bold text-gray-800 mb-4">Prime Locations, Premium Returns</h3>
               <p className="text-gray-600 leading-relaxed">
                 Flexible rental options for apartments, villas, and commercial spaces with trusted agreements.
               </p>
             </div>
-            <button className="w-full bg-[#90cc35] hover:bg-[#8fe114] text-[#3c3d3b] font-semibold py-3 px-6 rounded-lg transition-colors duration-200">
+            <button className="w-full bg-[#29aa8a] hover:bg-[#59c0a6] text-[#f8f9f6] hover:text-black font-semibold py-3 px-6 rounded-lg transition-colors duration-200">
               Explore Homes
             </button>
           </div>

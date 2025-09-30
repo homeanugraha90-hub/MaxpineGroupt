@@ -17,7 +17,7 @@ export default  function Home() {
         <About/>
         <WhyChoose/>
         <Brand_logo/>
-        <HomeparkLiving/>
+        {/* <HomeparkLiving/> */}
         <PropertyGallery/>
         <VideoSection/>
         <Faqs/>
