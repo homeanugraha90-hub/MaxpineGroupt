@@ -13,15 +13,15 @@ import brij from "../../assets/All home imgs/1-1-1170x785.jpg"
 // import sky from "../../assets/All home imgs/Green-and-White-Modern-Land-Plot-Sale-Promotion-Instagram-Post-1080-x-650-px-2.jpg"
 
 const slides = [
-  {
-    id: 1,
-    img: img,
-    title: " Maxpine",
-    subtitle: "Premium Properties in Prime Locations",
-    price: "₹45,00,000",
-    description: "Experience luxury living with world-class amenities and modern architecture",
-    video: vid,
-  },
+  // {
+  //   id: 1,
+  //   img: img,
+  //   title: " Maxpine",
+  //   subtitle: "Premium Properties in Prime Locations",
+  //   price: "₹45,00,000",
+  //   description: "Experience luxury living with world-class amenities and modern architecture",
+  //   video: vid,
+  // },
   {
     id: 2,
     img: anu,
@@ -112,7 +112,7 @@ export default function Banner() {
 
                   <div className="flex items-center gap-4">
                     <Link to="/site-visit">
-                    <button className="bg-[#3c92a9] text-white font-semibold px-8 py-3 rounded-lg shadow-lg hover:bg-[#1e6d83] hover:text-black transition-all duration-300 hover:shadow-xl">
+                    <button className="bg-[#3c92a9] text-white font-semibold px-8 py-3 rounded-lg shadow-lg hover:bg-[#1e6d83]  transition-all duration-300 hover:shadow-xl">
                       Schedule a Visit
                     </button>
                     </Link>
@@ -143,9 +143,7 @@ export default function Banner() {
                     <p className="text-gray-400 text-sm">
                       *Prices may vary based on unit and floor
                     </p>
-                    <button className="mt-6 w-full bg-white text-[#3b3835] font-semibold px-6 py-3 rounded-lg hover:bg-gray-100 transition-all duration-300">
-                      Get Details
-                    </button>
+                    
                   </div>
                 </motion.div>
               </div>

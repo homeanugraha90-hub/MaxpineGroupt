@@ -21,32 +21,32 @@ const services = [
   {
     id: 1,
     icon: <User className="w-12 h-12 text-[#3c92a9]" />,
-    bg: "bg-red-100",
+    bg: "bg-[#c3d9e0]",
     title: "Best Local Agents",
-    desc: "Lorem ipsum dolor sit consectetur sed eiusmod tempor incididunt dolore magna.",
+    desc: "Our local experts know every corner of Anugrah & Maxpine projects — helping you find the perfect home or investment within your budget.",
   },
   {
     id: 2,
     icon: <Home className="w-12 h-12 text-[#3c92a9]" />,
-    bg: "bg-yellow-100",
+    bg: "bg-[#c3d9e0]",
     title: "Personalized Service",
-    desc: "Lorem ipsum dolor sit consectetur sed eiusmod tempor incididunt dolore magna.",
+    desc: "We provide tailored guidance to match your lifestyle, budget, and goals — ensuring every step feels personal and stress-free.",
   },
   {
     id: 3,
     icon: <Award className="w-12 h-12 text-[#3c92a9]" />,
-    bg: "bg-red-100",
+    bg: "bg-[#c3d9e0]",
     title: "Excellent Reputation",
-    desc: "Lorem ipsum dolor sit consectetur sed eiusmod tempor incididunt dolore magna.",
+    desc: "Trusted by countless families, our proven track record speaks for itself in delivering quality and reliability.",
   },
 ];
 
-const stats = [
-  { number: '500+', label: 'Properties Sold', icon: Building2 },
-  { number: '1000+', label: 'Happy Clients', icon: Users },
-  { number: '15+', label: 'Years Experience', icon: Award },
-  { number: '98%', label: 'Success Rate', icon: TrendingUp }
-];
+// const stats = [
+//   { number: '500+', label: 'Properties Sold', icon: Building2 },
+//   { number: '1000+', label: 'Happy Clients', icon: Users },
+//   { number: '15+', label: 'Years Experience', icon: Award },
+//   { number: '98%', label: 'Success Rate', icon: TrendingUp }
+// ];
 
 const values = [
   {
@@ -213,7 +213,7 @@ export default function About() {
                 className={`bg-white rounded-xl flex justify-center flex-col items-center p-6 lg:p-8 shadow-lg hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 ${isVisible[`value-${index}`] ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`}
                 style={{ transitionDelay: `${index * 100}ms` }}
               >
-                <div className="w-14 h-14 lg:w-16 lg:h-16 bg-orange-100 rounded-lg flex items-center justify-center mb-4 text-[#3c92a9] ">
+                <div className="w-14 h-14 lg:w-16 lg:h-16 bg-[#dbe5e8] rounded-lg flex items-center justify-center mb-4 text-[#3c92a9] ">
                   {value.icon}
                 </div>
                 <h3 className="text-xl lg:text-2xl font-bold text-gray-900 mb-3">{value.title}</h3>

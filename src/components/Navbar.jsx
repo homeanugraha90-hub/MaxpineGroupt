@@ -11,7 +11,14 @@ export default function Navbar() {
 
   const menuData = {
     projects: [
-      { name: "Anugrah home", href: "https://anugrahhomes.com/" ,hoverCard:<Anugrah/>},
+      { name: "Anugrah home", href: "https://anugrahhomes.com/" ,sub:[
+         { name: "Visit Site", href: "/keyPlan" },
+        { name: "Key Play ", href: "/keyPlan" },
+        { name: "Layout ", href: "/layout" },
+        { name: "Development Updates", href: "/development" }
+      ]
+        
+      },
       { name: "Skyline Township", href: "/skyline", sub:[
          { name: "Visit Site", href: "/keyPlan" },
         { name: "Key Play ", href: "/keyPlan" },
@@ -162,7 +169,7 @@ export default function Navbar() {
     <header className="relative w-full">
       
 
-      <nav className="bg-[#cbcdca] relative">
+      <nav className="bg-white relative">
         <div className="flex items-stretch min-h-[90px]">
             <Link to="/">
           <div className=" flex justify-center h-full  items-center px-6 lg:px-28">
@@ -198,7 +205,7 @@ export default function Navbar() {
               </div>
             </div>
 
-            <div className="bg-[#cbcdca] flex items-center px-10 text-black font-bold cursor-pointer hover:bg-white transition-colors duration-200 text-xl">
+            <div className="bg-white flex items-center px-10 text-black font-bold cursor-pointer hover:bg-white transition-colors duration-200 text-xl">
                 <Link to="/site-visit">
               <div className="flex items-center gap-2">
                 <Lock className="w-4 h-4" />

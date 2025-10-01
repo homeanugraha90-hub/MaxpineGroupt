@@ -162,7 +162,7 @@ export default function News() {
             <ChevronLeft className="w-5 h-5" />
           </button>
           
-          {[1, 2, 3, 4, '...', 21].map((page, idx) => (
+          {[1,'...', 3].map((page, idx) => (
             <button
               key={idx}
               className={`w-10 h-10 rounded-full flex items-center justify-center font-medium transition-colors ${

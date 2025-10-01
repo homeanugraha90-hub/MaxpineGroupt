@@ -53,7 +53,7 @@ export default function WhyChoose() {
               </p>
             </div>
             <Link to="/news">
-            <button className="w-full bg-[#3c92a9] hover:bg-[#1d738a] text-[#f8f9f6] hover:text-black font-semibold py-3 px-6 rounded-lg transition-colors duration-200">
+            <button className="w-full bg-[#3c92a9] hover:bg-[#1d738a] text-[#f8f9f6]  font-semibold py-3 px-6 rounded-lg transition-colors duration-200">
               Explore Homes
             </button>
             </Link>
@@ -71,7 +71,7 @@ export default function WhyChoose() {
               </p>
             </div>
              <Link to="/news">
-            <button className="w-full bg-[#3c92a9] hover:bg-[#1e7891] text-[#f8f9f6] hover:text-black font-semibold py-3 px-6 rounded-lg transition-colors duration-200">
+            <button className="w-full bg-[#3c92a9] hover:bg-[#1e7891] text-[#f8f9f6]  font-semibold py-3 px-6 rounded-lg transition-colors duration-200">
               Explore Homes
             </button>
              </Link>
@@ -89,7 +89,7 @@ export default function WhyChoose() {
               </p>
             </div>
              <Link to="/news">
-            <button className="w-full bg-[#3c92a9] hover:bg-[#19748d] text-[#f8f9f6] hover:text-black font-semibold py-3 px-6 rounded-lg transition-colors duration-200">
+            <button className="w-full bg-[#3c92a9] hover:bg-[#19748d] text-[#f8f9f6]  font-semibold py-3 px-6 rounded-lg transition-colors duration-200">
               Explore Homes
             </button>
              </Link>

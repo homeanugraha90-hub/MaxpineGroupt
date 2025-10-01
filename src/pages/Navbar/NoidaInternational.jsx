@@ -4,6 +4,18 @@ import img1 from "../../assets/All home imgs/airport1.png"
 import img2 from "../../assets/All home imgs/Screenshot-2024-11-22-112948.png"
 import img3 from "../../assets/All home imgs/airport2.jpg"
 
+import img4 from "../../assets/All home imgs/ProjectDevelopmentImages1.jpg"
+import img5 from "../../assets/All home imgs/ProjectDevelopmentImages2.jpg"
+import img6 from "../../assets/All home imgs/ProjectDevelopmentImages4.jpg"
+import img11 from "../../assets/All home imgs/airportconnectivity-2048x1321-1.jpg"
+import img10 from "../../assets/All home imgs/update-39.jpeg"
+
+
+
+import img7 from "../../assets/All home imgs/present-Project-img-1 (1).png"
+import img8 from "../../assets/All home imgs/present-Project-img-1 (1).webp"
+import img9 from "../../assets/All home imgs/present-Project-img-1 (2).png"
+
 export default function NoidaInternational() {
   const [expandedSections, setExpandedSections] = useState({
     location: true,
@@ -29,19 +41,18 @@ export default function NoidaInternational() {
   ];
 
   const presentProjectImages = [
-    { id: 1, alt: "Construction site with multiple cranes" },
-    { id: 2, alt: "Building structure framework" },
-    { id: 3, alt: "Airport runway construction" },
-    { id: 4, alt: "Green building under construction" },
-    { id: 5, alt: "Airport terminal exterior view" },
-    { id: 6, alt: "Airport terminal interior design" }
+    { id: 1, alt: "Construction site with multiple cranes",url:img7 },
+    { id: 2, alt: "Building structure framework",url:img8 },
+    { id: 3, alt: "Airport runway construction",url:img9 },
+    { id: 4, alt: "Green building under construction",url:img4 },
+    { id: 5, alt: "Airport terminal exterior view" ,url:img5},
+    { id: 6, alt: "Airport terminal interior design",url:img10 }
   ];
 
   const developmentImages = [
-    { id: 1, alt: "Early stage construction phase 1" },
-    { id: 2, alt: "Foundation laying ceremony" },
-    { id: 3, alt: "Initial ground work" },
-    { id: 4, alt: "Site preparation activities" }
+    { id: 1, alt: "Early stage construction phase 1" ,urlimg:img4 },
+    { id: 2, alt: "Foundation laying ceremony",urlimg:img5 },
+    { id: 3, alt: "Initial ground work",urlimg:img6 },
   ];
 
   const phaseImages = [
@@ -51,9 +62,8 @@ export default function NoidaInternational() {
   ];
 
   const connectivityImages = [
-    { id: 1, alt: "Road connectivity map" },
-    { id: 2, alt: "Expressway connections" },
-    { id: 3, alt: "Regional transport network" }
+    { id: 1, alt: "Regional transport network" ,url:img11 },
+   
   ];
 
   return (
@@ -203,7 +213,7 @@ export default function NoidaInternational() {
                       {developmentImages.map((img) => (
                         <div key={img.id} className="bg-gray-100 rounded-lg overflow-hidden">
                           <img 
-                            src={`/api/placeholder/400/300`}
+                            src={img.urlimg}
                             alt={img.alt}
                             className="w-full h-48 object-cover hover:scale-105 transition-transform duration-300"
                           />
@@ -238,7 +248,7 @@ export default function NoidaInternational() {
                       {presentProjectImages.map((img) => (
                         <div key={img.id} className="bg-gray-100 rounded-lg overflow-hidden group">
                           <img 
-                            src={`/api/placeholder/400/300`}
+                            src={img.url}
                             alt={img.alt}
                             className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                           />
@@ -274,13 +284,13 @@ export default function NoidaInternational() {
                 </button>
                 {expandedSections.connectivity && (
                   <div className="px-6 pb-6">
-                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4">
+                    <div className="grid grid-cols-1 sm:grid-cols-1 gap-4 mb-4">
                       {connectivityImages.map((img) => (
-                        <div key={img.id} className="bg-gray-100 rounded-lg overflow-hidden">
+                        <div key={img.id} className="bg-gray-100 rounded-lg overflow-hidden  h-[50vh]s">
                           <img 
-                            src={`/api/placeholder/350/250`}
+                            src={img.url}
                             alt={img.alt}
-                            className="w-full h-40 object-cover hover:scale-105 transition-transform duration-300"
+                            className="w-full  object-cover hover:scale-105 transition-transform duration-300"
                           />
                         </div>
                       ))}

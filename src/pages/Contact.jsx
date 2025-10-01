@@ -52,9 +52,9 @@ export default function ContactPage() {
                 <MapPin className="w-6 h-6 text-[#3c92a9]" />
               </div>
               <h3 className="text-lg font-semibold text-slate-900 mb-2">Visit Us</h3>
-              <p className="text-slate-600 md:px-10 text-center">H-174, Ground Floor, Sector-63, Noida, Uttar Pradesh 201301 , Anugrah Homes, Jattari,
-Aligarh Palwal Road,
-Uttar Pradesh 202137</p>
+              <p className="text-slate-600 md:px-10 text-center">H-174, Ground Floor, Sector-63, Noida, Uttar Pradesh 201301. Anugrah Homes, Jattari,
+                Aligarh Palwal Road,
+                Uttar Pradesh 202137</p>
             </div>
 
             <div className="bg-white flex items-center flex-col rounded-xl shadow-md p-6 hover:shadow-lg transition-shadow">
@@ -78,7 +78,7 @@ Uttar Pradesh 202137</p>
                 <Clock className="w-6 h-6 text-[#3c92a9]" />
               </div>
               <h3 className="text-lg font-semibold text-slate-900 mb-2">Office Hours</h3>
-              <p className="text-slate-600">Monday - Friday: 9AM - 6PM<br />Saturday: 10AM - 4PM<br />Sunday: Closed</p>
+              <p className="text-slate-600">Monday - Friday: 9AM - 6PM<br />Saturday : 10AM - 4PM<br />Sunday : Closed</p>
             </div>
           </div>
 
@@ -140,34 +140,34 @@ Uttar Pradesh 202137</p>
                   </div>
 
                   <div>
-  <label className="block text-sm font-medium text-slate-700 mb-2">
-    I'm Interested In *
-  </label>
-  <select
-    name="propertyType"
-    value={formData.propertyType}
-    onChange={handleChange}
-    className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-[#3c92a9] focus:border-transparent outline-none transition"
-  >
-    <option value="buy">100 Sq. Yards Plot</option>
-    <option value="sell">200 Sq. Yards Plot</option>
-    <option value="rent">300 Sq. Yards Plot</option>
-    <option value="invest">400 Sq. Yards Plot</option>
-    <option value="custom">Custom</option>
-  </select>
+                    <label className="block text-sm font-medium text-slate-700 mb-2">
+                      I'm Interested In *
+                    </label>
+                    <select
+                      name="propertyType"
+                      value={formData.propertyType}
+                      onChange={handleChange}
+                      className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-[#3c92a9] focus:border-transparent outline-none transition"
+                    >
+                      <option value="buy">100 Sq. Yards Plot</option>
+                      <option value="sell">200 Sq. Yards Plot</option>
+                      <option value="rent">300 Sq. Yards Plot</option>
+                      <option value="invest">400 Sq. Yards Plot</option>
+                      <option value="custom">Custom</option>
+                    </select>
 
-  {/* ✅ Agar custom select kiya to input dikhega */}
-  {formData.propertyType === "custom" && (
-    <input
-      type="text"
-      name="customProperty"
-      value={formData.customProperty || ""}
-      onChange={handleChange}
-      placeholder="Enter your custom requirement"
-      className="mt-3 w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-[#3c92a9] focus:border-transparent outline-none transition"
-    />
-  )}
-</div>
+                    {/* ✅ Agar custom select kiya to input dikhega */}
+                    {formData.propertyType === "custom" && (
+                      <input
+                        type="text"
+                        name="customProperty"
+                        value={formData.customProperty || ""}
+                        onChange={handleChange}
+                        placeholder="Enter your custom requirement"
+                        className="mt-3 w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-[#3c92a9] focus:border-transparent outline-none transition"
+                      />
+                    )}
+                  </div>
 
                 </div>
 
@@ -198,7 +198,7 @@ Uttar Pradesh 202137</p>
             {/* Map Placeholder */}
             {/* Google Map Embed */}
             <div className="mt-8 bg-white rounded-xl shadow-md overflow-hidden">
-             
+
 
 
 

@@ -1,5 +1,6 @@
 import React from "react";
 import img from "/downloads/Brij Vrinda.png"
+import {Link} from "react-router-dom"
 
 const KeyPlayBV = () => {
   return (
@@ -64,6 +65,22 @@ const KeyPlayBV = () => {
               </li>
             </ul>
           </div>
+
+
+         
+         
+           <div className="mt-8 bg-gradient-to-br from-[#3c92a9] to-[#206c81] rounded-lg p-6 text-white">
+                <h4 className="text-lg font-bold mb-2">Interested in Plots Near Airport?</h4>
+                <p className="text-sm mb-4 text-blue-50">
+                  Get exclusive details about our properties near Noida International Airport
+                </p>
+                 <Link to="/contact">
+                <button className="w-full bg-white text-[#3c92a9] font-semibold py-3 rounded-lg hover:bg-blue-50 transition">
+                  Contact Us Today
+                </button>
+                 </Link>
+              </div>
+              
         </div>
       </div>
     </div>

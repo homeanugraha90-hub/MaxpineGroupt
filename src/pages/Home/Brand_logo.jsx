@@ -107,7 +107,7 @@ export default function Brand_logo() {
                 </div>
 
                 {/* Project Status */}
-                <p className="text-center text-gray-600 text-lg font-light tracking-wide">
+                <p className="text-center text-gray-600 text-lg font-bold tracking-wide">
                   {project.status}
                 </p>
               </div>
