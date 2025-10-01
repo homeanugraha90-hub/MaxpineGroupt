@@ -55,7 +55,7 @@ export default function LayOutCF() {
         <div className="container mx-auto px-4 lg:px-24 py-4">
           <div className="flex items-center text-sm text-gray-600">
             <Home className="w-4 h-4 mr-2" />
-            <a href="/" className="hover:text-[#7575a3] transition-colors">Home</a>
+            <a href="/" className="hover:text-[#3c92a9] transition-colors">Home</a>
             <span className="mx-2">/</span>
             <span className="text-gray-900 font-medium">Layout</span>
           </div>
@@ -63,7 +63,8 @@ export default function LayOutCF() {
       </div>
 
       {/* Header */}
-      <div className="bg-gradient-to-r from-[#7575a3] to-[#4a4a77] text-white py-16">
+      <div className="bg-gradient-to-r from-[#3c92a9]
+       to-[#1c687d] text-white py-16">
         <div className="container mx-auto px-4 lg:px-24">
           <div className="flex items-center gap-3 mb-4">
             <Map className="w-10 h-10" />
@@ -84,7 +85,7 @@ export default function LayOutCF() {
               {/* Controls Bar */}
               <div className="bg-gradient-to-r from-gray-800 to-gray-900 px-6 py-4 flex items-center justify-between">
                 <div className="flex items-center gap-2 text-white">
-                  <MapPin className="w-5 h-5 text-[#7575a3]" />
+                  <MapPin className="w-5 h-5 text-[#3c92a9]" />
                   <span className="font-semibold">Project Layout - The Club Farm</span>
                 </div>
                 <div className="flex items-center gap-2">
@@ -154,7 +155,7 @@ export default function LayOutCF() {
               {/* Legend */}
               <div className="border-t bg-gray-50 p-6">
                 <h3 className="font-semibold text-gray-900 mb-4 flex items-center gap-2">
-                  <Navigation className="w-5 h-5 text-[#7575a3]" />
+                  <Navigation className="w-5 h-5 text-[#3c92a9]" />
                   Plot Categories & Legend
                 </h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -191,7 +192,7 @@ export default function LayOutCF() {
 
               {/* Download Button */}
               <div className="p-6 border-t bg-white">
-                <button className="w-full md:w-auto flex items-center justify-center gap-3 bg-[#7575a3] hover:bg-[#238b73] text-white font-semibold px-8 py-4 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+                <button className="w-full md:w-auto flex items-center justify-center gap-3 bg-[#3c92a9] hover:bg-[#1c7b95] text-white font-semibold px-8 py-4 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
                   <Download className="w-5 h-5" />
                   Download Layout
                 </button>
@@ -226,7 +227,7 @@ export default function LayOutCF() {
             </div>
 
             {/* Additional Info Cards */}
-            <div className="bg-gradient-to-r from-[#7575a3] to-[#7575a3] rounded-lg shadow-lg p-8 mt-6 text-white">
+            <div className="bg-gradient-to-r from-[#3c92a9] to-[#3c92a9] rounded-lg shadow-lg p-8 mt-6 text-white">
               <h3 className="text-2xl font-bold mb-4">Project Highlights</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
@@ -264,7 +265,7 @@ export default function LayOutCF() {
           {/* Sidebar */}
           <div className="lg:col-span-1">
             <div className="bg-white rounded-lg shadow-md p-6 sticky top-6">
-              <h2 className="text-2xl font-bold text-gray-900 mb-6 pb-4 border-b-2 border-[#7575a3]">
+              <h2 className="text-2xl font-bold text-gray-900 mb-6 pb-4 border-b-2 border-[#3c92a9]">
                 Recent Posts
               </h2>
               <div className="space-y-4">
@@ -274,8 +275,8 @@ export default function LayOutCF() {
                     href={post.link}
                     className="group flex items-start gap-3 p-3 rounded-lg hover:bg-gray-50 transition-colors"
                   >
-                    <ArrowRight className="w-5 h-5 text-[#7575a3] flex-shrink-0 mt-0.5 group-hover:translate-x-1 transition-transform" />
-                    <p className="text-sm text-gray-700 group-hover:text-[#7575a3] transition-colors leading-relaxed">
+                    <ArrowRight className="w-5 h-5 text-[#3c92a9] flex-shrink-0 mt-0.5 group-hover:translate-x-1 transition-transform" />
+                    <p className="text-sm text-gray-700 group-hover:text-[#3c92a9] transition-colors leading-relaxed">
                       {post.title}
                     </p>
                   </a>
@@ -288,7 +289,7 @@ export default function LayOutCF() {
                 <p className="text-sm text-gray-600 mb-4">
                   Contact our sales team to get detailed plot information and booking details.
                 </p>
-                <button className="w-full bg-[#7575a3] hover:bg-[#4b4b84] text-white py-3 rounded-lg font-semibold transition-colors">
+                <button className="w-full bg-[#3c92a9] hover:bg-[#20738a] text-white py-3 rounded-lg font-semibold transition-colors">
                   Contact Sales Team
                 </button>
               </div>

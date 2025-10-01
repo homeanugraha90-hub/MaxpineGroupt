@@ -170,7 +170,7 @@ export default function PropertyGallery() {
                 onClick={() => handleFilterChange(filter.id)}
                 className={`px-6 py-3 rounded-full font-medium transition-all duration-300 ${
                   activeFilter === filter.id
-                    ? "bg-[#7575a3] text-white shadow-lg transform scale-105"
+                    ? "bg-[#3c92a9] text-white shadow-lg transform scale-105"
                     : "bg-white text-gray-600 hover:bg-gray-100 shadow-md"
                 }`}
               >
@@ -208,14 +208,14 @@ export default function PropertyGallery() {
                     <h3 className="text-white font-semibold text-lg mb-2">
                       {item.title}
                     </h3>
-                    <span className="text-[#7575a3] text-sm font-medium uppercase tracking-wider">
+                    <span className="text-[#3c92a9] text-sm font-medium uppercase tracking-wider">
                       {item.category}
                     </span>
                   </div>
                 </div>
 
                 {/* Hover Effect Border */}
-                <div className="absolute inset-0 border-4 border-[#7575a3] opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl"></div>
+                <div className="absolute inset-0 border-4 border-[#3c92a9] opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl"></div>
               </div>
             </div>
           ))}
@@ -226,7 +226,7 @@ export default function PropertyGallery() {
           <div className="text-center mt-12">
             <button 
               onClick={() => setShowAll(!showAll)}
-              className="bg-[#7575a3] hover:bg-[#7575a3] text-white font-semibold px-8 py-4 rounded-full transition-all duration-300 hover:shadow-lg hover:scale-105"
+              className="bg-[#3c92a9] hover:bg-[#1d7188] text-white font-semibold px-8 py-4 rounded-full transition-all duration-300 hover:shadow-lg hover:scale-105"
             >
               {showAll ? "Show Less" : `Load More Images (${filteredItems.length - INITIAL_ITEMS} more)`}
             </button>

@@ -131,13 +131,13 @@ export default function News() {
               </div>
 
               {/* Meta Info */}
-              <div className="flex items-center gap-2 text-sm text-[#7575a3] mb-3">
+              <div className="flex items-center gap-2 text-sm text-[#3c92a9] mb-3">
                 <span className="text-gray-600">{post.author} on</span>
                 <span>{post.date}</span>
               </div>
 
               {/* Title */}
-              <h3 className="text-xl font-bold text-gray-900 mb-3 leading-tight group-hover:text-[#7575a3] transition-colors">
+              <h3 className="text-xl font-bold text-gray-900 mb-3 leading-tight group-hover:text-[#3c92a9] transition-colors">
                 {post.title}
               </h3>
 
@@ -147,8 +147,8 @@ export default function News() {
               </p>
 
               {/* Read More Link */}
-              <button className="flex items-center gap-2 text-gray-900 font-medium group-hover:text-[#7575a3] transition-colors">
-                <span className="w-8 h-8 rounded-full bg-gray-900 group-hover:bg-[#7575a3] flex items-center justify-center transition-colors">
+              <button className="flex items-center gap-2 text-gray-900 font-medium group-hover:text-[#3c92a9] transition-colors">
+                <span className="w-8 h-8 rounded-full bg-gray-900 group-hover:bg-[#3c92a9] flex items-center justify-center transition-colors">
                   <ArrowRight className="w-4 h-4 text-white" />
                 </span>
               </button>
@@ -158,7 +158,7 @@ export default function News() {
 
         {/* Pagination */}
         <div className="flex items-center justify-center gap-2">
-          <button className="w-10 h-10 rounded-full bg-gray-900 text-white flex items-center justify-center hover:bg-[#7575a3] transition-colors">
+          <button className="w-10 h-10 rounded-full bg-gray-900 text-white flex items-center justify-center hover:bg-[#3c92a9] transition-colors">
             <ChevronLeft className="w-5 h-5" />
           </button>
           
@@ -175,7 +175,7 @@ export default function News() {
             </button>
           ))}
 
-          <button className="w-10 h-10 rounded-full bg-gray-900 text-white flex items-center justify-center hover:bg-[#7575a3] transition-colors">
+          <button className="w-10 h-10 rounded-full bg-gray-900 text-white flex items-center justify-center hover:bg-[#3c92a9] transition-colors">
             <ChevronRight className="w-5 h-5" />
           </button>
         </div>
@@ -210,7 +210,7 @@ export default function News() {
               />
               <button 
                 onClick={handleGetListed}
-                className="px-8 py-4 bg-[#7575a3] text-white font-semibold rounded-lg hover:bg-[#7575a3] transition-colors"
+                className="px-8 py-4 bg-[#3c92a9] text-white font-semibold rounded-lg hover:bg-[#3c92a9] transition-colors"
               >
                 Get Listed
               </button>

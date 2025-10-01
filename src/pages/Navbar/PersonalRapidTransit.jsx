@@ -54,7 +54,7 @@ export default function PersonalRapidTransit() {
       <div className="bg-white border-b">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <div className="flex items-center text-sm text-gray-600">
-            <span className="hover:text-purple-600 cursor-pointer">Home</span>
+            <span className="hover:text-[#3c92a9] cursor-pointer">Home</span>
             <span className="mx-2">/</span>
             <span className="text-gray-900 font-medium">Personal Rapid Transit – Pod Taxi</span>
           </div>
@@ -62,7 +62,7 @@ export default function PersonalRapidTransit() {
       </div>
 
       {/* Hero Section */}
-      <div className="relative bg-gradient-to-r from-purple-600 via-pink-600 to-red-600 text-white py-16 sm:py-24 overflow-hidden">
+      <div className="relative bg-gradient-to-r from-[#3c92a9] via-[#2d7f96] to-[#2889a3] text-white py-16 sm:py-24 overflow-hidden">
         <div className="absolute inset-0 bg-black opacity-10"></div>
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-black opacity-30"></div>
@@ -70,7 +70,7 @@ export default function PersonalRapidTransit() {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <div className="flex justify-center mb-6">
-              <div className="bg-white bg-opacity-20 backdrop-blur-sm rounded-full p-4">
+              <div className="bg-white text-[gray] bg-opacity-20 backdrop-blur-sm rounded-full p-4">
                 <Train className="w-12 h-12" />
               </div>
             </div>
@@ -91,7 +91,7 @@ export default function PersonalRapidTransit() {
             {/* PRT System Overview */}
             <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 mb-8">
               <div className="flex items-center gap-3 mb-6">
-                <Train className="w-7 h-7 text-purple-600" />
+                <Train className="w-7 h-7 text-[#3c92a9]" />
                 <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">
                   Personal Rapid Transit (PRT) System
                 </h2>
@@ -142,7 +142,7 @@ export default function PersonalRapidTransit() {
                   key={index}
                   className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-6 border border-purple-100 hover:shadow-lg transition-all hover:-translate-y-1"
                 >
-                  <div className="bg-gradient-to-r from-purple-600 to-pink-600 text-white w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+                  <div className="bg-gradient-to-r from-[#3c92a9] to-[#206a7e] text-white w-12 h-12 rounded-lg flex items-center justify-center mb-4">
                     {feature.icon}
                   </div>
                   <h3 className="text-lg font-bold text-gray-900 mb-2">
@@ -158,7 +158,7 @@ export default function PersonalRapidTransit() {
             {/* Route Information */}
             <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 mb-8">
               <div className="flex items-center gap-3 mb-6">
-                <MapPin className="w-7 h-7 text-purple-600" />
+                <MapPin className="w-7 h-7 text-[#3c92a9]" />
                 <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">
                   PRT Alignment - Film City To Jewar International Airport
                 </h2>
@@ -167,7 +167,7 @@ export default function PersonalRapidTransit() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div className="space-y-4">
                   <div className="flex items-start gap-3">
-                    <FileText className="w-5 h-5 text-purple-600 flex-shrink-0 mt-1" />
+                    <FileText className="w-5 h-5 text-[#3c92a9] flex-shrink-0 mt-1" />
                     <div>
                       <h3 className="font-semibold text-gray-900 mb-2">Project Scope</h3>
                       <p className="text-gray-700 text-sm leading-relaxed">
@@ -188,21 +188,21 @@ export default function PersonalRapidTransit() {
             </div>
 
             {/* Timeline */}
-            <div className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl p-8 shadow-xl text-white mb-8">
+            <div className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl p-8 shadow-xl text-[gray] mb-8">
               <div className="flex items-center gap-3 mb-6">
-                <Calendar className="w-7 h-7 text-purple-400" />
+                <Calendar className="w-7 h-7 text-[#3c92a9]" />
                 <h2 className="text-2xl sm:text-3xl font-bold">Project Timeline</h2>
               </div>
               <div className="space-y-6">
                 {timeline.map((item, index) => (
-                  <div key={index} className="relative pl-8 pb-6 border-l-2 border-purple-400 last:border-l-0 last:pb-0">
-                    <div className="absolute left-0 top-0 w-4 h-4 bg-purple-400 rounded-full transform -translate-x-[9px]"></div>
+                  <div key={index} className="relative pl-8 pb-6 border-l-2 border-[#3c92a9] last:border-l-0 last:pb-0">
+                    <div className="absolute left-0 top-0 w-4 h-4 bg-[#3c92a9] rounded-full transform -translate-x-[9px]"></div>
                     <div className="bg-white bg-opacity-10 backdrop-blur-sm rounded-lg p-4">
                       <div className="flex items-center gap-2 mb-2">
-                        <Calendar className="w-4 h-4 text-purple-300" />
-                        <span className="text-purple-300 font-semibold text-sm">{item.date}</span>
+                        <Calendar className="w-4 h-4 text-[#53a7bf]" />
+                        <span className="text-[#3c92a9] font-semibold text-sm">{item.date}</span>
                       </div>
-                      <p className="text-gray-100 text-sm leading-relaxed">{item.event}</p>
+                      <p className="text-gray-600 text-sm leading-relaxed">{item.event}</p>
                     </div>
                   </div>
                 ))}
@@ -210,7 +210,7 @@ export default function PersonalRapidTransit() {
             </div>
 
             {/* Benefits Section */}
-            <div className="bg-gradient-to-r from-purple-600 to-pink-600 rounded-2xl p-8 text-white shadow-xl">
+            <div className="bg-gradient-to-r from-[#3c92a9] to-[#2b7b91] rounded-2xl p-8 text-white shadow-xl">
               <div className="flex items-center gap-3 mb-6">
                 <TrendingUp className="w-7 h-7" />
                 <h3 className="text-2xl font-bold">Why PRT?</h3>
@@ -235,7 +235,7 @@ export default function PersonalRapidTransit() {
 
           {/* Sidebar */}
           <div className="lg:col-span-1">
-            <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 sticky top-8 mb-8">
+            <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 sticky  mb-8">
               <h3 className="text-xl font-bold text-gray-900 mb-6 pb-4 border-b border-gray-200">
                 Recent Updates
               </h3>
@@ -247,8 +247,8 @@ export default function PersonalRapidTransit() {
                     className="block group"
                   >
                     <div className="flex items-start gap-3 p-3 rounded-lg hover:bg-purple-50 transition-colors">
-                      <ArrowRight className="w-5 h-5 text-purple-600 flex-shrink-0 mt-0.5 group-hover:translate-x-1 transition-transform" />
-                      <span className="text-gray-700 text-sm leading-relaxed group-hover:text-purple-600 transition-colors">
+                      <ArrowRight className="w-5 h-5 text-[#3c92a9] flex-shrink-0 mt-0.5 group-hover:translate-x-1 transition-transform" />
+                      <span className="text-gray-700 text-sm leading-relaxed group-hover:text-[#3c92a9] transition-colors">
                         {post}
                       </span>
                     </div>
@@ -258,20 +258,20 @@ export default function PersonalRapidTransit() {
             </div>
 
             {/* Info Card */}
-            <div className="bg-gradient-to-br from-purple-600 to-pink-600 rounded-2xl p-6 text-white shadow-xl">
+            <div className="bg-gradient-to-br from-[#3c92a9] to-[#2b829a] rounded-2xl p-6 text-[#2a2929] shadow-xl">
               <h3 className="text-xl font-bold mb-4">Project Highlights</h3>
               <div className="space-y-4">
                 <div className="bg-white bg-opacity-20 backdrop-blur-sm rounded-lg p-4">
-                  <p className="text-sm font-semibold text-purple-100 mb-1">Location</p>
-                  <p className="text-white">Film City to Jewar Airport, YEIDA</p>
+                  <p className="text-sm font-semibold text-gray-500 mb-1">Location</p>
+                  <p className="text-[#404040]">Film City to Jewar Airport, YEIDA</p>
                 </div>
                 <div className="bg-white bg-opacity-20 backdrop-blur-sm rounded-lg p-4">
-                  <p className="text-sm font-semibold text-purple-100 mb-1">Model</p>
-                  <p className="text-white">DBFOT (Design, Build, Finance, Operate, Transfer)</p>
+                  <p className="text-sm font-semibold text-gray-500 mb-1">Model</p>
+                  <p className="text-[#404040]">DBFOT (Design, Build, Finance, Operate, Transfer)</p>
                 </div>
                 <div className="bg-white bg-opacity-20 backdrop-blur-sm rounded-lg p-4">
-                  <p className="text-sm font-semibold text-purple-100 mb-1">Status</p>
-                  <p className="text-white">RFP Stage - Bidding Open</p>
+                  <p className="text-sm font-semibold text-gray-500 mb-1">Status</p>
+                  <p className="text-[#404040]">RFP Stage - Bidding Open</p>
                 </div>
               </div>
             </div>
@@ -280,7 +280,8 @@ export default function PersonalRapidTransit() {
       </div>
 
       {/* CTA Section */}
-      <div className="bg-gradient-to-r from-purple-600 via-pink-600 to-red-600 py-16">
+      <div className="bg-gradient-to-r
+       from-[#3c92a9] via-[#2889a3] to-[#106f89] py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
             Interested in the PRT Project?
@@ -289,10 +290,10 @@ export default function PersonalRapidTransit() {
             Learn more about bidding opportunities and project specifications
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-white text-purple-600 px-8 py-3 rounded-full font-semibold hover:bg-pink-50 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+            <button className="bg-white text-[#3c92a9] px-8 py-3 rounded-full font-semibold hover:bg-pink-50 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
               Download RFP
             </button>
-            <button className="bg-transparent border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-purple-600 transition-all">
+            <button className="bg-transparent border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-[#3c92a9] transition-all">
               Contact Us
             </button>
           </div>

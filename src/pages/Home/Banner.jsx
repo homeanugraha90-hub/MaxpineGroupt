@@ -8,12 +8,15 @@ import "swiper/css/navigation";
 import { motion } from "framer-motion";
 import { useState, useRef, useEffect } from "react";
 import vid from "../../assets/video.mp4";
+import anu from "../../assets/All home imgs/Gate-1170x785.png"
+import brij from "../../assets/All home imgs/1-1-1170x785.jpg"
+// import sky from "../../assets/All home imgs/Green-and-White-Modern-Land-Plot-Sale-Promotion-Instagram-Post-1080-x-650-px-2.jpg"
 
 const slides = [
   {
     id: 1,
     img: img,
-    title: "Discover Your Dream Home with Maxpine",
+    title: " Maxpine",
     subtitle: "Premium Properties in Prime Locations",
     price: "₹45,00,000",
     description: "Experience luxury living with world-class amenities and modern architecture",
@@ -21,8 +24,8 @@ const slides = [
   },
   {
     id: 2,
-    img: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80",
-    title: "Invest in Excellence",
+    img: anu,
+    title: "Anugrah Homes",
     subtitle: "Anugrah Homes - Building Your Future",
     price: "₹52,00,000",
     description: "Strategic locations with high appreciation potential and premium amenities",
@@ -30,11 +33,20 @@ const slides = [
   },
   {
     id: 3,
-    img: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1600&q=80",
-    title: "Luxury Redefined",
-    subtitle: "Where Comfort Meets Elegance SkyLine",
+    img: anu,
+    title: "SkyLine Township",
+    subtitle: "SkyLine Township",
     price: "₹85,00,000",
     description: "Spacious layouts, modern design, and premium finishes in every detail",
+    video: vid,
+  },
+  {
+    id: 4,
+    img: brij,
+    title: "Brij Vrinda",
+    subtitle: "Brij Vrinda- Building Your Future",
+    price: "₹52,00,000",
+    description: "Strategic locations with high appreciation potential and premium amenities",
     video: vid,
   },
 ];
@@ -88,9 +100,9 @@ export default function Banner() {
                   initial={{ opacity: 0, x: -50 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.8 }}
-                  className="border-4 border-[#7575a3] p-8 md:p-10 max-w-2xl bg-black/20 backdrop-blur-sm"
+                  className="border-4 border-[#3c92a9] p-8 md:p-10 max-w-2xl bg-black/20 backdrop-blur-sm"
                 >
-                  <span className="text-[#7575a3] font-semibold text-lg tracking-wide mb-2 inline-block">
+                  <span className="text-[#3c92a9] font-semibold text-lg tracking-wide mb-2 inline-block">
                     {slide.subtitle}
                   </span>
                   <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-4">
@@ -100,7 +112,7 @@ export default function Banner() {
 
                   <div className="flex items-center gap-4">
                     <Link to="/site-visit">
-                    <button className="bg-[#7575a3] text-white font-semibold px-8 py-3 rounded-lg shadow-lg hover:bg-[#9797cd] hover:text-black transition-all duration-300 hover:shadow-xl">
+                    <button className="bg-[#3c92a9] text-white font-semibold px-8 py-3 rounded-lg shadow-lg hover:bg-[#1e6d83] hover:text-black transition-all duration-300 hover:shadow-xl">
                       Schedule a Visit
                     </button>
                     </Link>
@@ -121,11 +133,11 @@ export default function Banner() {
                   transition={{ duration: 0.8, delay: 0.3 }}
                   className="text-left md:text-right"
                 >
-                  <div className="inline-block bg-black/40 backdrop-blur-sm border-2 border-[#7575a3] p-8 rounded-lg">
+                  <div className="inline-block bg-black/40 backdrop-blur-sm border-2 border-[#3c92a9] p-8 rounded-lg">
                     <p className="text-xl text-gray-300 font-medium mb-2">
                       Starting Price
                     </p>
-                    <p className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#7575a3] mb-3">
+                    <p className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#3c92a9] mb-3">
                       {slide.price}
                     </p>
                     <p className="text-gray-400 text-sm">

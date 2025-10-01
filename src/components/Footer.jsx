@@ -52,7 +52,7 @@ export default function Footer() {
           <div className="space-y-4">
             <h2 className="text-2xl font-bold mb-3">
                Maxpine
-              <span className="text-[#7575a3]">Group</span>
+              <span className="text-[#3c92a9]">Group</span>
             </h2>
             <p className="text-gray-300 text-sm leading-relaxed">
               Your trusted partner in real estate. We help you find your dream home with expert guidance and personalized service.
@@ -61,19 +61,19 @@ export default function Footer() {
             {/* Contact Info */}
             <div className="space-y-2">
               <div className="flex items-center gap-2 text-gray-300 text-sm">
-                <Phone className="w-4 h-4 text-[#7575a3]" />
+                <Phone className="w-4 h-4 text-[#3c92a9]" />
                 <span>+91-120-410-7573</span>
               </div>
               <div className="flex items-center gap-2 text-gray-300 text-sm">
-                <Mail className="w-4 h-4 text-[#7575a3]" />
+                <Mail className="w-4 h-4 text-[#3c92a9]" />
                 <span>info@maxpinegroup.in</span>
               </div>
               <div className="flex items-start gap-2 text-gray-300 text-sm">
-                <MapPin className="w-4 h-4 text-[#7575a3] mt-0.5" />
+                <MapPin className="w-4 h-4 text-[#3c92a9] mt-0.5" />
                 <span className=" pr-5">H-174, Ground Floor, Sector-63, Noida, Uttar Pradesh 201301</span>
               </div>
               <div className="flex items-center gap-2 text-gray-300 text-sm">
-                <Clock className="w-4 h-4 text-[#7575a3]" />
+                <Clock className="w-4 h-4 text-[#3c92a9]" />
                 <span>Every Day: 24x7</span>
               </div>
             </div>
@@ -81,13 +81,13 @@ export default function Footer() {
 
           {/* Legal & Newsletter */}
           <div className="space-y-4">
-            <h4 className="text-lg font-semibold text-[#7575a3]">Quick Links</h4>
+            <h4 className="text-lg font-semibold text-[#3c92a9]">Quick Links</h4>
             <ul className="grid grid-cols-2 gap-2">
               {legalPages.map((page, index) => (
                 <li key={index}>
                   <a
                     href={page.href}
-                    className="text-gray-300 hover:text-[#7575a3] transition-colors duration-200 text-sm"
+                    className="text-gray-300 hover:text-[#3c92a9] transition-colors duration-200 text-sm"
                   >
                     {page.name}
                   </a>
@@ -102,7 +102,7 @@ export default function Footer() {
           {/* Social Media & License */}
           <div className="space-y-4">
             <div>
-              <h4 className="font-semibold mb-3 text-[#7575a3]">Follow Us</h4>
+              <h4 className="font-semibold mb-3 text-[#3c92a9]">Follow Us</h4>
               <div className="flex gap-2">
                 {[
                   { icon: <Facebook className="w-4 h-4" />, href: "https://www.facebook.com/maxpinegroupofficial", label: "Facebook" },
@@ -115,7 +115,7 @@ export default function Footer() {
                     key={index}
                     href={social.href}
                     aria-label={social.label}
-                    className="w-8 h-8 bg-gray-700 hover:bg-[#7575a3] rounded-full flex items-center justify-center transition-all duration-200"
+                    className="w-8 h-8 bg-gray-700 hover:bg-[#3c92a9] rounded-full flex items-center justify-center transition-all duration-200"
                   >
                     {social.icon}
                   </a>
@@ -124,14 +124,14 @@ export default function Footer() {
             </div>
              {/* Newsletter */}
             <div className="mt-6 p-3 bg-gray-800 rounded-lg">
-              <h5 className="font-semibold mb-2 text-[#7575a3] text-sm">Newsletter</h5>
+              <h5 className="font-semibold mb-2 text-[#3c92a9] text-sm">Newsletter</h5>
               <div className="flex gap-2">
                 <input
                   type="email"
                   placeholder="Your email"
-                  className="flex-1 px-3 py-2 bg-gray-700 text-white rounded text-xs focus:outline-none focus:ring-1 focus:ring-[#7575a3]"
+                  className="flex-1 px-3 py-2 bg-gray-700 text-white rounded text-xs focus:outline-none focus:ring-1 focus:ring-[#3c92a9]"
                 />
-                <button className="px-3 py-2 bg-[#7575a3] hover:bg-[#7575a3] rounded transition-colors text-xs font-medium">
+                <button className="px-3 py-2 bg-[#3c92a9] hover:bg-[#3c92a9] rounded transition-colors text-xs font-medium">
                   Subscribe
                 </button>
               </div>
@@ -148,7 +148,7 @@ export default function Footer() {
       <div className="border-t border-gray-700 bg-gray-800/50">
         <div className=" mx-auto px-24 py-6">
           <div className="bg-gray-800 rounded-lg p-4">
-            <h4 className="text-base font-semibold text-[#7575a3] mb-3">Disclaimer</h4>
+            <h4 className="text-base font-semibold text-[#3c92a9] mb-3">Disclaimer</h4>
             <div className="text-xs text-gray-300 space-y-1  ">
               <p className="">
                 <strong>Property Information:</strong> All information is subject to change. Photos are for illustrative purposes only.

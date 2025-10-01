@@ -13,7 +13,7 @@ export default function About() {
         
         {/* Left Image with Badge */}
         <div className="relative   lg:h-[70vh]">
-          {/* <div className="absolute -top-6 -left-6 w-60 h-6 bg-[#7575a3] opacity-30"></div> */}
+          {/* <div className="absolute -top-6 -left-6 w-60 h-6 bg-[#3c92a9] opacity-30"></div> */}
           <img
             src={img1}
             effect="blur"
@@ -21,21 +21,21 @@ export default function About() {
             className="w-full h-full rounded-lg shadow-lg border-8 border-white "
           />
           {/* Badge */}
-          <div className="absolute bottom-1 -left-10 bg-[#7575a3] px-6 py-4 text-white font-medium shadow-lg">
+          <div className="absolute bottom-1 -left-10 bg-[#3c92a9] px-6 py-4 text-white font-medium shadow-lg">
           20+ years of <br /> experience
           </div>
         </div>
 
         {/* Right Content */}
         <div className="  ">
-          <p className="text-[#7575a3] uppercase tracking-wide font-semibold mb-2">
+          <p className="text-[#3c92a9] uppercase tracking-wide font-semibold mb-2">
             About Us
           </p>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
             Building Dreams, <br /> Shaping Communities
           </h2>
           <p className="text-lg text-gray-700 font-medium mb-6 flex items-center">
-            <span className="w-8 h-[2px] bg-[#7575a3] mr-3"></span>
+            <span className="w-8 h-[2px] bg-[#3c92a9] mr-3"></span>
             We provide an essential service for you
           </p>
           <p className="text-gray-600 w-full  leading-relaxed mb-6 ">
@@ -50,7 +50,7 @@ export default function About() {
             attention to detail, and customer satisfaction.
           </p>
           <Link to="/about">
-          <button className="bg-[#7575a3] text-white font-medium px-8 py-3 rounded-full shadow hover:bg-[#7575a3] transition">
+          <button className="bg-[#3c92a9] text-white font-medium px-8 py-3 rounded-full shadow hover:bg-[#187791] transition">
             Read More...
           </button>
           </Link>

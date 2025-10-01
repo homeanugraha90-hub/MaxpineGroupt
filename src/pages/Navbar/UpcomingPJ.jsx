@@ -6,6 +6,17 @@ import {
   User, Mail, Phone, Calendar, TreePine, Droplets
 } from "lucide-react";
 
+import img1 from "../../assets/Leaf/leaf-1.jpeg"
+import img2 from "../../assets/Leaf/leaf-2.jpeg"
+import img3 from "../../assets/Leaf/leaf-3.jpeg"
+import img4 from "../../assets/Leaf/leaf-4.jpeg"
+import img5 from "../../assets/Leaf/leaf-5.jpeg"
+import img6 from "../../assets/Leaf/leaf-7.jpeg"
+import img7 from "../../assets/Leaf/leaf-6.jpeg"
+import img8 from "../../assets/Leaf/leaf-8.jpeg"
+import img9 from "../../assets/Leaf/leaf-10.jpeg"
+import img10 from "../../assets/Leaf/leaf-11.jpeg"
+
 export default function UpcomingPJ() {
   const [currentImage, setCurrentImage] = useState(0);
   const [showGallery, setShowGallery] = useState(false);
@@ -19,14 +30,15 @@ export default function UpcomingPJ() {
   });
 
   const images = [
-    "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1200&h=700&fit=crop",
-    "https://images.unsplash.com/photo-1448375240586-882707db888b?w=1200&h=700&fit=crop",
-    "https://images.unsplash.com/photo-1511497584788-876760111969?w=1200&h=700&fit=crop",
-    "https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?w=1200&h=700&fit=crop",
-    "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?w=1200&h=700&fit=crop",
-    "https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=1200&h=700&fit=crop",
-    "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1200&h=700&fit=crop",
-    "https://images.unsplash.com/photo-1425913397330-cf8af2ff40a1?w=1200&h=700&fit=crop"
+    img1,
+    img2,
+    img3,
+    img4,
+    img5,
+    img6,
+    img7,
+    img8,
+    img9,img10
   ];
 
   const features = [
@@ -55,9 +67,9 @@ export default function UpcomingPJ() {
         <div className="container mx-auto px-4 lg:px-24 py-4">
           <div className="flex items-center text-sm text-gray-600">
             <Home className="w-4 h-4 mr-2" />
-            <a href="/" className="hover:text-[#7575a3] transition-colors">Home</a>
+            <a href="/" className="hover:text-[#3c92a9] transition-colors">Home</a>
             <span className="mx-2">/</span>
-            <a href="/properties" className="hover:text-[#7575a3] transition-colors">For Sale</a>
+            <a href="/properties" className="hover:text-[#3c92a9] transition-colors">For Sale</a>
             <span className="mx-2">/</span>
             <span className="text-gray-900 font-medium">Leaf Shade</span>
           </div>
@@ -88,12 +100,12 @@ export default function UpcomingPJ() {
                 className={`p-3 rounded-lg border transition-all ${
                   isFavorite 
                     ? 'bg-red-500 border-red-500 text-white' 
-                    : 'bg-white border-gray-300 text-gray-700 hover:border-[#7575a3]'
+                    : 'bg-white border-gray-300 text-gray-700 hover:border-[#3c92a9]'
                 }`}
               >
                 <Heart className="w-5 h-5" fill={isFavorite ? "currentColor" : "none"} />
               </button>
-              <button className="p-3 rounded-lg border border-gray-300 bg-white text-gray-700 hover:border-[#7575a3] transition-all">
+              <button className="p-3 rounded-lg border border-gray-300 bg-white text-gray-700 hover:border-[#3c92a9] transition-all">
                 <Share2 className="w-5 h-5" />
               </button>
             </div>
@@ -136,7 +148,7 @@ export default function UpcomingPJ() {
                 key={idx}
                 onClick={() => setCurrentImage(idx)}
                 className={`flex-shrink-0 w-24 h-20 rounded-lg overflow-hidden border-2 transition-all ${
-                  currentImage === idx ? 'border-[#7575a3]' : 'border-transparent opacity-60 hover:opacity-100'
+                  currentImage === idx ? 'border-[#3c92a9]' : 'border-transparent opacity-60 hover:opacity-100'
                 }`}
               >
                 <img src={img} alt={`Thumbnail ${idx + 1}`} className="w-full h-full object-cover" />
@@ -186,7 +198,7 @@ export default function UpcomingPJ() {
 
               <div className="mt-6 pt-6 border-t">
                 <h4 className="font-semibold text-gray-900 mb-3">Property Documents</h4>
-                <div className="flex items-center gap-2 text-[#7575a3]">
+                <div className="flex items-center gap-2 text-[#3c92a9]">
                   <Check className="w-5 h-5" />
                   <span>LandBank Brochure</span>
                 </div>
@@ -254,7 +266,7 @@ export default function UpcomingPJ() {
                     <p className="text-sm font-semibold text-gray-700">Property Owner</p>
                   </div>
                   <div className="p-4">
-                    <p className="text-sm text-[#7575a3] font-semibold">For Sale | Upcoming Project</p>
+                    <p className="text-sm text-[#3c92a9] font-semibold">For Sale | Upcoming Project</p>
                   </div>
                 </div>
               </div>
@@ -265,8 +277,8 @@ export default function UpcomingPJ() {
               <h2 className="text-2xl font-bold mb-6 pb-4 border-b">Features</h2>
               <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                 {features.map((feature, idx) => (
-                  <div key={idx} className="flex items-center gap-3 p-3 bg-gray-50 rounded-lg hover:bg-[#7575a3] hover:text-white transition-colors group">
-                    <feature.icon className="w-5 h-5 text-[#7575a3] group-hover:text-white" />
+                  <div key={idx} className="flex items-center gap-3 p-3 bg-gray-50 rounded-lg hover:bg-[#3c92a9] hover:text-white transition-colors group">
+                    <feature.icon className="w-5 h-5 text-[#3c92a9] group-hover:text-white" />
                     <span className="text-sm font-medium">{feature.name}</span>
                   </div>
                 ))}
@@ -327,7 +339,7 @@ export default function UpcomingPJ() {
                         value={reviewData.email}
                         onChange={(e) => setReviewData({...reviewData, email: e.target.value})}
                         placeholder="Email (will not be published)"
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#7575a3] focus:border-transparent"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#3c92a9] focus:border-transparent"
                       />
                     </div>
                     <div>
@@ -337,7 +349,7 @@ export default function UpcomingPJ() {
                         value={reviewData.name}
                         onChange={(e) => setReviewData({...reviewData, name: e.target.value})}
                         placeholder="Name (optional)"
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#7575a3] focus:border-transparent"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#3c92a9] focus:border-transparent"
                       />
                     </div>
                   </div>
@@ -349,7 +361,7 @@ export default function UpcomingPJ() {
                       value={reviewData.title}
                       onChange={(e) => setReviewData({...reviewData, title: e.target.value})}
                       placeholder="Review Title"
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#7575a3] focus:border-transparent"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#3c92a9] focus:border-transparent"
                     />
                   </div>
 
@@ -377,13 +389,13 @@ export default function UpcomingPJ() {
                       onChange={(e) => setReviewData({...reviewData, review: e.target.value})}
                       rows="5"
                       placeholder="Write Review"
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#7575a3] focus:border-transparent"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#3c92a9] focus:border-transparent"
                     ></textarea>
                   </div>
 
                   <button
                     onClick={handleSubmitReview}
-                    className="bg-[#7575a3] hover:bg-[#464678] text-white px-8 py-3 rounded-lg font-semibold transition-colors"
+                    className="bg-[#3c92a9] hover:bg-[#1b7690] text-white px-8 py-3 rounded-lg font-semibold transition-colors"
                   >
                     Submit Review
                   </button>
@@ -414,7 +426,7 @@ export default function UpcomingPJ() {
                   <label className="block text-sm font-medium text-gray-700 mb-2">First Name</label>
                   <input
                     type="text"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#7575a3] focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#3c92a9] focus:border-transparent"
                   />
                 </div>
 
@@ -422,7 +434,7 @@ export default function UpcomingPJ() {
                   <label className="block text-sm font-medium text-gray-700 mb-2">Last Name</label>
                   <input
                     type="text"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#7575a3] focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#3c92a9] focus:border-transparent"
                   />
                 </div>
 
@@ -430,7 +442,7 @@ export default function UpcomingPJ() {
                   <label className="block text-sm font-medium text-gray-700 mb-2">Phone</label>
                   <input
                     type="tel"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#7575a3] focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#3c92a9] focus:border-transparent"
                   />
                 </div>
 
@@ -438,13 +450,13 @@ export default function UpcomingPJ() {
                   <label className="block text-sm font-medium text-gray-700 mb-2">Email</label>
                   <input
                     type="email"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#7575a3] focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#3c92a9] focus:border-transparent"
                   />
                 </div>
 
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">Tour Type</label>
-                  <select className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#7575a3] focus:border-transparent">
+                  <select className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#3c92a9] focus:border-transparent">
                     <option>In Person</option>
                     <option>Virtual Tour</option>
                   </select>
@@ -455,11 +467,11 @@ export default function UpcomingPJ() {
                   <textarea
                     rows="3"
                     placeholder="Your message..."
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#7575a3] focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#3c92a9] focus:border-transparent"
                   ></textarea>
                 </div>
 
-                <button className="w-full bg-[#7575a3] hover:bg-[#414178] text-white py-3 rounded-lg font-semibold transition-colors flex items-center justify-center gap-2">
+                <button className="w-full bg-[#3c92a9] hover:bg-[#17738d] text-white py-3 rounded-lg font-semibold transition-colors flex items-center justify-center gap-2">
                   <Send className="w-5 h-5" />
                   Send Message
                 </button>

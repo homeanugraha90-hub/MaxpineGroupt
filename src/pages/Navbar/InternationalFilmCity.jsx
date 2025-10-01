@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { ChevronDown, ChevronUp, MapPin, Building, Film, Clapperboard, Clock } from 'lucide-react';
+import { Music, Scissors, Zap, Tent, Theater } from "lucide-react";
+
 
 export default function InternationalFilmCity() {
   const [expandedSections, setExpandedSections] = useState({
@@ -25,14 +27,15 @@ export default function InternationalFilmCity() {
     "A Festive Affair: Diwali at Magpie Group"
   ];
 
-  const proposedProducts = [
-    { name: "Music Dubbing Studios", icon: "🎵" },
-    { name: "Editing Studios", icon: "✂️" },
-    { name: "VFX Studios", icon: "🎬" },
-    { name: "Special Effects Studio", icon: "⚡" },
-    { name: "Film Festival Arenas", icon: "🎪" },
-    { name: "Premiere Arenas", icon: "🎭" }
-  ];
+ const proposedProducts = [
+  { name: "Music Dubbing Studios", icon: <Music className="w-5 h-5 text-[#29aa8a]" /> },
+  { name: "Editing Studios", icon: <Scissors className="w-5 h-5 text-[#29aa8a]" /> },
+  { name: "VFX Studios", icon: <Clapperboard className="w-5 h-5 text-[#29aa8a]" /> },
+  { name: "Special Effects Studio", icon: <Zap className="w-5 h-5 text-[#29aa8a]" /> },
+  { name: "Film Festival Arenas", icon: <Tent className="w-5 h-5 text-[#29aa8a]" /> },
+  { name: "Premiere Arenas", icon: <Theater className="w-5 h-5 text-[#29aa8a]" /> }
+];
+
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -54,7 +57,7 @@ export default function InternationalFilmCity() {
             {/* Header */}
             <div className="bg-white rounded-lg shadow-sm p-6 sm:p-8 mb-8">
               <div className="flex items-center gap-3 mb-4">
-                <Film className="w-10 h-10 text-purple-600" />
+                <Film className="w-10 h-10 text-[#3c92a9]" />
                 <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900">
                   International Film City
                 </h1>
@@ -63,7 +66,7 @@ export default function InternationalFilmCity() {
               {/* Key Stats */}
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-6">
                 <div className="bg-purple-50 rounded-lg p-4 text-center">
-                  <Clock className="w-6 h-6 text-purple-600 mx-auto mb-2" />
+                  <Clock className="w-6 h-6 text-[#3c92a9] mx-auto mb-2" />
                   <div className="text-2xl font-bold text-gray-900">15 min</div>
                   <div className="text-xs text-gray-600 mt-1">From Anugrah Homes</div>
                 </div>
@@ -105,18 +108,18 @@ export default function InternationalFilmCity() {
                 {expandedSections.overview && (
                   <div className="px-6 pb-6">
                     <div className="space-y-4 mb-6">
-                      <div className="bg-purple-50 border-l-4 border-purple-500 p-4 rounded">
+                      <div className="bg-purple-50 border-l-4 border-[#3c92a9] p-4 rounded">
                         <ul className="space-y-2 text-gray-700">
                           <li className="flex items-start">
-                            <span className="text-purple-600 mr-2">•</span>
+                            <span className="text-[#3c92a9] mr-2">•</span>
                             <span>The aim is to provide an integrated media infrastructure for the entire value chain spread over 1000 Acres.</span>
                           </li>
                           <li className="flex items-start">
-                            <span className="text-purple-600 mr-2">•</span>
+                            <span className="text-[#3c92a9] mr-2">•</span>
                             <span>Strategically located the proposed site is located at Sector 21 on Yamuna Expressway, 4 km from Noida International Airport.</span>
                           </li>
                           <li className="flex items-start">
-                            <span className="text-purple-600 mr-2">•</span>
+                            <span className="text-[#3c92a9] mr-2">•</span>
                             <span>POD taxi is proposed to connect Noida International Airport and the International Film City.</span>
                           </li>
                         </ul>
@@ -378,7 +381,8 @@ export default function InternationalFilmCity() {
                   <li key={index}>
                     <a 
                       href="#" 
-                      className="text-gray-700 hover:text-purple-600 transition text-sm leading-relaxed block py-2 border-b border-gray-100 last:border-0"
+                      className="text-gray-700
+                       hover:text-[#3c92a9] transition text-sm leading-relaxed block py-2 border-b border-gray-100 last:border-0"
                     >
                       {post}
                     </a>
@@ -387,13 +391,15 @@ export default function InternationalFilmCity() {
               </ul>
 
               {/* Contact CTA */}
-              <div className="mt-8 bg-gradient-to-br from-purple-500 to-purple-700 rounded-lg p-6 text-white">
+              <div className="mt-8 bg-gradient-to-br
+               from-[#3c92a9] to-[#1e6c82] rounded-lg p-6 text-white">
                 <Film className="w-12 h-12 mb-3 text-purple-100" />
                 <h4 className="text-lg font-bold mb-2">Invest Near Film City</h4>
                 <p className="text-sm mb-4 text-purple-50">
                   Discover investment opportunities near International Film City
                 </p>
-                <button className="w-full bg-white text-purple-600 font-semibold py-3 rounded-lg hover:bg-purple-50 transition">
+                <button className="w-full bg-white
+                 text-[#3c92a9] font-semibold py-3 rounded-lg hover:bg-purple-50 transition">
                   Get Details Now
                 </button>
               </div>

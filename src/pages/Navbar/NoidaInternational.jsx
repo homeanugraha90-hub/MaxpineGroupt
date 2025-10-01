@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import { ChevronDown, ChevronUp, MapPin, Calendar, Users, Building2 } from 'lucide-react';
+import img1 from "../../assets/All home imgs/airport1.png"
+import img2 from "../../assets/All home imgs/Screenshot-2024-11-22-112948.png"
+import img3 from "../../assets/All home imgs/airport2.jpg"
 
 export default function NoidaInternational() {
   const [expandedSections, setExpandedSections] = useState({
@@ -42,9 +45,9 @@ export default function NoidaInternational() {
   ];
 
   const phaseImages = [
-    { id: 1, alt: "Phase 1 master plan" },
-    { id: 2, alt: "Capacity planning diagram" },
-    { id: 3, alt: "Project cost breakdown" }
+    { id: 1, alt: "Phase 1 master plan" ,url:img2 },
+    { id: 2, alt: "Capacity planning diagram" ,url :img3 },
+    
   ];
 
   const connectivityImages = [
@@ -120,21 +123,15 @@ export default function NoidaInternational() {
                 </button>
                 {expandedSections.location && (
                   <div className="px-6 pb-6">
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-4">
+                    <div className="grid grid-cols-1 md:grid-cols-1 gap-6 mb-4">
                       <div className="bg-gray-100 rounded-lg overflow-hidden">
                         <img 
-                          src="/api/placeholder/400/300" 
+                          src={img1} 
                           alt="Location map showing proximity" 
                           className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
                         />
                       </div>
-                      <div className="bg-gray-100 rounded-lg overflow-hidden">
-                        <img 
-                          src="/api/placeholder/400/300" 
-                          alt="Airport site plan and layout" 
-                          className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
-                        />
-                      </div>
+                      
                     </div>
                     <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded">
                       <p className="text-sm text-gray-700 leading-relaxed">
@@ -162,13 +159,13 @@ export default function NoidaInternational() {
                 </button>
                 {expandedSections.phase && (
                   <div className="px-6 pb-6">
-                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
                       {phaseImages.map((img) => (
                         <div key={img.id} className="bg-gray-100 rounded-lg overflow-hidden">
                           <img 
-                            src={`/api/placeholder/300/200`}
+                            src={img.url}
                             alt={img.alt}
-                            className="w-full h-40 object-cover hover:scale-105 transition-transform duration-300"
+                            className="w-full h-70 object-cover hover:scale-105 transition-transform duration-300"
                           />
                         </div>
                       ))}
@@ -323,7 +320,8 @@ export default function NoidaInternational() {
                   <li key={index}>
                     <a 
                       href="#" 
-                      className="text-gray-700 hover:text-blue-600 transition text-sm leading-relaxed block py-2 border-b border-gray-100 last:border-0"
+                      className="text-gray-700
+                       hover:text-[#3c92a9] transition text-sm leading-relaxed block py-2 border-b border-gray-100 last:border-0"
                     >
                       {post}
                     </a>
@@ -332,12 +330,12 @@ export default function NoidaInternational() {
               </ul>
 
               {/* Contact CTA */}
-              <div className="mt-8 bg-gradient-to-br from-blue-500 to-blue-700 rounded-lg p-6 text-white">
+              <div className="mt-8 bg-gradient-to-br from-[#3c92a9] to-[#206c81] rounded-lg p-6 text-white">
                 <h4 className="text-lg font-bold mb-2">Interested in Plots Near Airport?</h4>
                 <p className="text-sm mb-4 text-blue-50">
                   Get exclusive details about our properties near Noida International Airport
                 </p>
-                <button className="w-full bg-white text-blue-600 font-semibold py-3 rounded-lg hover:bg-blue-50 transition">
+                <button className="w-full bg-white text-[#3c92a9] font-semibold py-3 rounded-lg hover:bg-blue-50 transition">
                   Contact Us Today
                 </button>
               </div>

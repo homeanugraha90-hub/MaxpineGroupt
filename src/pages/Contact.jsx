@@ -38,7 +38,7 @@ export default function ContactPage() {
           <div className="flex items-center gap-3 text-lg">
             <a href="/" className="hover:text-blue-400 transition-colors">Home</a>
             <span>›</span>
-            <span className="text-[#90cc35]">Contact</span>
+            <span className="text-[#3c92a9]">Contact</span>
           </div>
         </div>
       </div>
@@ -48,32 +48,34 @@ export default function ContactPage() {
           {/* Contact Info Cards */}
           <div className="md:col-span-1 space-y-6">
             <div className="bg-white flex items-center flex-col rounded-xl shadow-md p-6 hover:shadow-lg transition-shadow">
-              <div className="w-12 h-12 bg-[#e0ead1] rounded-lg flex items-center justify-center mb-4">
-                <MapPin className="w-6 h-6 text-[#8de011]" />
+              <div className="w-12 h-12 bg-[#afcdd5] rounded-lg flex items-center justify-center mb-4">
+                <MapPin className="w-6 h-6 text-[#3c92a9]" />
               </div>
               <h3 className="text-lg font-semibold text-slate-900 mb-2">Visit Us</h3>
-              <p className="text-slate-600">123 Real Estate Ave Suite 456<br />City, State 12345</p>
+              <p className="text-slate-600 md:px-10 text-center">H-174, Ground Floor, Sector-63, Noida, Uttar Pradesh 201301 , Anugrah Homes, Jattari,
+Aligarh Palwal Road,
+Uttar Pradesh 202137</p>
             </div>
 
-            <div className="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition-shadow">
-              <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
-                <Phone className="w-6 h-6 text-green-600" />
+            <div className="bg-white flex items-center flex-col rounded-xl shadow-md p-6 hover:shadow-lg transition-shadow">
+              <div className="w-12 h-12 bg-[#add2dc] rounded-lg flex items-center justify-center mb-4">
+                <Phone className="w-6 h-6 text-[#3c92a9]" />
               </div>
               <h3 className="text-lg font-semibold text-slate-900 mb-2">Call Us</h3>
-              <p className="text-slate-600">+1 (555) 123-4567<br />Mon-Fri: 9AM - 6PM</p>
+              <p className="text-slate-600 text-center ">+91-911-525-3545, +91-120-410-7573, <br /> +91 767-827-9151 ,Every Day : 24x7</p>
             </div>
 
-            <div className="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition-shadow">
+            <div className="bg-white flex items-center justify-center flex-col rounded-xl shadow-md p-6 hover:shadow-lg transition-shadow">
               <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
-                <Mail className="w-6 h-6 text-purple-600" />
+                <Mail className="w-6 h-6 text-[#3c92a9]" />
               </div>
               <h3 className="text-lg font-semibold text-slate-900 mb-2">Email Us</h3>
-              <p className="text-slate-600">info@realestate.com<br />support@realestate.com</p>
+              <p className="text-slate-600">info@anugrahhomes.com<br />info@maxpinegroup.in</p>
             </div>
 
-            <div className="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition-shadow">
-              <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
-                <Clock className="w-6 h-6 text-orange-600" />
+            <div className="bg-white flex items-center justify-center flex-col rounded-xl shadow-md p-6 hover:shadow-lg transition-shadow">
+              <div className="w-12 h-12 bg-[#acd0db] rounded-lg flex items-center justify-center mb-4">
+                <Clock className="w-6 h-6 text-[#3c92a9]" />
               </div>
               <h3 className="text-lg font-semibold text-slate-900 mb-2">Office Hours</h3>
               <p className="text-slate-600">Monday - Friday: 9AM - 6PM<br />Saturday: 10AM - 4PM<br />Sunday: Closed</p>
@@ -84,7 +86,7 @@ export default function ContactPage() {
           <div className="md:col-span-2">
             <div className="bg-white rounded-xl shadow-md p-8">
               <h2 className="text-2xl font-bold text-slate-900 mb-6">Send Us a Message</h2>
-              
+
               {submitted && (
                 <div className="mb-6 bg-green-50 border border-green-200 text-green-800 px-4 py-3 rounded-lg">
                   Thank you! We'll get back to you within 24 hours.
@@ -102,8 +104,8 @@ export default function ContactPage() {
                       name="name"
                       value={formData.name}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-[#90cc35] focus:border-transparent outline-none transition"
-                      placeholder="John Doe"
+                      className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-[#3c92a9] focus:border-transparent outline-none transition"
+                      placeholder="Name"
                     />
                   </div>
 
@@ -116,8 +118,8 @@ export default function ContactPage() {
                       name="email"
                       value={formData.email}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-[#90cc35] focus:border-transparent outline-none transition"
-                      placeholder="john@example.com"
+                      className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-[#3c92a9] focus:border-transparent outline-none transition"
+                      placeholder="abc@gmail.com"
                     />
                   </div>
                 </div>
@@ -132,28 +134,41 @@ export default function ContactPage() {
                       name="phone"
                       value={formData.phone}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-[#90cc35] focus:border-transparent outline-none transition"
-                      placeholder="+1 (555) 000-0000"
+                      className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-[#3c92a9] focus:border-transparent outline-none transition"
+                      placeholder="+91 000-000-0000"
                     />
                   </div>
 
                   <div>
-                    <label className="block text-sm font-medium text-slate-700 mb-2">
-                      I'm Interested In *
-                    </label>
-                    <select
-                      name="propertyType"
-                      value={formData.propertyType}
-                      onChange={handleChange}
-                      className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-[#90cc35] focus:border-transparent outline-none transition"
-                    >
-                      <option value="buy">Buying a Property</option>
-                      <option value="sell">Selling a Property</option>
-                      <option value="rent">Renting a Property</option>
-                      <option value="invest">Investment Opportunities</option>
-                      <option value="consult">General Consultation</option>
-                    </select>
-                  </div>
+  <label className="block text-sm font-medium text-slate-700 mb-2">
+    I'm Interested In *
+  </label>
+  <select
+    name="propertyType"
+    value={formData.propertyType}
+    onChange={handleChange}
+    className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-[#3c92a9] focus:border-transparent outline-none transition"
+  >
+    <option value="buy">100 Sq. Yards Plot</option>
+    <option value="sell">200 Sq. Yards Plot</option>
+    <option value="rent">300 Sq. Yards Plot</option>
+    <option value="invest">400 Sq. Yards Plot</option>
+    <option value="custom">Custom</option>
+  </select>
+
+  {/* ✅ Agar custom select kiya to input dikhega */}
+  {formData.propertyType === "custom" && (
+    <input
+      type="text"
+      name="customProperty"
+      value={formData.customProperty || ""}
+      onChange={handleChange}
+      placeholder="Enter your custom requirement"
+      className="mt-3 w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-[#3c92a9] focus:border-transparent outline-none transition"
+    />
+  )}
+</div>
+
                 </div>
 
                 <div>
@@ -165,14 +180,14 @@ export default function ContactPage() {
                     value={formData.message}
                     onChange={handleChange}
                     rows="6"
-                    className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-[#90cc35] focus:border-transparent outline-none transition resize-none"
+                    className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-[#3c92a9] focus:border-transparent outline-none transition resize-none"
                     placeholder="Tell us about your requirements..."
                   ></textarea>
                 </div>
 
                 <button
                   onClick={handleSubmit}
-                  className="w-full bg-[#90cc35] hover:bg-[#afdd6a] text-white font-semibold py-4 px-6 rounded-lg transition-colors flex items-center justify-center gap-2 shadow-lg hover:shadow-xl"
+                  className="w-full bg-[#3c92a9] hover:bg-[#1a7088] text-white font-semibold py-4 px-6 rounded-lg transition-colors flex items-center justify-center gap-2 shadow-lg hover:shadow-xl"
                 >
                   <Send className="w-5 h-5" />
                   Send Message
@@ -181,15 +196,22 @@ export default function ContactPage() {
             </div>
 
             {/* Map Placeholder */}
+            {/* Google Map Embed */}
             <div className="mt-8 bg-white rounded-xl shadow-md overflow-hidden">
-              <div className="bg-gradient-to-r from-[#90cc35] to-[#72af16] h-64 flex items-center justify-center">
-                <div className="text-center text-white">
-                  <MapPin className="w-16 h-16 mx-auto mb-4 opacity-80" />
-                  <p className="text-xl font-semibold">Our Location</p>
-                  <p className="text-blue-100 mt-2">123 Real Estate Ave, Suite 456</p>
-                </div>
-              </div>
+             
+
+
+
+              <iframe src="https://www.google.com/maps/embed?pb=!1m19!1m8!1m3!1d448266.48399162124!2d77.3798317!3d28.6273072!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x390cef986ec80253%3A0xcda30717d6f6e933!2sMAXPINE%20GROUP%20H-174%2C%20Ground%20Floor%20Sector%2063%20Noida%2C%20Uttar%20Pradesh%20201309!3m2!1d28.627307199999997!2d77.3798317!5e0!3m2!1sen!2sin!4v1759313308812!5m2!1sen!2sin" width="100%"
+                height="400"
+                style={{ border: 0 }}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Maxpine Group Location"></iframe>
             </div>
+
+
           </div>
         </div>
       </div>

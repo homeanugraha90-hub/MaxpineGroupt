@@ -14,7 +14,7 @@ export default function AnugrahCard() {
           <MapPin className="w-4 h-4 mr-1" /> Noida Extension, UP
         </p>
         <p className="flex items-center text-sm text-gray-600">
-          <Home className="w-4 h-4 mr-1" /> 2 & 3 BHK Apartments
+          <Home className="w-4 h-4 mr-1" /> 100 , 200 , 300 Sq. Yards Plot
         </p>
         <p className="flex items-center text-sm text-gray-600">
           <Tag className="w-4 h-4 mr-1" /> Starting ₹52 Lakhs

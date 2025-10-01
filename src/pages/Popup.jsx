@@ -1,9 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { X, Mail, User, Phone, MapPin, Send, CheckCircle, AlertCircle } from 'lucide-react';
-import img from "../assets/All home imgs/video-placeholder.jpg"
 
 export default function Popup() {
-    const [isOpen, setIsOpen] = useState(true);
+    const [isOpen, setIsOpen] = useState(false);
     const [formData, setFormData] = useState({
         firstName: '',
         lastName: '',
@@ -15,6 +14,28 @@ export default function Popup() {
     const [errors, setErrors] = useState({});
     const [status, setStatus] = useState({ type: '', message: '' });
     const [isSubmitting, setIsSubmitting] = useState(false);
+
+    // Check if popup should be shown on mount
+    useEffect(() => {
+        const lastClosed = localStorage.getItem("popupClosedAt");
+        
+        if (!lastClosed) {
+            // First time - show popup
+            setIsOpen(true);
+        } else {
+            const now = Date.now();
+            const elapsed = now - parseInt(lastClosed, 10);
+            const fourMinutes = 4 * 60 * 1000; // 4 minutes in milliseconds
+
+            if (elapsed >= fourMinutes) {
+                // More than 4 minutes have passed - show popup
+                setIsOpen(true);
+            } else {
+                // Less than 4 minutes - don't show popup
+                setIsOpen(false);
+            }
+        }
+    }, []);
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -98,7 +119,7 @@ export default function Popup() {
                 });
                 handleReset();
                 setTimeout(() => {
-                    setIsOpen(false);
+                    handleClose();
                 }, 3000);
             } else {
                 throw new Error('Failed to send message');
@@ -111,6 +132,12 @@ export default function Popup() {
         } finally {
             setIsSubmitting(false);
         }
+    };
+
+    const handleClose = () => {
+        // Save the current timestamp when closing
+        localStorage.setItem("popupClosedAt", Date.now().toString());
+        setIsOpen(false);
     };
 
     const handleReset = () => {
@@ -129,20 +156,20 @@ export default function Popup() {
     if (!isOpen) return null;
 
     return (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 bg-opacity-50 backdrop-blur-sm">
-            <div className="relative w-full max-w-xl bg-white rounded-2xl shadow-2xl max-h-[70vh] overflow-hidden">
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm">
+            <div className="relative w-full max-w-xl bg-white rounded-2xl shadow-2xl max-h-[90vh] overflow-hidden">
                 {/* Header */}
-                <div className="relative bg-gradient-to-r from-[#7575a3] via-[#6767a1] to-[#7373b0] px-6 py-8 text-white">
+                <div className="relative bg-gradient-to-r from-[#3c7598] via-[#3c7598] to-[#3c7598] px-6 py-8 text-white">
                     <button
-                        onClick={() => setIsOpen(false)}
-                        className="absolute top-4 right-4 p-2 hover:bg-[gray] hover:bg-opacity-20 rounded-full transition-all"
+                        onClick={handleClose}
+                        className="absolute top-4 right-4 p-2 hover:bg-white hover:text-[gray] hover:bg-opacity-20 rounded-full transition-all"
                         aria-label="Close"
                     >
                         <X className="w-6 h-6" />
                     </button>
 
                     <div className="flex items-center gap-4">
-                        <div className="bg-[gray] bg-opacity-20 backdrop-blur-sm p-3 rounded-xl">
+                        <div className="bg-white text-[gray] bg-opacity-20 backdrop-blur-sm p-3 rounded-xl">
                             <Mail className="w-8 h-8" />
                         </div>
                         <div>
@@ -153,26 +180,28 @@ export default function Popup() {
                 </div>
 
                 {/* Form Content */}
-                <div className="p-6 overflow-y-auto max-h-[calc(90vh-140px)]">
+                <div className="p-6 overflow-y-auto max-h-[calc(90vh-180px)]">
                     {/* Status Messages */}
                     {status.message && (
-                        <div className={`mb-6 p-4 rounded-lg flex items-start gap-3 ${status.type === 'success'
+                        <div className={`mb-6 p-4 rounded-lg flex items-start gap-3 ${
+                            status.type === 'success'
                                 ? 'bg-green-50 border border-green-200'
                                 : 'bg-red-50 border border-red-200'
-                            }`}>
+                        }`}>
                             {status.type === 'success' ? (
                                 <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
                             ) : (
                                 <AlertCircle className="w-5 h-5 text-red-600 flex-shrink-0 mt-0.5" />
                             )}
-                            <p className={`text-sm ${status.type === 'success' ? 'text-green-800' : 'text-red-800'
-                                }`}>
+                            <p className={`text-sm ${
+                                status.type === 'success' ? 'text-green-800' : 'text-red-800'
+                            }`}>
                                 {status.message}
                             </p>
                         </div>
                     )}
 
-                    <div className="space-y-2">
+                    <div className="space-y-4">
                         {/* Name Fields */}
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                             <div>
@@ -186,15 +215,16 @@ export default function Popup() {
                                         name="firstName"
                                         value={formData.firstName}
                                         onChange={handleChange}
-                                        className={`w-full pl-10 pr-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all outline-none ${errors.firstName ? 'border-red-500' : 'border-gray-300'
-                                            }`}
+                                        className={`w-full pl-10 pr-4 py-3 border rounded-lg focus:ring-2 focus:ring-[#3c92a9] focus:border-transparent transition-all outline-none ${
+                                            errors.firstName ? 'border-red-500' : 'border-gray-300'
+                                        }`}
                                         placeholder="John"
                                     />
                                 </div>
                                 {errors.firstName && <p className="text-red-500 text-xs mt-1">{errors.firstName}</p>}
                             </div>
 
-                            <div >
+                            <div>
                                 <label className="block text-sm font-semibold text-gray-700 mb-2">
                                     Last Name <span className="text-red-500">*</span>
                                 </label>
@@ -205,8 +235,9 @@ export default function Popup() {
                                         name="lastName"
                                         value={formData.lastName}
                                         onChange={handleChange}
-                                        className={`w-full pl-10 pr-4 py-3 border rounded-lg focus:ring-2 focus:ring-[#7575a3] focus:border-transparent transition-all outline-none ${errors.lastName ? 'border-red-500' : 'border-gray-300'
-                                            }`}
+                                        className={`w-full pl-10 pr-4 py-3 border rounded-lg focus:ring-2 focus:ring-[#3c92a9] focus:border-transparent transition-all outline-none ${
+                                            errors.lastName ? 'border-red-500' : 'border-gray-300'
+                                        }`}
                                         placeholder="Doe"
                                     />
                                 </div>
@@ -214,11 +245,9 @@ export default function Popup() {
                             </div>
                         </div>
 
-                        {/* Phone Field */}
-                        <div className='grid grid-cols-1 sm:grid-cols-2 gap-4'>
-
-
-                            <div >
+                        {/* Phone and City Fields */}
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
                                 <label className="block text-sm font-semibold text-gray-700 mb-2">
                                     Phone <span className="text-red-500">*</span>
                                 </label>
@@ -229,18 +258,15 @@ export default function Popup() {
                                         name="phone"
                                         value={formData.phone}
                                         onChange={handleChange}
-                                        className={`w-full pl-10 pr-4 py-3 border rounded-lg focus:ring-2 focus:ring-[#7575a3] focus:border-transparent transition-all outline-none ${errors.phone ? 'border-red-500' : 'border-gray-300'
-                                            }`}
+                                        className={`w-full pl-10 pr-4 py-3 border rounded-lg focus:ring-2 focus:ring-[#3c92a9] focus:border-transparent transition-all outline-none ${
+                                            errors.phone ? 'border-red-500' : 'border-gray-300'
+                                        }`}
                                         placeholder="+91 98765 43210"
                                     />
                                 </div>
                                 {errors.phone && <p className="text-red-500 text-xs mt-1">{errors.phone}</p>}
                             </div>
 
-
-
-
-                            {/* City Field */}
                             <div>
                                 <label className="block text-sm font-semibold text-gray-700 mb-2">
                                     City <span className="text-red-500">*</span>
@@ -252,15 +278,15 @@ export default function Popup() {
                                         name="city"
                                         value={formData.city}
                                         onChange={handleChange}
-                                        className={`w-full pl-10 pr-4 py-3 border rounded-lg focus:ring-2 focus:ring-[#7575a3] focus:border-transparent transition-all outline-none ${errors.city ? 'border-red-500' : 'border-gray-300'
-                                            }`}
+                                        className={`w-full pl-10 pr-4 py-3 border rounded-lg focus:ring-2 focus:ring-[#3c92a9] focus:border-transparent transition-all outline-none ${
+                                            errors.city ? 'border-red-500' : 'border-gray-300'
+                                        }`}
                                         placeholder="New Delhi"
                                     />
                                 </div>
                                 {errors.city && <p className="text-red-500 text-xs mt-1">{errors.city}</p>}
                             </div>
                         </div>
-
 
                         {/* Email Field */}
                         <div>
@@ -274,36 +300,21 @@ export default function Popup() {
                                     name="email"
                                     value={formData.email}
                                     onChange={handleChange}
-                                    className={`w-full pl-10 pr-4 py-3 border rounded-lg focus:ring-2 focus:ring-[#7575a3] focus:border-transparent transition-all outline-none ${errors.email ? 'border-red-500' : 'border-gray-300'
-                                        }`}
+                                    className={`w-full pl-10 pr-4 py-3 border rounded-lg focus:ring-2 focus:ring-[#3c92a9] focus:border-transparent transition-all outline-none ${
+                                        errors.email ? 'border-red-500' : 'border-gray-300'
+                                    }`}
                                     placeholder="john.doe@example.com"
                                 />
                             </div>
                             {errors.email && <p className="text-red-500 text-xs mt-1">{errors.email}</p>}
                         </div>
 
-
-                        {/* Message Field */}
-                        {/* <div>
-              <label className="block text-sm font-semibold text-gray-700 mb-2">
-                Your Message
-              </label>
-              <textarea
-                name="message"
-                value={formData.message}
-                onChange={handleChange}
-                rows="4"
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all outline-none resize-none"
-                placeholder="Tell us about your requirements..."
-              />
-            </div> */}
-
                         {/* Buttons */}
                         <div className="flex flex-col sm:flex-row gap-3 pt-4">
                             <button
                                 onClick={handleSubmit}
                                 disabled={isSubmitting}
-                                className="flex-1 bg-gradient-to-r from-[#7575a3] to-[#6363a3] text-white px-6 py-3 rounded-lg font-semibold hover:from-[#8989c5] hover:to-[#5d5d8e] transition-all shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+                                className="flex-1 bg-gradient-to-r from-[#3c92a9] to-[#247c95] text-white px-6 py-3 rounded-lg font-semibold hover:from-[#17718a] hover:to-[#2297b7] transition-all shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
                             >
                                 {isSubmitting ? (
                                     <>
@@ -331,9 +342,9 @@ export default function Popup() {
                     <div className="mt-6 pt-6 border-t border-gray-200">
                         <p className="text-sm text-gray-500 text-center">
                             By submitting this form, you agree to our{' '}
-                            <a href="#" className="text-blue-600 hover:underline">Privacy Policy</a>
+                            <a href="#" className="text-[#3c92a9] hover:underline">Privacy Policy</a>
                             {' '}and{' '}
-                            <a href="#" className="text-blue-600 hover:underline">Terms of Service</a>
+                            <a href="#" className="text-[#3c92a9] hover:underline">Terms of Service</a>
                         </p>
                     </div>
                 </div>

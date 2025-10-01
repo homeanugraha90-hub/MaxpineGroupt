@@ -133,7 +133,7 @@ export default function PrivacyPolicy() {
       <div className="bg-white border-b">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <div className="flex items-center text-sm text-gray-600">
-            <span className="hover:text-blue-600 cursor-pointer">Home</span>
+            <span className="hover:text-[#3c92a9] cursor-pointer">Home</span>
             <span className="mx-2">/</span>
             <span className="text-gray-900 font-medium">Privacy Policy</span>
           </div>
@@ -141,7 +141,7 @@ export default function PrivacyPolicy() {
       </div>
 
       {/* Hero Section */}
-      <div className="relative bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 text-white py-16 sm:py-20 overflow-hidden">
+      <div className="relative bg-gradient-to-r from-[#3c92a9] via-[#2c7d94] to-[#2692b0] text-white py-16 sm:py-20 overflow-hidden">
         <div className="absolute inset-0 bg-black opacity-10"></div>
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-black opacity-20"></div>
@@ -149,7 +149,7 @@ export default function PrivacyPolicy() {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <div className="flex justify-center mb-6">
-              <div className="bg-white bg-opacity-20 backdrop-blur-sm rounded-full p-4">
+              <div className="bg-white text-[gray] bg-opacity-20 backdrop-blur-sm rounded-full p-4">
                 <Shield className="w-12 h-12" />
               </div>
             </div>
@@ -191,11 +191,11 @@ export default function PrivacyPolicy() {
               <div className="mt-8 pt-6 border-t border-gray-200">
                 <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-lg p-4">
                   <div className="flex items-start gap-3">
-                    <AlertCircle className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
+                    <AlertCircle className="w-5 h-5 text-[#3c92a9] flex-shrink-0 mt-0.5" />
                     <div>
                       <h4 className="font-semibold text-gray-900 text-sm mb-1">Need Help?</h4>
                       <p className="text-xs text-gray-600 mb-3">Contact our privacy team for any questions</p>
-                      <button className="text-xs bg-blue-600 text-white px-3 py-1.5 rounded-lg hover:bg-blue-700 transition-colors">
+                      <button className="text-xs bg-[#3c92a9] text-white px-3 py-1.5 rounded-lg hover:bg-[#217d96] transition-colors">
                         Contact Us
                       </button>
                     </div>
@@ -210,7 +210,7 @@ export default function PrivacyPolicy() {
             {/* Introduction */}
             <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8 mb-8 border border-blue-100">
               <div className="flex items-start gap-4">
-                <div className="bg-blue-600 text-white p-3 rounded-lg">
+                <div className="bg-[#3c92a9] text-white p-3 rounded-lg">
                   <Shield className="w-6 h-6" />
                 </div>
                 <div>
@@ -218,7 +218,7 @@ export default function PrivacyPolicy() {
                   <p className="text-gray-700 leading-relaxed">
                     At Maxpine Group, we are committed to protecting your privacy and ensuring the security of your personal information. 
                     This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website 
-                    <span className="font-semibold text-blue-600"> www.maxpinegroup.in</span>.
+                    <span className="font-semibold text-[#3c92a9]"> www.maxpinegroup.in</span>.
                   </p>
                 </div>
               </div>
@@ -237,7 +237,7 @@ export default function PrivacyPolicy() {
                     className="w-full px-6 py-5 flex items-center justify-between hover:bg-gray-50 transition-colors"
                   >
                     <div className="flex items-center gap-4">
-                      <div className="bg-gradient-to-br from-blue-100 to-indigo-100 p-3 rounded-lg text-blue-600">
+                      <div className="bg-gradient-to-br from-blue-100 to-indigo-100 p-3 rounded-lg text-[#3c92a9]">
                         {section.icon}
                       </div>
                       <div className="text-left">
@@ -257,7 +257,7 @@ export default function PrivacyPolicy() {
                       {section.subsections.map((subsection, subIndex) => (
                         <div key={subIndex} className="bg-gray-50 rounded-xl p-6">
                           <h4 className="font-semibold text-gray-900 mb-3 flex items-center gap-2">
-                            <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
+                            <div className="w-2 h-2 bg-[#3c92a9] rounded-full"></div>
                             {subsection.title}
                           </h4>
                           <p className="text-gray-700 leading-relaxed text-sm pl-4">
@@ -309,7 +309,7 @@ export default function PrivacyPolicy() {
       </div>
 
       {/* Footer CTA */}
-      <div className="bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 py-12">
+      <div className="bg-gradient-to-r from-[#3c92a9] via-[#257990] to-[#1f748b] py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-white mb-4">
             Your Trust Matters to Us
