@@ -1,6 +1,7 @@
 
 import { useState } from "react";
 import { Home, ChevronDown, Calendar, Camera, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 import img1 from "../../assets/Brij.V.Development/1.jpg"
 import img2 from "../../assets/Brij.V.Development/2.jpg"
@@ -182,7 +183,7 @@ export default function Development() {
 
           {/* Sidebar */}
           <div className="lg:col-span-1">
-            <div className="bg-white rounded-lg shadow-md p-6 sticky top-6">
+            <div className="bg-white rounded-lg shadow-md p-6  top-6">
               <h2 className="text-2xl font-bold text-gray-900 mb-6 pb-4 border-b-2 border-[#3c92a9]">
                 Recent Posts
               </h2>
@@ -201,6 +202,17 @@ export default function Development() {
                 ))}
               </div>
             </div>
+             <div className="mt-8 bg-gradient-to-br from-[#3c92a9] to-[#206c81] rounded-lg p-6 text-white">
+                <h4 className="text-lg font-bold mb-2">Interested in Plots Near Airport?</h4>
+                <p className="text-sm mb-4 text-blue-50">
+                  Get exclusive details about our properties near Noida International Airport
+                </p>
+                <Link to="/contact">
+                <button className="w-full bg-white text-[#3c92a9] font-semibold py-3 rounded-lg hover:bg-blue-50 transition">
+                  Contact Us Today
+                </button>
+                </Link>
+              </div>
           </div>
         </div>
       </div>

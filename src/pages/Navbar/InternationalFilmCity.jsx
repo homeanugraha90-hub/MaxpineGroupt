@@ -1,7 +1,12 @@
 import React, { useState } from 'react';
 import { ChevronDown, ChevronUp, MapPin, Building, Film, Clapperboard, Clock } from 'lucide-react';
 import { Music, Scissors, Zap, Tent, Theater } from "lucide-react";
-
+import img1 from "../../assets/All home imgs/filmcity-01 (1).jpg"
+import img2 from "../../assets/All home imgs/filmcity-01 (1).png"
+import img3 from "../../assets/All home imgs/filmcity-01 (2).png"
+import img4 from "../../assets/All home imgs/filmcity-01 (3).png"
+import img5 from "../../assets/All home imgs/present-Project-img-1 (2).png"
+import img6 from "../../assets/All home imgs/update-16.jpeg"
 
 export default function InternationalFilmCity() {
   const [expandedSections, setExpandedSections] = useState({
@@ -28,7 +33,7 @@ export default function InternationalFilmCity() {
   ];
 
  const proposedProducts = [
-  { name: "Music Dubbing Studios", icon: <Music className="w-5 h-5 text-[#29aa8a]" /> },
+  { name: "Music Dubbing Studios", icon: <Music className="w-5 h-5 text-[#29aa8a]" />  },
   { name: "Editing Studios", icon: <Scissors className="w-5 h-5 text-[#29aa8a]" /> },
   { name: "VFX Studios", icon: <Clapperboard className="w-5 h-5 text-[#29aa8a]" /> },
   { name: "Special Effects Studio", icon: <Zap className="w-5 h-5 text-[#29aa8a]" /> },
@@ -142,14 +147,14 @@ export default function InternationalFilmCity() {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       <div className="bg-gray-100 rounded-lg overflow-hidden">
                         <img 
-                          src="/api/placeholder/400/300" 
+                          src={img1} 
                           alt="Proposed products infrastructure" 
                           className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
                         />
                       </div>
                       <div className="bg-gray-100 rounded-lg overflow-hidden">
                         <img 
-                          src="/api/placeholder/400/300" 
+                          src={img2} 
                           alt="Film city layout plan" 
                           className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
                         />
@@ -215,7 +220,7 @@ export default function InternationalFilmCity() {
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
                       <div className="bg-gray-100 rounded-lg overflow-hidden">
                         <img 
-                          src="/api/placeholder/350/250"
+                          src={img3}
                           alt="Music and dubbing studios"
                           className="w-full h-48 object-cover hover:scale-105 transition-transform duration-300"
                         />
@@ -225,7 +230,7 @@ export default function InternationalFilmCity() {
                       </div>
                       <div className="bg-gray-100 rounded-lg overflow-hidden">
                         <img 
-                          src="/api/placeholder/350/250"
+                          src={img4}
                           alt="VFX and editing studios"
                           className="w-full h-48 object-cover hover:scale-105 transition-transform duration-300"
                         />
@@ -233,26 +238,8 @@ export default function InternationalFilmCity() {
                           <p className="text-sm font-medium text-gray-700">VFX & Editing Studios</p>
                         </div>
                       </div>
-                      <div className="bg-gray-100 rounded-lg overflow-hidden">
-                        <img 
-                          src="/api/placeholder/350/250"
-                          alt="Film festival arenas"
-                          className="w-full h-48 object-cover hover:scale-105 transition-transform duration-300"
-                        />
-                        <div className="p-3 bg-white">
-                          <p className="text-sm font-medium text-gray-700">Film Festival Arenas</p>
-                        </div>
-                      </div>
-                      <div className="bg-gray-100 rounded-lg overflow-hidden">
-                        <img 
-                          src="/api/placeholder/350/250"
-                          alt="Special effects studios"
-                          className="w-full h-48 object-cover hover:scale-105 transition-transform duration-300"
-                        />
-                        <div className="p-3 bg-white">
-                          <p className="text-sm font-medium text-gray-700">Special Effects Studios</p>
-                        </div>
-                      </div>
+                      
+                     
                     </div>
                     <p className="text-sm text-gray-600 italic">
                       State-of-the-art facilities designed to support the entire film production value chain.
@@ -281,14 +268,14 @@ export default function InternationalFilmCity() {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
                       <div className="bg-gray-100 rounded-lg overflow-hidden">
                         <img 
-                          src="/api/placeholder/400/350"
+                          src={img2}
                           alt="Sector 21 master plan"
                           className="w-full h-80 object-cover hover:scale-105 transition-transform duration-300"
                         />
                       </div>
                       <div className="bg-gray-100 rounded-lg overflow-hidden">
                         <img 
-                          src="/api/placeholder/400/350"
+                          src={img4}
                           alt="Land use and connectivity map"
                           className="w-full h-80 object-cover hover:scale-105 transition-transform duration-300"
                         />
@@ -350,14 +337,14 @@ export default function InternationalFilmCity() {
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
                         <div className="bg-gray-100 rounded-lg overflow-hidden">
                           <img 
-                            src="/api/placeholder/350/250"
+                            src={img5}
                             alt="Development progress view 1"
                             className="w-full h-48 object-cover hover:scale-105 transition-transform duration-300"
                           />
                         </div>
                         <div className="bg-gray-100 rounded-lg overflow-hidden">
                           <img 
-                            src="/api/placeholder/350/250"
+                            src={img6}
                             alt="Development progress view 2"
                             className="w-full h-48 object-cover hover:scale-105 transition-transform duration-300"
                           />
