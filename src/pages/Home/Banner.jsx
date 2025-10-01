@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
 import {Link} from "react-router-dom"
 import "swiper/css";
+import img from "../../assets/All home imgs/video-placeholder.jpg";
 import "swiper/css/navigation";
 import { motion } from "framer-motion";
 import { useState, useRef, useEffect } from "react";
@@ -11,7 +12,7 @@ import vid from "../../assets/video.mp4";
 const slides = [
   {
     id: 1,
-    img: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1600&q=80",
+    img: img,
     title: "Discover Your Dream Home with Maxpine",
     subtitle: "Premium Properties in Prime Locations",
     price: "₹45,00,000",
@@ -87,9 +88,9 @@ export default function Banner() {
                   initial={{ opacity: 0, x: -50 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.8 }}
-                  className="border-4 border-[#29aa8a] p-8 md:p-10 max-w-2xl bg-black/20 backdrop-blur-sm"
+                  className="border-4 border-[#7575a3] p-8 md:p-10 max-w-2xl bg-black/20 backdrop-blur-sm"
                 >
-                  <span className="text-[#29aa8a] font-semibold text-lg tracking-wide mb-2 inline-block">
+                  <span className="text-[#7575a3] font-semibold text-lg tracking-wide mb-2 inline-block">
                     {slide.subtitle}
                   </span>
                   <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-4">
@@ -99,7 +100,7 @@ export default function Banner() {
 
                   <div className="flex items-center gap-4">
                     <Link to="/site-visit">
-                    <button className="bg-[#29aa8a] text-white font-semibold px-8 py-3 rounded-lg shadow-lg hover:bg-[#4fc3a6] hover:text-black transition-all duration-300 hover:shadow-xl">
+                    <button className="bg-[#7575a3] text-white font-semibold px-8 py-3 rounded-lg shadow-lg hover:bg-[#9797cd] hover:text-black transition-all duration-300 hover:shadow-xl">
                       Schedule a Visit
                     </button>
                     </Link>
@@ -120,11 +121,11 @@ export default function Banner() {
                   transition={{ duration: 0.8, delay: 0.3 }}
                   className="text-left md:text-right"
                 >
-                  <div className="inline-block bg-black/40 backdrop-blur-sm border-2 border-[#29aa8a] p-8 rounded-lg">
+                  <div className="inline-block bg-black/40 backdrop-blur-sm border-2 border-[#7575a3] p-8 rounded-lg">
                     <p className="text-xl text-gray-300 font-medium mb-2">
                       Starting Price
                     </p>
-                    <p className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#29aa8a] mb-3">
+                    <p className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#7575a3] mb-3">
                       {slide.price}
                     </p>
                     <p className="text-gray-400 text-sm">

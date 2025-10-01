@@ -1,8 +1,19 @@
 import React, { useState } from 'react';
 import { Calendar, ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react';
+import img1 from "../assets/All home imgs/new-update-1.jpeg"
+import img2 from "../assets/All home imgs/upadate-34.jpeg"
+import img3 from "../assets/All home imgs/update-01.jpeg"
+import img4 from "../assets/All home imgs/update-012.jpeg"
+import img5 from "../assets/All home imgs/update-013.jpeg"
+import img6 from "../assets/All home imgs/update-02.jpeg"
+import img7 from "../assets/All home imgs/update-03.jpeg"
+import img8 from "../assets/All home imgs/update-03.jpeg"
+import img9 from "../assets/All home imgs/update-04.jpeg"
+import img10 from "../assets/All home imgs/update-32.jpeg"
+import imgvide from "../assets/All home imgs/video-placeholder.jpg"
 
 export default function News() {
-  const [currentPage, setCurrentPage] = useState(1);
+  // const [currentPage, setCurrentPage] = useState(1);
   const [email, setEmail] = useState('');
 
   const blogPosts = [
@@ -12,7 +23,7 @@ export default function News() {
       author: "Hamilton Siza",
       date: "07 December, 21",
       excerpt: "Properties are most budget friendly so you have are opportunity to find are the best the best...",
-      image: "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=600&h=400&fit=crop"
+      image: img1
     },
     {
       id: 2,
@@ -20,7 +31,7 @@ export default function News() {
       author: "Garry Sobana",
       date: "15 December, 21",
       excerpt: "Properties are most budget friendly so you have are opportunity to find are the best the best...",
-      image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&h=400&fit=crop"
+      image: img2
     },
     {
       id: 3,
@@ -28,7 +39,7 @@ export default function News() {
       author: "Shane Watson",
       date: "10 December, 21",
       excerpt: "Properties are most budget friendly so you have are opportunity to find are the best the best...",
-      image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&h=400&fit=crop"
+      image: img3
     },
     {
       id: 4,
@@ -36,7 +47,7 @@ export default function News() {
       author: "Hamilton Siza",
       date: "07 December, 21",
       excerpt: "Properties are most budget friendly so you have are opportunity to find are the best the best...",
-      image: "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=600&h=400&fit=crop"
+      image: img4
     },
     {
       id: 5,
@@ -44,7 +55,7 @@ export default function News() {
       author: "Garry Sobana",
       date: "15 December, 21",
       excerpt: "Properties are most budget friendly so you have are opportunity to find are the best the best...",
-      image: "https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=600&h=400&fit=crop"
+      image:img5
     },
     {
       id: 6,
@@ -52,7 +63,7 @@ export default function News() {
       author: "Shane Watson",
       date: "10 December, 21",
       excerpt: "Properties are most budget friendly so you have are opportunity to find are the best the best...",
-      image: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=600&h=400&fit=crop"
+      image: img6
     },
     {
       id: 7,
@@ -60,7 +71,7 @@ export default function News() {
       author: "Hamilton Siza",
       date: "07 December, 21",
       excerpt: "Properties are most budget friendly so you have are opportunity to find are the best the best...",
-      image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&h=400&fit=crop"
+      image: img7
     },
     {
       id: 8,
@@ -68,7 +79,7 @@ export default function News() {
       author: "Garry Sobana",
       date: "15 December, 21",
       excerpt: "Properties are most budget friendly so you have are opportunity to find are the best the best...",
-      image: "https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?w=600&h=400&fit=crop"
+      image: img8
     },
     {
       id: 9,
@@ -76,7 +87,7 @@ export default function News() {
       author: "Shane Watson",
       date: "10 December, 21",
       excerpt: "Properties are most budget friendly so you have are opportunity to find are the best the best...",
-      image: "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=600&h=400&fit=crop"
+      image: img9
     }
   ];
 
@@ -93,7 +104,7 @@ export default function News() {
       <div 
         className="relative bg-cover bg-center py-32 px-4"
         style={{
-          backgroundImage: "linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1600&h=600&fit=crop')"
+          backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(${imgvide})`
         }}
       >
         <div className="max-w-4xl mx-auto text-center text-white">
@@ -120,13 +131,13 @@ export default function News() {
               </div>
 
               {/* Meta Info */}
-              <div className="flex items-center gap-2 text-sm text-amber-600 mb-3">
+              <div className="flex items-center gap-2 text-sm text-[#7575a3] mb-3">
                 <span className="text-gray-600">{post.author} on</span>
                 <span>{post.date}</span>
               </div>
 
               {/* Title */}
-              <h3 className="text-xl font-bold text-gray-900 mb-3 leading-tight group-hover:text-amber-600 transition-colors">
+              <h3 className="text-xl font-bold text-gray-900 mb-3 leading-tight group-hover:text-[#7575a3] transition-colors">
                 {post.title}
               </h3>
 
@@ -136,8 +147,8 @@ export default function News() {
               </p>
 
               {/* Read More Link */}
-              <button className="flex items-center gap-2 text-gray-900 font-medium group-hover:text-amber-600 transition-colors">
-                <span className="w-8 h-8 rounded-full bg-gray-900 group-hover:bg-amber-600 flex items-center justify-center transition-colors">
+              <button className="flex items-center gap-2 text-gray-900 font-medium group-hover:text-[#7575a3] transition-colors">
+                <span className="w-8 h-8 rounded-full bg-gray-900 group-hover:bg-[#7575a3] flex items-center justify-center transition-colors">
                   <ArrowRight className="w-4 h-4 text-white" />
                 </span>
               </button>
@@ -147,7 +158,7 @@ export default function News() {
 
         {/* Pagination */}
         <div className="flex items-center justify-center gap-2">
-          <button className="w-10 h-10 rounded-full bg-gray-900 text-white flex items-center justify-center hover:bg-amber-600 transition-colors">
+          <button className="w-10 h-10 rounded-full bg-gray-900 text-white flex items-center justify-center hover:bg-[#7575a3] transition-colors">
             <ChevronLeft className="w-5 h-5" />
           </button>
           
@@ -164,7 +175,7 @@ export default function News() {
             </button>
           ))}
 
-          <button className="w-10 h-10 rounded-full bg-gray-900 text-white flex items-center justify-center hover:bg-amber-600 transition-colors">
+          <button className="w-10 h-10 rounded-full bg-gray-900 text-white flex items-center justify-center hover:bg-[#7575a3] transition-colors">
             <ChevronRight className="w-5 h-5" />
           </button>
         </div>
@@ -195,11 +206,11 @@ export default function News() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="Enter your email here..."
-                className="flex-1 px-5 py-4 rounded-lg bg-slate-700 text-white placeholder-gray-400 border-0 focus:outline-none focus:ring-2 focus:ring-amber-500"
+                className="flex-1 px-5 py-4 rounded-lg bg-slate-700 text-white placeholder-gray-400 border-0 focus:outline-none focus:ring-2 focus:ring-[#505084]"
               />
               <button 
                 onClick={handleGetListed}
-                className="px-8 py-4 bg-amber-500 text-white font-semibold rounded-lg hover:bg-amber-600 transition-colors"
+                className="px-8 py-4 bg-[#7575a3] text-white font-semibold rounded-lg hover:bg-[#7575a3] transition-colors"
               >
                 Get Listed
               </button>

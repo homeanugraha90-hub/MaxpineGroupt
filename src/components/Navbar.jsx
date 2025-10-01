@@ -24,7 +24,7 @@ export default function Navbar() {
       { name: "Upcoming Projects", href: "#" ,sub: [
         { name: "Skyline Township", href: "/skyline" },
         { name: "Leafshade", href: "/upcomingPJ" },
-        { name: "Amrit Garh", href: "#" }
+        { name: "Amrit Garh", href: "/amrit-grah" }
       ]},
     ],
     developments: [
@@ -57,7 +57,7 @@ export default function Navbar() {
   ];
 
   const Dropdown = ({ items, active, width }) => (
-    <div className={`absolute top-full left-0 ${width} bg-white shadow-lg border-t-3 border-[#29aa8a] transition-all duration-300 z-50 ${
+    <div className={`absolute top-full left-0 ${width} bg-white shadow-lg border-t-3 border-[#7575a3] transition-all duration-300 z-50 ${
       active ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-2'
     }`}>
       <div className="py-2">
@@ -78,17 +78,17 @@ export default function Navbar() {
               setDesktop(p => ({ ...p, nested: null, hoverCard: null }));
             }}
           >
-            <a href={item.href} target="_blank" className="flex items-center justify-between px-6 py-3 text-gray-700 hover:bg-[#29aa8a] hover:text-white transition-colors duration-200">
+            <a href={item.href}  className="flex items-center justify-between px-6 py-3 text-gray-700 hover:bg-[#7575a3] hover:text-white transition-colors duration-200">
               <span>{item.name}</span>
               {item.sub && <ChevronRight className="w-4 h-4" />}
             </a>
             {item.sub && (
-              <div className={`absolute left-full top-0 w-56 bg-white shadow-lg border-l-3 border-[#29aa8a] transition-all duration-300 ${
+              <div className={`absolute left-full top-0 w-56 bg-white shadow-lg border-l-3 border-[#7575a3] transition-all duration-300 ${
                 desktop.nested === item.name ? 'opacity-100 visible' : 'opacity-0 invisible'
               }`}>
                 <div className="py-2">
                   {item.sub.map((s, j) => (
-                    <a key={j} target="_blank" href={s.href} className="block px-6 py-3 text-gray-700 hover:bg-[#29aa8a] hover:text-white transition-colors duration-200">
+                    <a key={j}  href={s.href} className="block px-6 py-3 text-gray-700 hover:bg-[#7575a3] hover:text-white transition-colors duration-200">
                       {s.name}
                     </a>
                   ))}
@@ -96,7 +96,7 @@ export default function Navbar() {
               </div>
             )}
             {item.hoverCard && (
-              <div className={`absolute  left-full top-0 w-90 bg-white shadow-lg border-l-3 border-[#29aa8a] transition-all duration-300 ${
+              <div className={`absolute  left-full top-0 w-90 bg-white shadow-lg border-l-3 border-[#7575a3] transition-all duration-300 ${
                 desktop.hoverCard === item.name ? 'opacity-100 visible' : 'opacity-0 invisible'
               }`}>
                 <div className="p-4">
@@ -178,7 +178,7 @@ export default function Navbar() {
             </Link>
 
           <div className="hidden lg:flex flex-1">
-            <div className="bg-[#29aa8a] flex items-stretch justify-center flex-1 px-8">
+            <div className="bg-[#7575a3] flex items-stretch justify-center flex-1 px-8">
               <div className="flex items-stretch space-x-4 text-white font-medium">
                 {navConfig.map((item, i) => (
                   item.type === "link" ? (
@@ -214,13 +214,13 @@ export default function Navbar() {
           </div>
 
           <div className="lg:hidden flex items-center px-4 ml-auto">
-            <button onClick={() => setMobile(p => ({ ...p, menu: !p.menu }))} className="text-white hover:text-[#29aa8a] transition-colors duration-200">
+            <button onClick={() => setMobile(p => ({ ...p, menu: !p.menu }))} className="text-white hover:text-[#7575a3] transition-colors duration-200">
               {mobile.menu ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
           </div>
         </div>
 
-        <div className={`lg:hidden bg-[#29aa8a] transition-all duration-300 ${mobile.menu ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0 overflow-hidden'}`}>
+        <div className={`lg:hidden bg-[#7575a3] transition-all duration-300 ${mobile.menu ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0 overflow-hidden'}`}>
           <div className="px-4 py-6 space-y-2">
             {navConfig.filter(item => item.type === "link" || item.type === "dropdown").map((item, i) => (
               item.type === "link" ? (

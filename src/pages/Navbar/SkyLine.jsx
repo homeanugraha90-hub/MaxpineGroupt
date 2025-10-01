@@ -145,7 +145,7 @@ export default function SkyLine() {
                 key={idx}
                 onClick={() => setCurrentImage(idx)}
                 className={`flex-shrink-0 w-24 h-20 rounded-lg overflow-hidden border-2 transition-all ${
-                  currentImage === idx ? 'border-[#29aa8a]' : 'border-transparent opacity-60 hover:opacity-100'
+                  currentImage === idx ? 'border-[#7575a3]' : 'border-transparent opacity-60 hover:opacity-100'
                 }`}
               >
                 <img src={img} alt={`Thumbnail ${idx + 1}`} className="w-full h-full object-cover" />
@@ -166,13 +166,13 @@ export default function SkyLine() {
                 <div>
                   <h1 className="text-3xl font-bold text-gray-900 mb-2">{propertyDetails.title}</h1>
                   <p className="flex items-center text-gray-600 text-lg">
-                    <MapPin className="w-5 h-5 mr-2 text-[#29aa8a]" />
+                    <MapPin className="w-5 h-5 mr-2 text-[#7575a3]" />
                     {propertyDetails.location}
                   </p>
                 </div>
                 <div className="text-right">
                   <p className="text-sm text-gray-500">Starting Price</p>
-                  <p className="text-3xl font-bold text-[#29aa8a]">{propertyDetails.price}</p>
+                  <p className="text-3xl font-bold text-[#7575a3]">{propertyDetails.price}</p>
                   <span className="inline-block bg-green-100 text-green-700 text-xs px-3 py-1 rounded-full mt-2">
                     PRE LAUNCH PRICES
                   </span>
@@ -182,22 +182,22 @@ export default function SkyLine() {
               {/* Quick Stats */}
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 pt-4 border-t">
                 <div className="text-center p-3 bg-gray-50 rounded-lg">
-                  <Ruler className="w-6 h-6 mx-auto mb-2 text-[#29aa8a]" />
+                  <Ruler className="w-6 h-6 mx-auto mb-2 text-[#7575a3]" />
                   <p className="text-sm text-gray-500">Plot Size</p>
                   <p className="font-semibold">{propertyDetails.plotArea}</p>
                 </div>
                 <div className="text-center p-3 bg-gray-50 rounded-lg">
-                  <Home className="w-6 h-6 mx-auto mb-2 text-[#29aa8a]" />
+                  <Home className="w-6 h-6 mx-auto mb-2 text-[#7575a3]" />
                   <p className="text-sm text-gray-500">Type</p>
                   <p className="font-semibold">Residential</p>
                 </div>
                 <div className="text-center p-3 bg-gray-50 rounded-lg">
-                  <Calendar className="w-6 h-6 mx-auto mb-2 text-[#29aa8a]" />
+                  <Calendar className="w-6 h-6 mx-auto mb-2 text-[#7575a3]" />
                   <p className="text-sm text-gray-500">Status</p>
                   <p className="font-semibold">Pre Launch</p>
                 </div>
                 <div className="text-center p-3 bg-gray-50 rounded-lg">
-                  <MapPin className="w-6 h-6 mx-auto mb-2 text-[#29aa8a]" />
+                  <MapPin className="w-6 h-6 mx-auto mb-2 text-[#7575a3]" />
                   <p className="text-sm text-gray-500">Location</p>
                   <p className="font-semibold">Hapur</p>
                 </div>
@@ -213,7 +213,7 @@ export default function SkyLine() {
                     onClick={() => setActiveTab(tab)}
                     className={`flex-1 px-6 py-4 text-sm font-semibold capitalize transition-colors ${
                       activeTab === tab
-                        ? 'bg-[#29aa8a] text-white'
+                        ? 'bg-[#7575a3] text-white'
                         : 'text-gray-600 hover:bg-gray-50'
                     }`}
                   >
@@ -253,7 +253,7 @@ export default function SkyLine() {
                   <div>
                     <h3 className="text-xl font-bold mb-4">Address</h3>
                     <p className="text-gray-700 flex items-start gap-2">
-                      <MapPin className="w-5 h-5 text-[#29aa8a] mt-1 flex-shrink-0" />
+                      <MapPin className="w-5 h-5 text-[#7575a3] mt-1 flex-shrink-0" />
                       <span>{propertyDetails.location}</span>
                     </p>
                     <div className="mt-6 h-64 bg-gray-200 rounded-lg overflow-hidden">
@@ -297,8 +297,8 @@ export default function SkyLine() {
               <h3 className="text-2xl font-bold mb-6">Amenities</h3>
               <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                 {amenities.map((amenity, idx) => (
-                  <div key={idx} className="flex items-center gap-3 p-4 bg-gray-50 rounded-lg hover:bg-[#29aa8a] hover:text-white transition-colors group">
-                    <amenity.icon className="w-6 h-6 text-[#29aa8a] group-hover:text-white" />
+                  <div key={idx} className="flex items-center gap-3 p-4 bg-gray-50 rounded-lg hover:bg-[#7575a3] hover:text-white transition-colors group">
+                    <amenity.icon className="w-6 h-6 text-[#7575a3] group-hover:text-white" />
                     <span className="font-medium">{amenity.name}</span>
                   </div>
                 ))}
@@ -309,7 +309,7 @@ export default function SkyLine() {
             <div className="bg-white rounded-xl shadow-md p-6">
               <div className="flex items-center justify-between mb-6">
                 <h3 className="text-2xl font-bold">Reviews (0)</h3>
-                <button className="bg-[#29aa8a] hover:bg-[#238b73] text-white px-6 py-2 rounded-lg font-semibold transition-colors">
+                <button className="bg-[#7575a3] hover:bg-[#51518b] text-white px-6 py-2 rounded-lg font-semibold transition-colors">
                   Leave a Review
                 </button>
               </div>
@@ -321,7 +321,7 @@ export default function SkyLine() {
                   <input
                     type="text"
                     placeholder="Your name (optional)"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#29aa8a] focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#7575a3] focus:border-transparent"
                   />
                 </div>
 
@@ -330,7 +330,7 @@ export default function SkyLine() {
                   <input
                     type="text"
                     placeholder="Review title"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#29aa8a] focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#7575a3] focus:border-transparent"
                   />
                 </div>
 
@@ -350,11 +350,11 @@ export default function SkyLine() {
                   <textarea
                     rows="4"
                     placeholder="Write your review..."
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#29aa8a] focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#7575a3] focus:border-transparent"
                   ></textarea>
                 </div>
 
-                <button className="bg-[#29aa8a] hover:bg-[#238b73] text-white px-8 py-3 rounded-lg font-semibold transition-colors">
+                <button className="bg-[#7575a3] hover:bg-[#41417b] text-white px-8 py-3 rounded-lg font-semibold transition-colors">
                   Submit Review
                 </button>
               </div>
@@ -382,7 +382,7 @@ export default function SkyLine() {
                   <input
                     type="text"
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#29aa8a] focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#7575a3] focus:border-transparent"
                   />
                 </div>
 
@@ -391,7 +391,7 @@ export default function SkyLine() {
                   <input
                     type="text"
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#29aa8a] focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#7575a3] focus:border-transparent"
                   />
                 </div>
 
@@ -400,7 +400,7 @@ export default function SkyLine() {
                   <input
                     type="tel"
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#29aa8a] focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#7575a3] focus:border-transparent"
                   />
                 </div>
 
@@ -409,13 +409,13 @@ export default function SkyLine() {
                   <input
                     type="email"
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#29aa8a] focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#7575a3] focus:border-transparent"
                   />
                 </div>
 
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">Tour Type*</label>
-                  <select className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#29aa8a] focus:border-transparent">
+                  <select className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#7575a3] focus:border-transparent">
                     <option>In Person</option>
                     <option>Virtual Tour</option>
                   </select>
@@ -423,7 +423,7 @@ export default function SkyLine() {
 
                 <button
                   type="submit"
-                  className="w-full bg-[#29aa8a] hover:bg-[#238b73] text-white py-3 rounded-lg font-semibold transition-colors flex items-center justify-center gap-2"
+                  className="w-full bg-[#7575a3] hover:bg-[#4b4b86] text-white py-3 rounded-lg font-semibold transition-colors flex items-center justify-center gap-2"
                 >
                   <Send className="w-5 h-5" />
                   Schedule Tour
@@ -435,14 +435,14 @@ export default function SkyLine() {
                   href="tel:+911204107573"
                   className="flex items-center gap-3 p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
                 >
-                  <Phone className="w-5 h-5 text-[#29aa8a]" />
+                  <Phone className="w-5 h-5 text-[#7575a3]" />
                   <span className="text-gray-700">+91-120-410-7573</span>
                 </a>
                 <a
                   href="mailto:info@maxpinegroup.in"
                   className="flex items-center gap-3 p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
                 >
-                  <Mail className="w-5 h-5 text-[#29aa8a]" />
+                  <Mail className="w-5 h-5 text-[#7575a3]" />
                   <span className="text-gray-700">info@maxpinegroup.in</span>
                 </a>
               </div>
@@ -462,7 +462,7 @@ export default function SkyLine() {
                     alt={property.title}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
-                  <span className="absolute top-3 left-3 bg-[#29aa8a] text-white text-xs px-3 py-1 rounded-full">
+                  <span className="absolute top-3 left-3 bg-[#7575a3] text-white text-xs px-3 py-1 rounded-full">
                     Featured
                   </span>
                 </div>
@@ -477,7 +477,7 @@ export default function SkyLine() {
                       <p className="text-xs text-gray-500">Size</p>
                       <p className="font-semibold text-sm">{property.size}</p>
                     </div>
-                    <button className="bg-[#29aa8a] hover:bg-[#238b73] text-white px-4 py-2 rounded-lg text-sm font-semibold transition-colors">
+                    <button className="bg-[#7575a3] hover:bg-[#515187] text-white px-4 py-2 rounded-lg text-sm font-semibold transition-colors">
                       {property.price}
                     </button>
                   </div>

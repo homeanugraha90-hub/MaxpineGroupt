@@ -1,12 +1,12 @@
-import { 
-  Phone, 
-  Mail, 
-  MapPin, 
-  Clock, 
-  Facebook, 
-  Twitter, 
-  Instagram, 
-  Linkedin, 
+import {
+  Phone,
+  Mail,
+  MapPin,
+  Clock,
+  Facebook,
+  Twitter,
+  Instagram,
+  Linkedin,
   Youtube,
   ArrowUp,
   Shield
@@ -18,23 +18,41 @@ export default function Footer() {
   // };
 
   const legalPages = [
-    { name: "Privacy Policy", href: "#" },
-    { name: "Terms of Service", href: "#" },
-    { name: "Cookie Policy", href: "#" },
-    { name: "Contact", href: "#" }
+    { name: "Home", href: "/" },
+    { name: "About", href: "/about" },
+
+    // Projects
+    { name: "Anugrah Home", href: "https://anugrahhomes.com" },
+    { name: "Brij Brinda", href: "/keyPlan" },
+    { name: "The Club Farm", href: "/keyplanCF" },
+    { name: "Upcoming Projects", href: "/skyline" },
+
+    // Zones
+    { name: "Noida International", href: "/noida-international" },
+    { name: "International Film City", href: "/international-film-city" },
+    { name: "Medical Device Park", href: "/medical-device-Park" },
+    { name: "Logistics Park", href: "#" },
+    { name: "Pod Taxi", href: "#" },
+
+    // Others
+    { name: "Site Visit", href: "/site-visit" },
+    { name: "News Letter", href: "/news" },
+    { name: "Contact", href: "/contact" },
+    { name: "Privacy Policy", href: "/privacy-policy" },
   ];
+
 
   return (
     <footer className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white">
       {/* Main Footer Content */}
       <div className="container mx-auto px-24 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          
+
           {/* Company Info */}
           <div className="space-y-4">
             <h2 className="text-2xl font-bold mb-3">
-              <span className="text-[#29aa8a]">△</span> Maxpine
-              <span className="text-[#29aa8a]">Group</span>
+               Maxpine
+              <span className="text-[#7575a3]">Group</span>
             </h2>
             <p className="text-gray-300 text-sm leading-relaxed">
               Your trusted partner in real estate. We help you find your dream home with expert guidance and personalized service.
@@ -43,19 +61,19 @@ export default function Footer() {
             {/* Contact Info */}
             <div className="space-y-2">
               <div className="flex items-center gap-2 text-gray-300 text-sm">
-                <Phone className="w-4 h-4 text-[#29aa8a]" />
+                <Phone className="w-4 h-4 text-[#7575a3]" />
                 <span>+91-120-410-7573</span>
               </div>
               <div className="flex items-center gap-2 text-gray-300 text-sm">
-                <Mail className="w-4 h-4 text-[#29aa8a]" />
+                <Mail className="w-4 h-4 text-[#7575a3]" />
                 <span>info@maxpinegroup.in</span>
               </div>
               <div className="flex items-start gap-2 text-gray-300 text-sm">
-                <MapPin className="w-4 h-4 text-[#29aa8a] mt-0.5" />
-                <span>Noida , Delhi</span>
+                <MapPin className="w-4 h-4 text-[#7575a3] mt-0.5" />
+                <span className=" pr-5">H-174, Ground Floor, Sector-63, Noida, Uttar Pradesh 201301</span>
               </div>
               <div className="flex items-center gap-2 text-gray-300 text-sm">
-                <Clock className="w-4 h-4 text-[#29aa8a]" />
+                <Clock className="w-4 h-4 text-[#7575a3]" />
                 <span>Every Day: 24x7</span>
               </div>
             </div>
@@ -63,13 +81,13 @@ export default function Footer() {
 
           {/* Legal & Newsletter */}
           <div className="space-y-4">
-            <h4 className="text-lg font-semibold text-[#29aa8a]">Quick Links</h4>
-            <ul className="space-y-2">
+            <h4 className="text-lg font-semibold text-[#7575a3]">Quick Links</h4>
+            <ul className="grid grid-cols-2 gap-2">
               {legalPages.map((page, index) => (
                 <li key={index}>
-                  <a 
+                  <a
                     href={page.href}
-                    className="text-gray-300 hover:text-[#29aa8a] transition-colors duration-200 text-sm"
+                    className="text-gray-300 hover:text-[#7575a3] transition-colors duration-200 text-sm"
                   >
                     {page.name}
                   </a>
@@ -77,26 +95,14 @@ export default function Footer() {
               ))}
             </ul>
 
-            {/* Newsletter */}
-            <div className="mt-6 p-3 bg-gray-800 rounded-lg">
-              <h5 className="font-semibold mb-2 text-[#29aa8a] text-sm">Newsletter</h5>
-              <div className="flex gap-2">
-                <input 
-                  type="email" 
-                  placeholder="Your email"
-                  className="flex-1 px-3 py-2 bg-gray-700 text-white rounded text-xs focus:outline-none focus:ring-1 focus:ring-[#29aa8a]"
-                />
-                <button className="px-3 py-2 bg-[#29aa8a] hover:bg-[#29aa8a] rounded transition-colors text-xs font-medium">
-                  Subscribe
-                </button>
-              </div>
-            </div>
+           
           </div>
+
 
           {/* Social Media & License */}
           <div className="space-y-4">
             <div>
-              <h4 className="font-semibold mb-3 text-[#29aa8a]">Follow Us</h4>
+              <h4 className="font-semibold mb-3 text-[#7575a3]">Follow Us</h4>
               <div className="flex gap-2">
                 {[
                   { icon: <Facebook className="w-4 h-4" />, href: "https://www.facebook.com/maxpinegroupofficial", label: "Facebook" },
@@ -109,37 +115,46 @@ export default function Footer() {
                     key={index}
                     href={social.href}
                     aria-label={social.label}
-                    className="w-8 h-8 bg-gray-700 hover:bg-[#29aa8a] rounded-full flex items-center justify-center transition-all duration-200"
+                    className="w-8 h-8 bg-gray-700 hover:bg-[#7575a3] rounded-full flex items-center justify-center transition-all duration-200"
                   >
                     {social.icon}
                   </a>
                 ))}
               </div>
             </div>
+             {/* Newsletter */}
+            <div className="mt-6 p-3 bg-gray-800 rounded-lg">
+              <h5 className="font-semibold mb-2 text-[#7575a3] text-sm">Newsletter</h5>
+              <div className="flex gap-2">
+                <input
+                  type="email"
+                  placeholder="Your email"
+                  className="flex-1 px-3 py-2 bg-gray-700 text-white rounded text-xs focus:outline-none focus:ring-1 focus:ring-[#7575a3]"
+                />
+                <button className="px-3 py-2 bg-[#7575a3] hover:bg-[#7575a3] rounded transition-colors text-xs font-medium">
+                  Subscribe
+                </button>
+              </div>
+            </div>
 
             {/* License */}
-            <div className="bg-gray-800 p-3 rounded-lg">
-              <h5 className="font-semibold mb-1 text-[#29aa8a] text-sm">Licensed Agent</h5>
-              <p className="text-xs text-gray-400">
-                License #RE123456789<br />
-                Ukraine Real Estate Board
-              </p>
-            </div>
+
           </div>
+          
         </div>
       </div>
 
       {/* Disclaimer Section */}
       <div className="border-t border-gray-700 bg-gray-800/50">
-        <div className=" mx-auto px-4 py-6">
+        <div className=" mx-auto px-24 py-6">
           <div className="bg-gray-800 rounded-lg p-4">
-            <h4 className="text-base font-semibold text-[#29aa8a] mb-3">Disclaimer</h4>
+            <h4 className="text-base font-semibold text-[#7575a3] mb-3">Disclaimer</h4>
             <div className="text-xs text-gray-300 space-y-1  ">
               <p className="">
                 <strong>Property Information:</strong> All information is subject to change. Photos are for illustrative purposes only.
-             
+
                 <strong>Investment Advice:</strong> Information is for guidance only. Consult professionals before making decisions.
-             
+
                 <strong>Equal Housing:</strong> All properties available regardless of race, color, religion, sex, or national origin.
               </p>
             </div>
@@ -148,7 +163,7 @@ export default function Footer() {
       </div>
 
       {/* Bottom Bar */}
-    
+
     </footer>
   );
 }

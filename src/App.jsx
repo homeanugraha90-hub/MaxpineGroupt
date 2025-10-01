@@ -26,6 +26,7 @@ import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Popup from "./pages/Popup";
 import FloatingChatbot from "./components/FloatingChatbot";
 import UsePageTitle from "./components/UsePageTitle";
+import AmritGrah from "./pages/Navbar/AmritGrah";
 
 function App() {
   return (
@@ -55,6 +56,7 @@ function App() {
            <Route path="/logistics-park" element={<LogisticsPark/>} />
            <Route path="/personal-rapid-transit" element={<PersonalRapidTransit/>} />
             <Route path="/privacy-policy" element={<PrivacyPolicy/>} />
+             <Route path="/amrit-grah" element={<AmritGrah />} />
 
 
 

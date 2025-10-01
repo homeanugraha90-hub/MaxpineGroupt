@@ -1,18 +1,19 @@
 import { Home, Handshake, Key, Star, ArrowUp } from "lucide-react";
-import { useState } from "react";
+import { Link } from "react-router-dom";
+// import { useState } from "react";
 
 export default function WhyChoose() {
-  const [showScrollTop, setShowScrollTop] = useState(false);
+  // const [showScrollTop, setShowScrollTop] = useState(false);
 
-  const customerImages = [
-    "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=50&h=50&fit=crop&crop=face",
-    "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=50&h=50&fit=crop&crop=face",
-    "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=50&h=50&fit=crop&crop=face"
-  ];
+  // const customerImages = [
+  //   "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=50&h=50&fit=crop&crop=face",
+  //   "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=50&h=50&fit=crop&crop=face",
+  //   "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=50&h=50&fit=crop&crop=face"
+  // ];
 
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
+  // const scrollToTop = () => {
+  //   window.scrollTo({ top: 0, behavior: 'smooth' });
+  // };
 
   return (
     <section className="relative min-h-screen px-10 md:px-20 bg-cover bg-center bg-no-repeat" 
@@ -24,9 +25,9 @@ export default function WhyChoose() {
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-16">
           <div className="mb-8 lg:mb-0">
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-0.5 bg-[#29aa8a]"></div>
-              <span className="text-[#29aa8a] font-medium text-sm lg:text-base">Why Choose Us</span>
-              <div className="w-8 h-0.5 bg-[#29aa8a]"></div>
+              <div className="w-8 h-0.5 bg-[#7575a3]"></div>
+              <span className="text-[#7575a3] font-medium text-sm lg:text-base">Why Choose Us</span>
+              <div className="w-8 h-0.5 bg-[#7575a3]"></div>
             </div>
             <h2 className="text-2xl md:text-3xl lg:text-5xl font-bold text-white leading-tight">
               Why Maxpine Group?
@@ -43,7 +44,7 @@ export default function WhyChoose() {
           <div className="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
             <div className="mb-6 flex items-center flex-col  justify-center px-5">
               <div className="w-16 h-16  bg-red-50 rounded-full flex items-center  justify-center mb-4">
-                <Home className="w-8 h-8 text-[#29aa8a]" />
+                <Home className="w-8 h-8 text-[#7575a3]" />
               </div>
               
               <h3 className="text-xl   md:text-2xl font-bold text-gray-800 mb-4   w-full">Find Your Perfect Dream <br/> Home Today</h3>
@@ -51,41 +52,47 @@ export default function WhyChoose() {
                 Browse premium apartments, villas, and townhouses in prime locations.
               </p>
             </div>
-            <button className="w-full bg-[#29aa8a] hover:bg-[#59c0a6] text-[#f8f9f6] hover:text-black font-semibold py-3 px-6 rounded-lg transition-colors duration-200">
+            <Link to="/news">
+            <button className="w-full bg-[#7575a3] hover:bg-[#9e9ece] text-[#f8f9f6] hover:text-black font-semibold py-3 px-6 rounded-lg transition-colors duration-200">
               Explore Homes
             </button>
+            </Link>
           </div>
 
           {/* Sell Property */}
           <div className="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
             <div className="mb-6 flex items-center flex-col  justify-center px-5">
               <div className="w-16 h-16 bg-red-50 rounded-full flex items-center justify-center mb-4">
-                <Handshake className="w-8 h-8 text-[#29aa8a]" />
+                <Handshake className="w-8 h-8 text-[#7575a3]" />
               </div>
               <h3 className="text-2xl text-left   w-full font-bold text-gray-800 mb-4">Your Trusted Real Estate Partner</h3>
               <p className="text-gray-600 leading-relaxed">
                 Get the best market value with our expert property evaluation and selling services.
               </p>
             </div>
-            <button className="w-full bg-[#29aa8a] hover:bg-[#59c0a6] text-[#f8f9f6] hover:text-black font-semibold py-3 px-6 rounded-lg transition-colors duration-200">
+             <Link to="/news">
+            <button className="w-full bg-[#7575a3] hover:bg-[#a0a0cd] text-[#f8f9f6] hover:text-black font-semibold py-3 px-6 rounded-lg transition-colors duration-200">
               Explore Homes
             </button>
+             </Link>
           </div>
 
           {/* Rent a Home */}
           <div className="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
             <div className="mb-6 flex items-center flex-col  justify-center px-5">
               <div className="w-16 h-16 bg-red-50 rounded-full flex items-center justify-center mb-4">
-                <Key className="w-8 h-8 text-[#29aa8a]" />
+                <Key className="w-8 h-8 text-[#7575a3]" />
               </div>
               <h3 className="text-2xl text-left  w-full  font-bold text-gray-800 mb-4">Prime Locations, Premium Returns</h3>
               <p className="text-gray-600 leading-relaxed">
                 Flexible rental options for apartments, villas, and commercial spaces with trusted agreements.
               </p>
             </div>
-            <button className="w-full bg-[#29aa8a] hover:bg-[#59c0a6] text-[#f8f9f6] hover:text-black font-semibold py-3 px-6 rounded-lg transition-colors duration-200">
+             <Link to="/news">
+            <button className="w-full bg-[#7575a3] hover:bg-[#9393c6] text-[#f8f9f6] hover:text-black font-semibold py-3 px-6 rounded-lg transition-colors duration-200">
               Explore Homes
             </button>
+             </Link>
           </div>
         </div>
       </div>

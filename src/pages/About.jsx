@@ -6,6 +6,7 @@ import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import vidimg from "../assets/All home imgs/video-placeholder.jpg"
 import img1 from "../assets/Team Member/Pawan.png"
 import img2 from "../assets/Team Member/ashish.png"
 import img3 from "../assets/Team Member/Vijay.png"
@@ -19,21 +20,21 @@ import Testimonial from './About/Testimonial';
 const services = [
   {
     id: 1,
-    icon: <User className="w-12 h-12 text-[#29aa8a]" />,
+    icon: <User className="w-12 h-12 text-[#7575a3]" />,
     bg: "bg-red-100",
     title: "Best Local Agents",
     desc: "Lorem ipsum dolor sit consectetur sed eiusmod tempor incididunt dolore magna.",
   },
   {
     id: 2,
-    icon: <Home className="w-12 h-12 text-[#29aa8a]" />,
+    icon: <Home className="w-12 h-12 text-[#7575a3]" />,
     bg: "bg-yellow-100",
     title: "Personalized Service",
     desc: "Lorem ipsum dolor sit consectetur sed eiusmod tempor incididunt dolore magna.",
   },
   {
     id: 3,
-    icon: <Award className="w-12 h-12 text-[#29aa8a]" />,
+    icon: <Award className="w-12 h-12 text-[#7575a3]" />,
     bg: "bg-red-100",
     title: "Excellent Reputation",
     desc: "Lorem ipsum dolor sit consectetur sed eiusmod tempor incididunt dolore magna.",
@@ -140,79 +141,27 @@ export default function About() {
       {/* Hero Section */}
       <section
         className="relative w-full h-[60vh] bg-cover bg-center flex items-center justify-center"
-        style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=2075&q=80)' }}
+        style={{ backgroundImage: `url(${vidimg})` }}
       >
         <div className="absolute inset-0 bg-black/50"></div>
         <div className="relative text-center text-white px-4 animate-fade-in">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">About Us</h1>
           <div className="flex items-center justify-center gap-2 text-sm md:text-base">
-            <a href="/" className="hover:text-[#29aa8a] transition">Home</a>
+            <a href="/" className="hover:text-[#7575a3] transition">Home</a>
             <span className="text-gray-300">›</span>
-            <span className="text-[#29aa8a] ">About</span>
+            <span className="text-[#7575a3] ">About</span>
           </div>
         </div>
       </section>
 
      
 
-      {/* Welcome Section */}
-      {/* <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-        <div 
-          id="welcome-content"
-          data-animate
-          className={`transition-all duration-1000 ${isVisible['welcome-content'] ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}
-        >
-          <p className="text-sm font-semibold text-[#29aa8a]  uppercase tracking-wide">
-            About Us
-          </p>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mt-2">
-            Welcome To Our <br /> Maxpine
-          </h2>
-          
-          <div className="flex items-center mt-6">
-            <span className="w-12 h-[2px] bg-[#29aa8a]  mr-3"></span>
-            <p className="text-gray-600 text-base lg:text-lg">
-              We provide an essential service for you
-            </p>
-          </div>
-
-          <p className="mt-6 text-gray-500 leading-relaxed text-sm sm:text-base">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-            cupidatat non proident.
-          </p>
-
-          <button className="mt-8 px-6 sm:px-8 py-3 bg-[#29aa8a]  text-white font-medium rounded-full shadow hover:bg-orange-600 transition transform hover:scale-105">
-            Get Started
-          </button>
-        </div>
-
-        <div 
-          id="welcome-image"
-          data-animate
-          className={`relative transition-all duration-1000 ${isVisible['welcome-image'] ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}
-        >
-          <div className="relative border-4 border-white shadow-lg">
-            <img
-              src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1073&q=80"
-              alt="Building"
-              className="w-full rounded-lg h-64 sm:h-96 lg:h-[60vh] object-cover"
-            />
-          </div>
-          <div className="absolute bottom-4 sm:bottom-6 -left-4 sm:-left-6 bg-[#29aa8a]  text-white px-4 sm:px-6 py-3 sm:py-4 shadow-lg rounded-sm">
-            <p className="text-base sm:text-lg font-medium">35 years of</p>
-            <p className="text-base sm:text-lg font-medium">experience</p>
-          </div>
-        </div>
-      </section> */}
+      
 
       {/* Services Section */}
       <section className="py-16 lg:py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 text-center">
-          <p className="text-[#29aa8a]  font-semibold uppercase tracking-wide text-sm">
+          <p className="text-[#7575a3]  font-semibold uppercase tracking-wide text-sm">
             Our Services
           </p>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mt-2">
@@ -247,7 +196,7 @@ export default function About() {
       <section className="py-16 lg:py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 lg:mb-16">
-            <p className="text-[#29aa8a]  font-semibold uppercase tracking-wide text-sm">
+            <p className="text-[#7575a3]  font-semibold uppercase tracking-wide text-sm">
               What Drives Us
             </p>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mt-2">
@@ -264,7 +213,7 @@ export default function About() {
                 className={`bg-white rounded-xl flex justify-center flex-col items-center p-6 lg:p-8 shadow-lg hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 ${isVisible[`value-${index}`] ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`}
                 style={{ transitionDelay: `${index * 100}ms` }}
               >
-                <div className="w-14 h-14 lg:w-16 lg:h-16 bg-orange-100 rounded-lg flex items-center justify-center mb-4 text-[#29aa8a] ">
+                <div className="w-14 h-14 lg:w-16 lg:h-16 bg-orange-100 rounded-lg flex items-center justify-center mb-4 text-[#7575a3] ">
                   {value.icon}
                 </div>
                 <h3 className="text-xl lg:text-2xl font-bold text-gray-900 mb-3">{value.title}</h3>
@@ -282,7 +231,7 @@ export default function About() {
       <section className="py-16 lg:py-20 bg-white relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 lg:mb-16">
-            <p className="text-[#29aa8a]  font-semibold uppercase tracking-wide text-sm">
+            <p className="text-[#7575a3]  font-semibold uppercase tracking-wide text-sm">
               The Experts
             </p>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mt-2">
@@ -311,7 +260,7 @@ export default function About() {
               {team.map((member, index) => (
                 <SwiperSlide key={index}>
                   <div className="group transition-all duration-500">
-                    <div className="bg-gray-50 rounded-xl p-4 sm:p-6 lg:p-8 text-center transform hover:-translate-y-2 transition-all duration-300 hover:shadow-xl border-t-4 border-[#29aa8a] ">
+                    <div className="bg-gray-50 rounded-xl p-4 sm:p-6 lg:p-8 text-center transform hover:-translate-y-2 transition-all duration-300 hover:shadow-xl border-t-4 border-[#7575a3] ">
                       <img
                         src={member.image}
                         alt={member.name}
@@ -320,7 +269,7 @@ export default function About() {
                       <h3 className="text-base sm:text-lg lg:text-xl font-bold text-gray-900 mb-2">
                         {member.name}
                       </h3>
-                      <p className="text-[#29aa8a] font-medium text-sm sm:text-base">
+                      <p className="text-[#7575a3] font-medium text-sm sm:text-base">
                         {member.role}
                       </p>
                       {member.about && (
@@ -396,16 +345,16 @@ export default function About() {
             </p>
             <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-4 sm:gap-6 text-black">
               <div className="flex items-center gap-3 bg-white bg-opacity-10 rounded-lg px-4 sm:px-6 py-3 backdrop-blur-sm hover:bg-opacity-20 transition-all">
-                <Phone className="w-4 h-4 sm:w-5 sm:h-5 text-[#29aa8a]" />
-                <span className="font-medium text-sm sm:text-base">+91-120-410-7573</span>
+                <Phone className="w-4 h-4 sm:w-5 sm:h-5 text-[#7575a3]" />
+                <span className="font-medium text-sm sm:text-base">+91-911-525-3545</span>
               </div>
               <div className="flex items-center gap-3 bg-white bg-opacity-10 rounded-lg px-4 sm:px-6 py-3 backdrop-blur-sm hover:bg-opacity-20 transition-all">
-                <Mail className="w-4 h-4 sm:w-5 sm:h-5 text-[#29aa8a]" />
+                <Mail className="w-4 h-4 sm:w-5 sm:h-5 text-[#7575a3]" />
                 <span className="font-medium text-sm sm:text-base">info@maxpinegroup.in</span>
               </div>
               <div className="flex items-center gap-3 bg-white bg-opacity-10 rounded-lg px-4 sm:px-6 py-3 backdrop-blur-sm hover:bg-opacity-20 transition-all">
-                <MapPin className="w-4 h-4 sm:w-5 sm:h-5 text-[#29aa8a]" />
-                <span className="font-medium text-sm sm:text-base">Noida</span>
+                <MapPin className="w-4 h-4 sm:w-5 sm:h-5 text-[#7575a3]" />
+                <span className="font-medium text-sm sm:text-base">H-174, Ground Floor, Sector-63, Noida, Uttar Pradesh 201301</span>
               </div>
             </div>
           </div>

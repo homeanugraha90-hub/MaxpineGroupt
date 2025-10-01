@@ -29,7 +29,7 @@ export default function UpArrow() {
       {isVisible && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-6 right-6 p-3 rounded-full bg-[#90cc35] text-white shadow-lg hover:bg-[#7ac607] transition-all"
+          className="fixed bottom-6 right-6 p-4 rounded-full bg-[#7575a3] text-white shadow-lg hover:bg-[#9292c1] transition-all"
         >
           <ArrowUp className="w-5 h-5" />
         </button>

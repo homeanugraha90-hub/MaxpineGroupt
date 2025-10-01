@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { X, Mail, User, Phone, MapPin, Send, CheckCircle, AlertCircle } from 'lucide-react';
+import img from "../assets/All home imgs/video-placeholder.jpg"
 
 export default function Popup() {
     const [isOpen, setIsOpen] = useState(true);
@@ -131,7 +132,7 @@ export default function Popup() {
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 bg-opacity-50 backdrop-blur-sm">
             <div className="relative w-full max-w-xl bg-white rounded-2xl shadow-2xl max-h-[70vh] overflow-hidden">
                 {/* Header */}
-                <div className="relative bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 px-6 py-8 text-white">
+                <div className="relative bg-gradient-to-r from-[#7575a3] via-[#6767a1] to-[#7373b0] px-6 py-8 text-white">
                     <button
                         onClick={() => setIsOpen(false)}
                         className="absolute top-4 right-4 p-2 hover:bg-[gray] hover:bg-opacity-20 rounded-full transition-all"
@@ -204,7 +205,7 @@ export default function Popup() {
                                         name="lastName"
                                         value={formData.lastName}
                                         onChange={handleChange}
-                                        className={`w-full pl-10 pr-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all outline-none ${errors.lastName ? 'border-red-500' : 'border-gray-300'
+                                        className={`w-full pl-10 pr-4 py-3 border rounded-lg focus:ring-2 focus:ring-[#7575a3] focus:border-transparent transition-all outline-none ${errors.lastName ? 'border-red-500' : 'border-gray-300'
                                             }`}
                                         placeholder="Doe"
                                     />
@@ -228,7 +229,7 @@ export default function Popup() {
                                         name="phone"
                                         value={formData.phone}
                                         onChange={handleChange}
-                                        className={`w-full pl-10 pr-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all outline-none ${errors.phone ? 'border-red-500' : 'border-gray-300'
+                                        className={`w-full pl-10 pr-4 py-3 border rounded-lg focus:ring-2 focus:ring-[#7575a3] focus:border-transparent transition-all outline-none ${errors.phone ? 'border-red-500' : 'border-gray-300'
                                             }`}
                                         placeholder="+91 98765 43210"
                                     />
@@ -251,7 +252,7 @@ export default function Popup() {
                                         name="city"
                                         value={formData.city}
                                         onChange={handleChange}
-                                        className={`w-full pl-10 pr-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all outline-none ${errors.city ? 'border-red-500' : 'border-gray-300'
+                                        className={`w-full pl-10 pr-4 py-3 border rounded-lg focus:ring-2 focus:ring-[#7575a3] focus:border-transparent transition-all outline-none ${errors.city ? 'border-red-500' : 'border-gray-300'
                                             }`}
                                         placeholder="New Delhi"
                                     />
@@ -273,7 +274,7 @@ export default function Popup() {
                                     name="email"
                                     value={formData.email}
                                     onChange={handleChange}
-                                    className={`w-full pl-10 pr-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all outline-none ${errors.email ? 'border-red-500' : 'border-gray-300'
+                                    className={`w-full pl-10 pr-4 py-3 border rounded-lg focus:ring-2 focus:ring-[#7575a3] focus:border-transparent transition-all outline-none ${errors.email ? 'border-red-500' : 'border-gray-300'
                                         }`}
                                     placeholder="john.doe@example.com"
                                 />
@@ -302,7 +303,7 @@ export default function Popup() {
                             <button
                                 onClick={handleSubmit}
                                 disabled={isSubmitting}
-                                className="flex-1 bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-6 py-3 rounded-lg font-semibold hover:from-blue-700 hover:to-indigo-700 transition-all shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+                                className="flex-1 bg-gradient-to-r from-[#7575a3] to-[#6363a3] text-white px-6 py-3 rounded-lg font-semibold hover:from-[#8989c5] hover:to-[#5d5d8e] transition-all shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
                             >
                                 {isSubmitting ? (
                                     <>

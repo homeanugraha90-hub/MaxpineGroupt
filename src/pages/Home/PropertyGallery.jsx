@@ -5,11 +5,24 @@ import img3 from "../../assets/green-5.jpg"
 import img4 from "../../assets/green-6.jpeg"
 import img5 from "../../assets/green-7.png"
 
-
-
+import anu1 from "../../assets/All home imgs/upadate-34.jpeg"
+import anu2 from "../../assets/All home imgs/update--14.jpeg"
+import anu3 from "../../assets/All home imgs/update-01.jpeg"
+import anu4 from "../../assets/All home imgs/update-02.jpeg"
+import anu5 from "../../assets/All home imgs/update-03.jpeg"
+import anu6 from "../../assets/All home imgs/update-04.jpeg"
+import anu7 from "../../assets/All home imgs/update-05.jpeg"
+import anu8 from "../../assets/All home imgs/update-06.jpeg"
+import anu9 from "../../assets/All home imgs/update-07.jpeg"
+import anu10 from "../../assets/All home imgs/update-08.jpeg"
+import anu11 from "../../assets/All home imgs/update-11.jpeg"
 
 export default function PropertyGallery() {
   const [activeFilter, setActiveFilter] = useState("all");
+  const [showAll, setShowAll] = useState(false);
+
+  // Number of items to show initially
+  const INITIAL_ITEMS = 6;
 
   const filters = [
     { id: "all", label: "View All" },
@@ -25,17 +38,16 @@ export default function PropertyGallery() {
       image: img1,
       title: "Modern Living Room"
     },
-   
     {
       id: 6,
       category: "maxpine",
-      image:img2,
+      image: img2,
       title: "Modern Architecture"
     },
     {
       id: 7,
       category: "maxpine",
-      image:img3,
+      image: img3,
       title: "Contemporary Facade"
     },
     {
@@ -53,7 +65,7 @@ export default function PropertyGallery() {
     {
       id: 10,
       category: "maxpine",
-      image:img1,
+      image: img1,
       title: "Garden View"
     },
     {
@@ -62,12 +74,84 @@ export default function PropertyGallery() {
       image: img2,
       title: "Fitness Center"
     },
-    
+    {
+      id: 12,
+      category: "anugrahHome",
+      image: anu1,
+      title: "Garden View"
+    },
+    {
+      id: 13,
+      category: "anugrahHome",
+      image: anu2,
+      title: "Garden View"
+    },
+    {
+      id: 14,
+      category: "anugrahHome",
+      image: anu3,
+      title: "Garden View"
+    },
+    {
+      id: 15,
+      category: "anugrahHome",
+      image: anu4,
+      title: "Garden View"
+    },
+    {
+      id: 16,
+      category: "anugrahHome",
+      image: anu5,
+      title: "Garden View"
+    },
+    {
+      id: 17,
+      category: "anugrahHome",
+      image: anu6,
+      title: "Garden View"
+    },
+    {
+      id: 18,
+      category: "anugrahHome",
+      image: anu7,
+      title: "Garden View"
+    },
+    {
+      id: 19,
+      category: "anugrahHome",
+      image: anu9,
+      title: "Garden View"
+    },
+    {
+      id: 20,
+      category: "anugrahHome",
+      image: anu10,
+      title: "Garden View"
+    },
+    {
+      id: 21,
+      category: "anugrahHome",
+      image: anu11,
+      title: "Garden View"
+    },
   ];
 
+  // Filter items based on active category
   const filteredItems = activeFilter === "all" 
     ? galleryItems 
     : galleryItems.filter(item => item.category === activeFilter);
+
+  // Determine how many items to display
+  const itemsToShow = showAll ? filteredItems : filteredItems.slice(0, INITIAL_ITEMS);
+
+  // Check if there are more items to show
+  const hasMoreItems = filteredItems.length > INITIAL_ITEMS;
+
+  // Handle filter change
+  const handleFilterChange = (filterId) => {
+    setActiveFilter(filterId);
+    setShowAll(false); // Reset to show limited items when changing filter
+  };
 
   return (
     <section className="md:px-28 py-16 lg:py-24 bg-gray-50">
@@ -83,10 +167,10 @@ export default function PropertyGallery() {
             {filters.map((filter) => (
               <button
                 key={filter.id}
-                onClick={() => setActiveFilter(filter.id)}
+                onClick={() => handleFilterChange(filter.id)}
                 className={`px-6 py-3 rounded-full font-medium transition-all duration-300 ${
                   activeFilter === filter.id
-                    ? "bg-[#29aa8a] text-white shadow-lg transform scale-105"
+                    ? "bg-[#7575a3] text-white shadow-lg transform scale-105"
                     : "bg-white text-gray-600 hover:bg-gray-100 shadow-md"
                 }`}
               >
@@ -97,12 +181,11 @@ export default function PropertyGallery() {
         </div>
 
         {/* Gallery Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-4 lg:gap-6 ">
-          {filteredItems.map((item, index) => (
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-4 lg:gap-6">
+          {itemsToShow.map((item, index) => (
             <div
               key={item.id}
               className={`group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all duration-500 transform hover:scale-105 ${
-                // Create different heights for masonry effect
                 index % 8 === 0 || index % 8 === 3 ? "row-span-2" :
                 index % 8 === 1 || index % 8 === 6 ? "row-span-1" : "row-span-1"
               }`}
@@ -125,25 +208,30 @@ export default function PropertyGallery() {
                     <h3 className="text-white font-semibold text-lg mb-2">
                       {item.title}
                     </h3>
-                    <span className="text-[#29aa8a] text-sm font-medium uppercase tracking-wider">
+                    <span className="text-[#7575a3] text-sm font-medium uppercase tracking-wider">
                       {item.category}
                     </span>
                   </div>
                 </div>
 
                 {/* Hover Effect Border */}
-                <div className="absolute inset-0 border-4 border-[#29aa8a] opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl"></div>
+                <div className="absolute inset-0 border-4 border-[#7575a3] opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl"></div>
               </div>
             </div>
           ))}
         </div>
 
-        {/* Load More Button */}
-        {/* <div className="text-center mt-12">
-          <button className="bg-[#29aa8a] hover:bg-[#b8834a] text-white font-semibold px-8 py-4 rounded-full transition-all duration-300 hover:shadow-lg hover:scale-105">
-            Load More Images
-          </button>
-        </div> */}
+        {/* Load More / Show Less Button */}
+        {hasMoreItems && (
+          <div className="text-center mt-12">
+            <button 
+              onClick={() => setShowAll(!showAll)}
+              className="bg-[#7575a3] hover:bg-[#7575a3] text-white font-semibold px-8 py-4 rounded-full transition-all duration-300 hover:shadow-lg hover:scale-105"
+            >
+              {showAll ? "Show Less" : `Load More Images (${filteredItems.length - INITIAL_ITEMS} more)`}
+            </button>
+          </div>
+        )}
       </div>
 
       <style jsx>{`

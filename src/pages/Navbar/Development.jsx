@@ -2,6 +2,33 @@
 import { useState } from "react";
 import { Home, ChevronDown, Calendar, Camera, ArrowRight } from "lucide-react";
 
+import img1 from "../../assets/Brij.V.Development/1.jpg"
+import img2 from "../../assets/Brij.V.Development/2.jpg"
+import img3 from "../../assets/Brij.V.Development/3.jpg"
+import img4 from "../../assets/Brij.V.Development/4.jpg"
+import img5 from "../../assets/Brij.V.Development/5.jpg"
+import img6 from "../../assets/Brij.V.Development/7.jpg"
+import img7 from "../../assets/Brij.V.Development/7.jpg"
+import img8 from "../../assets/Brij.V.Development/8.jpg"
+import img9 from "../../assets/Brij.V.Development/9.jpg"
+import img10 from "../../assets/Brij.V.Development/10.jpg"
+import img11 from "../../assets/Brij.V.Development/11.jpg"
+import img12 from "../../assets/Brij.V.Development/12.jpg"
+import img13 from "../../assets/Brij.V.Development/13.jpg"
+import img14 from "../../assets/Brij.V.Development/14.jpg"
+import img15 from "../../assets/Brij.V.Development/15.jpg"
+import img16 from "../../assets/Brij.V.Development/16.jpg"
+import img17 from "../../assets/Brij.V.Development/17.jpg"
+import img18 from "../../assets/Brij.V.Development/18.jpg"
+import img19 from "../../assets/Brij.V.Development/19.jpg"
+import img20 from "../../assets/Brij.V.Development/20.jpg"
+import img21 from "../../assets/Brij.V.Development/21.jpg"
+import img22 from "../../assets/Brij.V.Development/22.jpg"
+import img23 from "../../assets/Brij.V.Development/23.jpg"
+import img24 from "../../assets/Brij.V.Development/24.jpg"
+import img25 from "../../assets/Brij.V.Development/26.jpg"
+import img26 from "../../assets/Brij.V.Development/28.jpg"
+
 export default function Development() {
   const [openSection, setOpenSection] = useState(null);
 
@@ -10,54 +37,35 @@ export default function Development() {
       id: 1,
       title: "Project Development Images - (June 2025)",
       date: "June 2025",
-      images: [
-        "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=600&h=400&fit=crop",
-        "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=600&h=400&fit=crop",
-        "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=600&h=400&fit=crop",
-        "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=600&h=400&fit=crop"
-      ],
+      images: [img2,img3,img4,img5,img6,img7,img8,img9,img10,img11,img12],
       description: "Latest construction progress showcasing structural completion and finishing work."
     },
     {
       id: 2,
       title: "Project Development Images - (Apr-2025)",
       date: "April 2025",
-      images: [
-        "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=600&h=400&fit=crop",
-        "https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=600&h=400&fit=crop",
-        "https://images.unsplash.com/photo-1494145904049-0dca59b4bbad?w=600&h=400&fit=crop"
-      ],
+      images: [img1,img13,img14,img15],
       description: "Mid-phase development showing interior work and facade completion."
     },
     {
       id: 3,
       title: "Project Development Images - (Mar-2025)",
       date: "March 2025",
-      images: [
-        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&h=400&fit=crop",
-        "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=600&h=400&fit=crop"
-      ],
+      images: [img16,img17,img18,img19 ],
       description: "Foundation and structural framework completion milestones."
     },
     {
       id: 4,
       title: "Project Development Images - (Jan-2025)",
       date: "January 2025",
-      images: [
-        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&h=400&fit=crop",
-        "https://images.unsplash.com/photo-1600573472550-8090b5e0745e?w=600&h=400&fit=crop",
-        "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=600&h=400&fit=crop"
-      ],
+      images: [img20,img21,img22,img23 ],
       description: "Early construction phase with foundation laying and ground work."
     },
     {
       id: 5,
       title: "Project Development Images - (Dec-2024)",
       date: "December 2024",
-      images: [
-        "https://images.unsplash.com/photo-1503174971373-b1f69850bded?w=600&h=400&fit=crop",
-        "https://images.unsplash.com/photo-1504615755583-2916b52192a3?w=600&h=400&fit=crop"
-      ],
+      images: [img24,img25,img26,img22],
       description: "Project initiation and site preparation activities."
     }
   ];
@@ -81,7 +89,7 @@ export default function Development() {
         <div className="container mx-auto px-4 lg:px-24 py-4">
           <div className="flex items-center text-sm text-gray-600">
             <Home className="w-4 h-4 mr-2" />
-            <a href="/" className="hover:text-[#29aa8a] transition-colors">Home</a>
+            <a href="/" className="hover:text-[#7575a3] transition-colors">Home</a>
             <span className="mx-2">/</span>
             <span className="text-gray-900 font-medium">Development Updates</span>
           </div>
@@ -89,7 +97,7 @@ export default function Development() {
       </div>
 
       {/* Header */}
-      <div className="bg-gradient-to-r from-[#29aa8a] to-[#238b73] text-white py-16">
+      <div className="bg-gradient-to-r from-[#7575a3] to-[#646498] text-white py-16">
         <div className="container mx-auto px-4 lg:px-24">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Development Updates</h1>
           <p className="text-lg text-white/90 max-w-2xl">
@@ -115,8 +123,8 @@ export default function Development() {
                     className="w-full flex items-center justify-between p-6 text-left hover:bg-gray-50 transition-colors"
                   >
                     <div className="flex items-center gap-4">
-                      <div className="bg-[#29aa8a]/10 p-3 rounded-lg">
-                        <Camera className="w-6 h-6 text-[#29aa8a]" />
+                      <div className="bg-[#7575a3]/10 p-3 rounded-lg">
+                        <Camera className="w-6 h-6 text-[#7575a3]" />
                       </div>
                       <div>
                         <h3 className="text-lg font-semibold text-gray-900">{update.title}</h3>
@@ -127,7 +135,7 @@ export default function Development() {
                       </div>
                     </div>
                     <ChevronDown
-                      className={`w-6 h-6 text-[#29aa8a] transition-transform duration-300 ${
+                      className={`w-6 h-6 text-[#7575a3] transition-transform duration-300 ${
                         openSection === update.id ? "rotate-180" : ""
                       }`}
                     />
@@ -174,7 +182,7 @@ export default function Development() {
           {/* Sidebar */}
           <div className="lg:col-span-1">
             <div className="bg-white rounded-lg shadow-md p-6 sticky top-6">
-              <h2 className="text-2xl font-bold text-gray-900 mb-6 pb-4 border-b-2 border-[#29aa8a]">
+              <h2 className="text-2xl font-bold text-gray-900 mb-6 pb-4 border-b-2 border-[#7575a3]">
                 Recent Posts
               </h2>
               <div className="space-y-4">
@@ -184,8 +192,8 @@ export default function Development() {
                     href={post.link}
                     className="group flex items-start gap-3 p-3 rounded-lg hover:bg-gray-50 transition-colors"
                   >
-                    <ArrowRight className="w-5 h-5 text-[#29aa8a] flex-shrink-0 mt-0.5 group-hover:translate-x-1 transition-transform" />
-                    <p className="text-sm text-gray-700 group-hover:text-[#29aa8a] transition-colors leading-relaxed">
+                    <ArrowRight className="w-5 h-5 text-[#7575a3] flex-shrink-0 mt-0.5 group-hover:translate-x-1 transition-transform" />
+                    <p className="text-sm text-gray-700 group-hover:text-[#7575a3] transition-colors leading-relaxed">
                       {post.title}
                     </p>
                   </a>

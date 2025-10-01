@@ -58,7 +58,7 @@ export default function KeyPlanCF() {
         <div className="container mx-auto px-4 lg:px-24 py-4">
           <div className="flex items-center text-sm text-gray-600">
             <Home className="w-4 h-4 mr-2" />
-            <a href="/" className="hover:text-[#29aa8a] transition-colors">Home</a>
+            <a href="/" className="hover:text-[#7575a3] transition-colors">Home</a>
             <span className="mx-2">/</span>
             <span className="text-gray-900 font-medium">Key Plan</span>
           </div>
@@ -66,7 +66,7 @@ export default function KeyPlanCF() {
       </div>
 
       {/* Header */}
-      <div className="bg-gradient-to-r from-[#29aa8a] to-[#238b73] text-white py-16">
+      <div className="bg-gradient-to-r from-[#7575a3] to-[#545487] text-white py-16">
         <div className="container mx-auto px-4 lg:px-24">
           <div className="flex items-center gap-3 mb-4">
             <Navigation className="w-10 h-10" />
@@ -87,7 +87,7 @@ export default function KeyPlanCF() {
               {/* Controls Bar */}
               <div className="bg-gradient-to-r from-gray-800 to-gray-900 px-6 py-4 flex items-center justify-between">
                 <div className="flex items-center gap-2 text-white">
-                  <MapPin className="w-5 h-5 text-[#29aa8a]" />
+                  <MapPin className="w-5 h-5 text-[#7575a3]" />
                   <span className="font-semibold">Location Map</span>
                 </div>
                 <div className="flex items-center gap-2">
@@ -155,7 +155,7 @@ export default function KeyPlanCF() {
               {/* Key Landmarks */}
               <div className="border-t bg-gray-50 p-6">
                 <h3 className="font-semibold text-gray-900 mb-4 flex items-center gap-2">
-                  <MapPin className="w-5 h-5 text-[#29aa8a]" />
+                  <MapPin className="w-5 h-5 text-[#7575a3]" />
                   Nearby Landmarks
                 </h3>
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
@@ -180,7 +180,7 @@ export default function KeyPlanCF() {
               download
               className="px-6 py-3  text-white font-medium rounded-lg shadow  transition"
             >
-                <button className="w-full md:w-auto flex items-center justify-center gap-3 bg-[#29aa8a] hover:bg-[#238b73] text-white font-semibold px-8 py-4 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+                <button className="w-full md:w-auto flex items-center justify-center gap-3 bg-[#7575a3] hover:bg-[#52528f] text-white font-semibold px-8 py-4 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
                   <Download className="w-5 h-5" />
                   Download Key Plan
                 </button>
@@ -219,7 +219,7 @@ export default function KeyPlanCF() {
           {/* Sidebar */}
           <div className="lg:col-span-1">
             <div className="bg-white rounded-lg shadow-md p-6 sticky top-6">
-              <h2 className="text-2xl font-bold text-gray-900 mb-6 pb-4 border-b-2 border-[#29aa8a]">
+              <h2 className="text-2xl font-bold text-gray-900 mb-6 pb-4 border-b-2 border-[#7575a3]">
                 Recent Posts
               </h2>
               <div className="space-y-4">
@@ -229,8 +229,8 @@ export default function KeyPlanCF() {
                     href={post.link}
                     className="group flex items-start gap-3 p-3 rounded-lg hover:bg-gray-50 transition-colors"
                   >
-                    <ArrowRight className="w-5 h-5 text-[#29aa8a] flex-shrink-0 mt-0.5 group-hover:translate-x-1 transition-transform" />
-                    <p className="text-sm text-gray-700 group-hover:text-[#29aa8a] transition-colors leading-relaxed">
+                    <ArrowRight className="w-5 h-5 text-[#7575a3] flex-shrink-0 mt-0.5 group-hover:translate-x-1 transition-transform" />
+                    <p className="text-sm text-gray-700 group-hover:text-[#7575a3] transition-colors leading-relaxed">
                       {post.title}
                     </p>
                   </a>
