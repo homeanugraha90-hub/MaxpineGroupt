@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Shield, Lock, Eye, FileText, Users, Globe, Database, AlertCircle, CheckCircle2, ChevronDown, ChevronUp } from 'lucide-react';
+import {Link} from "react-router-dom"
 
 export default function PrivacyPolicy() {
   const [expandedSection, setExpandedSection] = useState(null);
@@ -119,13 +120,7 @@ export default function PrivacyPolicy() {
     }
   ];
 
-  const quickLinks = [
-    "Information We Collect",
-    "How We Use Your Data",
-    "Data Security",
-    "Your Rights",
-    "Contact Us"
-  ];
+  
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
@@ -195,9 +190,11 @@ export default function PrivacyPolicy() {
                     <div>
                       <h4 className="font-semibold text-gray-900 text-sm mb-1">Need Help?</h4>
                       <p className="text-xs text-gray-600 mb-3">Contact our privacy team for any questions</p>
+                      <Link to="/contact">
                       <button className="text-xs bg-[#3c92a9] text-white px-3 py-1.5 rounded-lg hover:bg-[#217d96] transition-colors">
                         Contact Us
                       </button>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -272,67 +269,14 @@ export default function PrivacyPolicy() {
             </div>
 
             {/* Important Notice */}
-            <div className="bg-gradient-to-r from-amber-50 to-orange-50 rounded-2xl p-8 mt-8 border border-amber-200">
-              <div className="flex items-start gap-4">
-                <AlertCircle className="w-6 h-6 text-amber-600 flex-shrink-0 mt-1" />
-                <div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">Important Notice</h3>
-                  <p className="text-gray-700 leading-relaxed mb-4">
-                    By using our website, you acknowledge that you have read and understood this Privacy Policy and agree to be bound by its terms. 
-                    If you do not agree with any part of this policy, please do not use our website.
-                  </p>
-                  <p className="text-sm text-gray-600">
-                    This policy is subject to change without prior notice. We recommend reviewing this page periodically for any updates.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* Contact Section */}
-            <div className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl p-8 mt-8 text-white">
-              <h3 className="text-2xl font-bold mb-4">Have Questions About Your Privacy?</h3>
-              <p className="text-gray-300 mb-6">
-                If you have any questions, concerns, or requests regarding this Privacy Policy or how we handle your personal information, 
-                please don't hesitate to reach out to our privacy team.
-              </p>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <button className="bg-white text-gray-900 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-all">
-                  Contact Privacy Team
-                </button>
-                <button className="bg-transparent border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-gray-900 transition-all">
-                  Download PDF
-                </button>
-              </div>
-            </div>
+          
+           
           </div>
         </div>
       </div>
 
       {/* Footer CTA */}
-      <div className="bg-gradient-to-r from-[#3c92a9] via-[#257990] to-[#1f748b] py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold text-white mb-4">
-            Your Trust Matters to Us
-          </h2>
-          <p className="text-blue-50 text-lg mb-8 max-w-2xl mx-auto">
-            We are committed to maintaining the highest standards of privacy and data protection
-          </p>
-          <div className="flex flex-wrap justify-center gap-6 text-white">
-            <div className="flex items-center gap-2">
-              <CheckCircle2 className="w-5 h-5" />
-              <span>Secure Data Handling</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <CheckCircle2 className="w-5 h-5" />
-              <span>Transparent Practices</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <CheckCircle2 className="w-5 h-5" />
-              <span>User Control</span>
-            </div>
-          </div>
-        </div>
-      </div>
+    
     </div>
   );
 }

@@ -63,7 +63,7 @@ export default function Faqs() {
               {/* Professional badge */}
               <div className="absolute bottom-6 left-6 bg-white/95 backdrop-blur-sm rounded-lg p-4 shadow-lg">
                 <div className="flex items-center gap-3">
-                  <div className="w-12 h-12 bg-[#3c92a9] rounded-full flex items-center justify-center">
+                  <div className="w-12 h-12 bg-[#20ae9b] rounded-full flex items-center justify-center">
                     <span className="text-white font-bold text-lg">△</span>
                   </div>
                   <div>
@@ -75,7 +75,7 @@ export default function Faqs() {
             </div>
             
             {/* Floating elements */}
-            <div className="absolute -top-4 -right-4 w-20 h-20 bg-[#3c92a9] rounded-full opacity-20 animate-pulse"></div>
+            <div className="absolute -top-4 -right-4 w-20 h-20 bg-[#20ae9b] rounded-full opacity-20 animate-pulse"></div>
             <div className="absolute -bottom-6 -left-6 w-16 h-16 bg-blue-500 rounded-full opacity-15 animate-bounce"></div>
           </div>
 
@@ -83,8 +83,8 @@ export default function Faqs() {
           <div className="space-y-8">
             {/* Header */}
             <div className="space-y-4">
-              <div className="flex items-center gap-2 text-[#3c92a9] font-semibold text-sm uppercase tracking-wider">
-                <div className="w-8 h-0.5 bg-[#3c92a9]"></div>
+              <div className="flex items-center gap-2 text-[#20ae9b] font-semibold text-sm uppercase tracking-wider">
+                <div className="w-8 h-0.5 bg-[#20ae9b]"></div>
                 <span>FREQUENTLY ASKED QUESTIONS</span>
               </div>
               
@@ -105,7 +105,7 @@ export default function Faqs() {
                     className="w-full flex items-center justify-between p-6 text-left hover:bg-gray-50 transition-colors duration-200"
                   >
                     <div className="flex items-center gap-4">
-                      <span className="text-[#3c92a9] font-bold text-lg min-w-[2rem]">
+                      <span className="text-[#20ae9b] font-bold text-lg min-w-[2rem]">
                         {index + 1}.
                       </span>
                       <h3 className="font-semibold text-gray-800 text-lg">
@@ -114,7 +114,7 @@ export default function Faqs() {
                     </div>
                     
                     <div className={`flex-shrink-0 w-8 h-8 rounded-full border-2 border-gray-300 flex items-center justify-center transition-all duration-300 ${
-                      openFAQ === faq.id ? 'border-[#3c92a9] bg-[#3c92a9] text-white rotate-45' : 'hover:border-[#3c92a9]'
+                      openFAQ === faq.id ? 'border-[#20ae9b] bg-[#20ae9b] text-white rotate-45' : 'hover:border-[#247c71]'
                     }`}>
                       {openFAQ === faq.id ? (
                         <Minus className="w-4 h-4" />
@@ -140,14 +140,15 @@ export default function Faqs() {
             </div>
 
             {/* Contact CTA */}
-            <div className="bg-gradient-to-r from-[#3c92a9] to-[#29839c] rounded-xl p-6 text-white">
+            <div className="bg-gradient-to-r from-[#20ae9b] 
+            to-[#0e786a] rounded-xl p-6 text-white">
               <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
                 <div>
                   <h4 className="font-semibold text-lg mb-1">Still have questions?</h4>
                   <p className="text-white/90 text-sm">Get in touch with our expert team</p>
                 </div>
                 <Link to="/contact">
-                <button className="bg-white text-[#3c92a9] font-semibold px-6 py-3 rounded-lg hover:bg-gray-100 transition-colors duration-200 whitespace-nowrap">
+                <button className="bg-white text-[#20ae9b] font-semibold px-6 py-3 rounded-lg hover:bg-gray-100 transition-colors duration-200 whitespace-nowrap">
                   Contact Us
                 </button>
                 </Link>

@@ -1,6 +1,10 @@
 import React from 'react';
 import { MapPin, Truck, Package, Building, TrendingUp, ArrowRight, CheckCircle2, Warehouse, Train, Plane } from 'lucide-react';
 
+import { Link } from 'react-router-dom';
+
+import img1 from "../../assets/All home imgs/logisticpark.png"
+
 export default function LogisticsPark() {
   const features = [
     {
@@ -88,23 +92,16 @@ export default function LogisticsPark() {
                   Strategic Location
                 </h2>
               </div>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-1 gap-6">
                 <div className="bg-gray-50 rounded-xl p-4 overflow-hidden">
                   <img 
-                    src="/api/placeholder/400/400" 
+                    src={img1} 
                     alt="Connectivity Map"
                     className="w-full h-auto rounded-lg hover:scale-105 transition-transform duration-300"
                   />
                   <p className="text-center text-sm text-gray-600 mt-3 font-medium">Regional Connectivity</p>
                 </div>
-                <div className="bg-gray-50 rounded-xl p-4 overflow-hidden">
-                  <img 
-                    src="/api/placeholder/400/400" 
-                    alt="Site Layout"
-                    className="w-full h-auto rounded-lg hover:scale-105 transition-transform duration-300"
-                  />
-                  <p className="text-center text-sm text-gray-600 mt-3 font-medium">Master Plan Layout</p>
-                </div>
+                
               </div>
             </div>
 
@@ -164,18 +161,7 @@ export default function LogisticsPark() {
             </div>
 
             {/* Investment Opportunity */}
-            <div className="bg-gradient-to-r from-[#3c92a9] to-[#277388] rounded-2xl p-8 text-white shadow-xl mt-8">
-              <div className="flex items-center gap-3 mb-4">
-                <Plane className="w-7 h-7" />
-                <h3 className="text-xl sm:text-2xl font-bold">Investment Opportunity</h3>
-              </div>
-              <p className="text-blue-50 text-lg leading-relaxed mb-6">
-                MMLP offers a unique opportunity for businesses to establish their operations in a strategically located, well-connected logistics hub with world-class infrastructure and facilities.
-              </p>
-              <button className="bg-white text-[#3c92a9] px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-all shadow-lg hover:shadow-xl">
-                Learn More
-              </button>
-            </div>
+            
           </div>
 
           {/* Sidebar */}
@@ -208,9 +194,11 @@ export default function LogisticsPark() {
               <p className="text-gray-300 text-sm mb-6">
                 Get in touch with our team to learn more about investment opportunities at the Logistics Park.
               </p>
+              <Link to="/contact">
               <button className="w-full bg-[#3c92a9] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#197a95] transition-all">
                 Contact Us
               </button>
+              </Link>
             </div>
             </div>
           </div>
@@ -218,24 +206,7 @@ export default function LogisticsPark() {
       </div>
 
       {/* CTA Section */}
-      <div className="bg-gradient-to-r from-[#3c92a9] via-[#3399b6] to-[#27758a] py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-            Ready to Explore Opportunities?
-          </h2>
-          <p className="text-blue-50 text-lg mb-8 max-w-2xl mx-auto">
-            Join the growing network of businesses at YEIDA's premier Multimodal Logistics Park
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-white text-[#3c92a9] px-8 py-3 rounded-full font-semibold hover:bg-blue-50 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
-              Download Brochure
-            </button>
-            <button className="bg-transparent border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-[#3c92a9] transition-all">
-              Schedule a Visit
-            </button>
-          </div>
-        </div>
-      </div>
+      
     </div>
   );
 }

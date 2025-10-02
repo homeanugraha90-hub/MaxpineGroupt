@@ -38,7 +38,7 @@ export default function ContactPage() {
           <div className="flex items-center gap-3 text-lg">
             <a href="/" className="hover:text-blue-400 transition-colors">Home</a>
             <span>›</span>
-            <span className="text-[#3c92a9]">Contact</span>
+            <span className="text-[#20ae9b]">Contact</span>
           </div>
         </div>
       </div>
@@ -49,25 +49,25 @@ export default function ContactPage() {
           <div className="md:col-span-1 space-y-6">
             <div className="bg-white flex items-center flex-col rounded-xl shadow-md p-6 hover:shadow-lg transition-shadow">
               <div className="w-12 h-12 bg-[#afcdd5] rounded-lg flex items-center justify-center mb-4">
-                <MapPin className="w-6 h-6 text-[#3c92a9]" />
+                <MapPin className="w-6 h-6 text-[#20ae9b]" />
               </div>
               <h3 className="text-lg font-semibold text-slate-900 mb-2">Visit Us</h3>
               <p className="text-slate-600 md:px-10 text-center">H-174, Ground Floor, Sector-63, Noida, Uttar Pradesh 201301. Anugrah Homes, Jattari,
                 Aligarh Palwal Road,
-                Uttar Pradesh 202137</p>
+                Uttar Pradesh 202137.</p>
             </div>
 
             <div className="bg-white flex items-center flex-col rounded-xl shadow-md p-6 hover:shadow-lg transition-shadow">
               <div className="w-12 h-12 bg-[#add2dc] rounded-lg flex items-center justify-center mb-4">
-                <Phone className="w-6 h-6 text-[#3c92a9]" />
+                <Phone className="w-6 h-6 text-[#20ae9b]" />
               </div>
               <h3 className="text-lg font-semibold text-slate-900 mb-2">Call Us</h3>
-              <p className="text-slate-600 text-center ">+91-911-525-3545, +91-120-410-7573, <br /> +91 767-827-9151 ,Every Day : 24x7</p>
+              <p className="text-slate-600 text-center ">+91-911-525-3545, +91-120-410-7573, <br /> +91 767-827-9151, Every Day : 24x7</p>
             </div>
 
             <div className="bg-white flex items-center justify-center flex-col rounded-xl shadow-md p-6 hover:shadow-lg transition-shadow">
               <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
-                <Mail className="w-6 h-6 text-[#3c92a9]" />
+                <Mail className="w-6 h-6 text-[#20ae9b]" />
               </div>
               <h3 className="text-lg font-semibold text-slate-900 mb-2">Email Us</h3>
               <p className="text-slate-600">info@anugrahhomes.com<br />info@maxpinegroup.in</p>
@@ -75,10 +75,10 @@ export default function ContactPage() {
 
             <div className="bg-white flex items-center justify-center flex-col rounded-xl shadow-md p-6 hover:shadow-lg transition-shadow">
               <div className="w-12 h-12 bg-[#acd0db] rounded-lg flex items-center justify-center mb-4">
-                <Clock className="w-6 h-6 text-[#3c92a9]" />
+                <Clock className="w-6 h-6 text-[#20ae9b]" />
               </div>
               <h3 className="text-lg font-semibold text-slate-900 mb-2">Office Hours</h3>
-              <p className="text-slate-600">Monday - Friday: 9AM - 6PM<br />Saturday : 10AM - 4PM<br />Sunday : Closed</p>
+              <p className="text-slate-600">Every Day : 24x7</p>
             </div>
           </div>
 
@@ -104,7 +104,7 @@ export default function ContactPage() {
                       name="name"
                       value={formData.name}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-[#3c92a9] focus:border-transparent outline-none transition"
+                      className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-[#20ae9b] focus:border-transparent outline-none transition"
                       placeholder="Name"
                     />
                   </div>
@@ -118,7 +118,7 @@ export default function ContactPage() {
                       name="email"
                       value={formData.email}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-[#3c92a9] focus:border-transparent outline-none transition"
+                      className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-[#20ae9b] focus:border-transparent outline-none transition"
                       placeholder="abc@gmail.com"
                     />
                   </div>
@@ -134,7 +134,7 @@ export default function ContactPage() {
                       name="phone"
                       value={formData.phone}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-[#3c92a9] focus:border-transparent outline-none transition"
+                      className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-[#20ae9b] focus:border-transparent outline-none transition"
                       placeholder="+91 000-000-0000"
                     />
                   </div>
@@ -147,7 +147,7 @@ export default function ContactPage() {
                       name="propertyType"
                       value={formData.propertyType}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-[#3c92a9] focus:border-transparent outline-none transition"
+                      className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-[#20ae9b] focus:border-transparent outline-none transition"
                     >
                       <option value="buy">100 Sq. Yards Plot</option>
                       <option value="sell">200 Sq. Yards Plot</option>
@@ -164,7 +164,7 @@ export default function ContactPage() {
                         value={formData.customProperty || ""}
                         onChange={handleChange}
                         placeholder="Enter your custom requirement"
-                        className="mt-3 w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-[#3c92a9] focus:border-transparent outline-none transition"
+                        className="mt-3 w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-[#20ae9b] focus:border-transparent outline-none transition"
                       />
                     )}
                   </div>
@@ -180,14 +180,14 @@ export default function ContactPage() {
                     value={formData.message}
                     onChange={handleChange}
                     rows="6"
-                    className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-[#3c92a9] focus:border-transparent outline-none transition resize-none"
+                    className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-[#20ae9b] focus:border-transparent outline-none transition resize-none"
                     placeholder="Tell us about your requirements..."
                   ></textarea>
                 </div>
 
                 <button
                   onClick={handleSubmit}
-                  className="w-full bg-[#3c92a9] hover:bg-[#1a7088] text-white font-semibold py-4 px-6 rounded-lg transition-colors flex items-center justify-center gap-2 shadow-lg hover:shadow-xl"
+                  className="w-full bg-[#20ae9b] hover:bg-[#2b877a] text-white font-semibold py-4 px-6 rounded-lg transition-colors flex items-center justify-center gap-2 shadow-lg hover:shadow-xl"
                 >
                   <Send className="w-5 h-5" />
                   Send Message

@@ -13,88 +13,32 @@ import img10 from "../assets/All home imgs/update-32.jpeg"
 import imgvide from "../assets/All home imgs/video-placeholder.jpg"
 
 export default function News() {
-  // const [currentPage, setCurrentPage] = useState(1);
   const [email, setEmail] = useState('');
+  const [currentPage, setCurrentPage] = useState(1);
+  const postsPerPage = 6; // how many blogs per page
 
   const blogPosts = [
-    {
-      id: 1,
-      title: "Tip's about Real Estate Recent Conditions from Agent.",
-      author: "Hamilton Siza",
-      date: "07 December, 21",
-      excerpt: "Properties are most budget friendly so you have are opportunity to find are the best the best...",
-      image: img1
-    },
-    {
-      id: 2,
-      title: "Importance of Build quality of modern Real Estate.",
-      author: "Garry Sobana",
-      date: "15 December, 21",
-      excerpt: "Properties are most budget friendly so you have are opportunity to find are the best the best...",
-      image: img2
-    },
-    {
-      id: 3,
-      title: "Most Popular Real Estate area you can choose from.",
-      author: "Shane Watson",
-      date: "10 December, 21",
-      excerpt: "Properties are most budget friendly so you have are opportunity to find are the best the best...",
-      image: img3
-    },
-    {
-      id: 4,
-      title: "The Home Buying Process: A Comprehensive Guide.",
-      author: "Hamilton Siza",
-      date: "07 December, 21",
-      excerpt: "Properties are most budget friendly so you have are opportunity to find are the best the best...",
-      image: img4
-    },
-    {
-      id: 5,
-      title: "The Best Types Of Real Estate Investment Properties.",
-      author: "Garry Sobana",
-      date: "15 December, 21",
-      excerpt: "Properties are most budget friendly so you have are opportunity to find are the best the best...",
-      image:img5
-    },
-    {
-      id: 6,
-      title: "How Much Does Land Survey Cost in 2022?.",
-      author: "Shane Watson",
-      date: "10 December, 21",
-      excerpt: "Properties are most budget friendly so you have are opportunity to find are the best the best...",
-      image: img6
-    },
-    {
-      id: 7,
-      title: "18 Best Real Estate Apps For Buyers, Sellers & Investors.",
-      author: "Hamilton Siza",
-      date: "07 December, 21",
-      excerpt: "Properties are most budget friendly so you have are opportunity to find are the best the best...",
-      image: img7
-    },
-    {
-      id: 8,
-      title: "Ultimate Guide to Buying a Vacation Rental Property.",
-      author: "Garry Sobana",
-      date: "15 December, 21",
-      excerpt: "Properties are most budget friendly so you have are opportunity to find are the best the best...",
-      image: img8
-    },
-    {
-      id: 9,
-      title: "Do You Qualify For Real Estate Line Of Credit?",
-      author: "Shane Watson",
-      date: "10 December, 21",
-      excerpt: "Properties are most budget friendly so you have are opportunity to find are the best the best...",
-      image: img9
-    }
+    { id: 1, title: "Tip's about Real Estate Recent Conditions from Agent.", author: "Hamilton Siza", date: "07 December, 21", excerpt: "Properties are most budget friendly so you have are opportunity to find are the best the best...", image: img1 },
+    { id: 2, title: "Importance of Build quality of modern Real Estate.", author: "Garry Sobana", date: "15 December, 21", excerpt: "Properties are most budget friendly so you have are opportunity to find are the best the best...", image: img2 },
+    { id: 3, title: "Most Popular Real Estate area you can choose from.", author: "Shane Watson", date: "10 December, 21", excerpt: "Properties are most budget friendly so you have are opportunity to find are the best the best...", image: img3 },
+    { id: 4, title: "The Home Buying Process: A Comprehensive Guide.", author: "Hamilton Siza", date: "07 December, 21", excerpt: "Properties are most budget friendly so you have are opportunity to find are the best the best...", image: img4 },
+    { id: 5, title: "The Best Types Of Real Estate Investment Properties.", author: "Garry Sobana", date: "15 December, 21", excerpt: "Properties are most budget friendly so you have are opportunity to find are the best the best...", image: img5 },
+    { id: 6, title: "How Much Does Land Survey Cost in 2022?.", author: "Shane Watson", date: "10 December, 21", excerpt: "Properties are most budget friendly so you have are opportunity to find are the best the best...", image: img6 },
+    { id: 7, title: "18 Best Real Estate Apps For Buyers, Sellers & Investors.", author: "Hamilton Siza", date: "07 December, 21", excerpt: "Properties are most budget friendly so you have are opportunity to find are the best the best...", image: img7 },
+    { id: 8, title: "Ultimate Guide to Buying a Vacation Rental Property.", author: "Garry Sobana", date: "15 December, 21", excerpt: "Properties are most budget friendly so you have are opportunity to find are the best the best...", image: img8 },
+    { id: 9, title: "Do You Qualify For Real Estate Line Of Credit?", author: "Shane Watson", date: "10 December, 21", excerpt: "Properties are most budget friendly so you have are opportunity to find are the best the best...", image: img9 },
+    { id: 10, title: "Smart Investment: Why Location Still Matters Most.", author: "Hamilton Siza", date: "12 December, 21", excerpt: "Properties are most budget friendly so you have are opportunity to find are the best the best...", image: img10 },
   ];
 
-  const handleGetListed = () => {
-    if (email) {
-      alert('Thank you for subscribing!');
-      setEmail('');
+  // Pagination logic
+  const totalPages = Math.ceil(blogPosts.length / postsPerPage);
+  const indexOfLastPost = currentPage * postsPerPage;
+  const indexOfFirstPost = indexOfLastPost - postsPerPage;
+  const currentPosts = blogPosts.slice(indexOfFirstPost, indexOfLastPost);
+
+  const handlePageChange = (page) => {
+    if (page >= 1 && page <= totalPages) {
+      setCurrentPage(page);
     }
   };
 
@@ -117,9 +61,9 @@ export default function News() {
       </div>
 
       {/* Blog Posts Grid */}
-      <div className="max-w-7xl mx-auto px-4 py-16">
+      <div className="max-w-7xl  mx-auto px-4 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-          {blogPosts.map((post) => (
+          {currentPosts.map((post) => (
             <article key={post.id} className="group cursor-pointer">
               {/* Image */}
               <div className="relative overflow-hidden rounded-lg mb-6 h-64">
@@ -147,75 +91,46 @@ export default function News() {
               </p>
 
               {/* Read More Link */}
-              <button className="flex items-center gap-2 text-gray-900 font-medium group-hover:text-[#3c92a9] transition-colors">
+              {/* <button className="flex items-center gap-2 text-gray-900 font-medium group-hover:text-[#3c92a9] transition-colors">
                 <span className="w-8 h-8 rounded-full bg-gray-900 group-hover:bg-[#3c92a9] flex items-center justify-center transition-colors">
                   <ArrowRight className="w-4 h-4 text-white" />
                 </span>
-              </button>
+              </button> */}
             </article>
           ))}
         </div>
 
         {/* Pagination */}
         <div className="flex items-center justify-center gap-2">
-          <button className="w-10 h-10 rounded-full bg-gray-900 text-white flex items-center justify-center hover:bg-[#3c92a9] transition-colors">
+          <button 
+            onClick={() => handlePageChange(currentPage - 1)}
+            disabled={currentPage === 1}
+            className="w-10 h-10 rounded-full bg-gray-900 text-white flex items-center justify-center hover:bg-[#3c92a9] transition-colors disabled:opacity-50"
+          >
             <ChevronLeft className="w-5 h-5" />
           </button>
-          
-          {[1,'...', 3].map((page, idx) => (
+
+          {[...Array(totalPages)].map((_, idx) => (
             <button
               key={idx}
+              onClick={() => handlePageChange(idx + 1)}
               className={`w-10 h-10 rounded-full flex items-center justify-center font-medium transition-colors ${
-                page === 1 
-                  ? 'bg-gray-900 text-white' 
+                currentPage === idx + 1
+                  ? 'bg-gray-900 text-white'
                   : 'text-gray-600 hover:bg-gray-100'
               }`}
             >
-              {page}
+              {idx + 1}
             </button>
           ))}
 
-          <button className="w-10 h-10 rounded-full bg-gray-900 text-white flex items-center justify-center hover:bg-[#3c92a9] transition-colors">
+          <button 
+            onClick={() => handlePageChange(currentPage + 1)}
+            disabled={currentPage === totalPages}
+            className="w-10 h-10 rounded-full bg-gray-900 text-white flex items-center justify-center hover:bg-[#3c92a9] transition-colors disabled:opacity-50"
+          >
             <ChevronRight className="w-5 h-5" />
           </button>
-        </div>
-      </div>
-
-      {/* Newsletter Section */}
-      <div className="relative bg-gradient-to-br from-slate-800 to-slate-900 py-20 px-4">
-        {/* Background Image */}
-        <div 
-          className="absolute right-0 top-0 bottom-0 w-1/2 bg-cover bg-center hidden lg:block"
-          style={{
-            backgroundImage: "url('https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&h=600&fit=crop')"
-          }}
-        />
-        
-        <div className="max-w-7xl mx-auto relative z-10">
-          <div className="lg:w-1/2">
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-              Are you a Home Owner?
-            </h2>
-            <p className="text-gray-300 mb-8 text-lg">
-              Put your email address and get listed.
-            </p>
-            
-            <div className="flex gap-3 max-w-md">
-              <input
-                type="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder="Enter your email here..."
-                className="flex-1 px-5 py-4 rounded-lg bg-slate-700 text-white placeholder-gray-400 border-0 focus:outline-none focus:ring-2 focus:ring-[#505084]"
-              />
-              <button 
-                onClick={handleGetListed}
-                className="px-8 py-4 bg-[#3c92a9] text-white font-semibold rounded-lg hover:bg-[#3c92a9] transition-colors"
-              >
-                Get Listed
-              </button>
-            </div>
-          </div>
         </div>
       </div>
     </div>

@@ -100,9 +100,9 @@ export default function Banner() {
                   initial={{ opacity: 0, x: -50 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.8 }}
-                  className="border-4 border-[#3c92a9] p-8 md:p-10 max-w-2xl bg-black/20 backdrop-blur-sm"
+                  className="border-4 border-[#20ae9b] p-8 md:p-10 max-w-2xl bg-black/20 backdrop-blur-sm"
                 >
-                  <span className="text-[#3c92a9] font-semibold text-lg tracking-wide mb-2 inline-block">
+                  <span className="text-[#20ae9b] font-semibold text-lg tracking-wide mb-2 inline-block">
                     {slide.subtitle}
                   </span>
                   <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-4">
@@ -112,7 +112,7 @@ export default function Banner() {
 
                   <div className="flex items-center gap-4">
                     <Link to="/site-visit">
-                    <button className="bg-[#3c92a9] text-white font-semibold px-8 py-3 rounded-lg shadow-lg hover:bg-[#1e6d83]  transition-all duration-300 hover:shadow-xl">
+                    <button className="bg-[#20ae9b] text-white font-semibold px-8 py-3 rounded-lg shadow-lg hover:bg-[#21635a]  transition-all duration-300 hover:shadow-xl">
                       Schedule a Visit
                     </button>
                     </Link>
@@ -133,11 +133,11 @@ export default function Banner() {
                   transition={{ duration: 0.8, delay: 0.3 }}
                   className="text-left md:text-right"
                 >
-                  <div className="inline-block bg-black/40 backdrop-blur-sm border-2 border-[#3c92a9] p-8 rounded-lg">
+                  <div className="inline-block bg-black/40 backdrop-blur-sm border-2 border-[#20ae9b] p-8 rounded-lg">
                     <p className="text-xl text-gray-300 font-medium mb-2">
                       Starting Price
                     </p>
-                    <p className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#3c92a9] mb-3">
+                    <p className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#20ae9b] mb-3">
                       {slide.price}
                     </p>
                     <p className="text-gray-400 text-sm">

@@ -21,11 +21,11 @@ Uttar Pradesh 202137
         <p className="flex items-center text-sm text-gray-600">
           <Tag className="w-4 h-4 mr-1" /> Starting ₹52 Lakhs
         </p>
-        <p className="flex items-center text-sm font-medium text-green-600">
+        <p className="flex items-center text-sm font-medium text-[#20ae9b]">
           <CheckCircle className="w-4 h-4 mr-1" /> Under Construction
         </p>
         <a href="https://anugrahhomes.com" target="_blank">
-        <button className="mt-3 w-full bg-[#4cd1d1] text-white py-2 rounded-lg hover:bg-[#29acac] transition">
+        <button className="mt-3 w-full bg-[#20ae9b] text-white py-2 rounded-lg hover:bg-[#25796e] transition">
           View Details
         </button>
         </a>

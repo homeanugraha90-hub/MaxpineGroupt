@@ -55,7 +55,7 @@ const LayOut = () => {
             <a
               href="/downloads/BVL-New.png"
               download
-              className="px-6 py-3 bg-[#3c92a9] text-white font-medium rounded-lg shadow hover:bg-[#176c83] transition"
+              className="px-6 py-3 bg-[#20ae9b] text-white font-medium rounded-lg shadow hover:bg-[#266a61] transition"
             >
               Download Current Layout
             </a>
@@ -103,7 +103,7 @@ const LayOut = () => {
                 value={formData.name}
                 onChange={handleChange}
                 required
-                className="w-full border rounded-lg px-3 py-3 focus:ring-2 focus:ring-[#3c92a9] outline-none"
+                className="w-full border rounded-lg px-3 py-3 focus:ring-2 focus:ring-[#20ae9b] outline-none"
               />
               <input
                 type="tel"
@@ -112,13 +112,13 @@ const LayOut = () => {
                 value={formData.number}
                 onChange={handleChange}
                 required
-                className="w-full border rounded-lg px-3 py-3 focus:ring-2 focus:ring-[#3c92a9] outline-none"
+                className="w-full border rounded-lg px-3 py-3 focus:ring-2 focus:ring-[#20ae9b] outline-none"
               />
               <select
                 name="size"
                 value={formData.size}
                 onChange={handleChange}
-                className="w-full border rounded-lg px-3 py-3 focus:ring-2 focus:ring-[#3c92a9] outline-none"
+                className="w-full border rounded-lg px-3 py-3 focus:ring-2 focus:ring-[#20ae9b] outline-none"
               >
                 <option value="100">100 sq. ft.</option>
                 <option value="200">200 sq. ft.</option>
@@ -126,7 +126,7 @@ const LayOut = () => {
               </select>
               <button
                 type="submit"
-                className="w-full bg-[#3c92a9] text-white font-medium rounded-lg px-4 py-3 hover:bg-[#21809b] transition"
+                className="w-full bg-[#20ae9b] text-white font-medium rounded-lg px-4 py-3 hover:bg-[#24685f] transition"
               >
                 Submit
               </button>

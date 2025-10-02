@@ -48,7 +48,7 @@ export default function FloatingChatbot() {
       {/* Main Toggle Button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="bg-gradient-to-r from-[#3c92a9] to-[#20778f] text-white w-14 h-14 rounded-full shadow-2xl hover:scale-110 transition-all flex items-center justify-center"
+        className="bg-gradient-to-r from-[#20ae9b] to-[#0b685c] text-white w-14 h-14 rounded-full shadow-2xl hover:scale-110 transition-all flex items-center justify-center"
       >
         {isOpen ? <X className="w-7 h-7" /> : <MessageCircle className="w-7 h-7" />}
       </button>

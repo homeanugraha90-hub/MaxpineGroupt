@@ -25,9 +25,9 @@ export default function WhyChoose() {
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-16">
           <div className="mb-8 lg:mb-0">
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-0.5 bg-[#3c92a9]"></div>
-              <span className="text-[#3c92a9] font-medium text-sm lg:text-base">Why Choose Us</span>
-              <div className="w-8 h-0.5 bg-[#3c92a9]"></div>
+              <div className="w-8 h-0.5 bg-[#20ae9b]"></div>
+              <span className="text-[#20ae9b] font-medium text-sm lg:text-base">Why Choose Us</span>
+              <div className="w-8 h-0.5 bg-[#20ae9b]"></div>
             </div>
             <h2 className="text-2xl md:text-3xl lg:text-5xl font-bold text-white leading-tight">
               Why Maxpine Group?
@@ -44,7 +44,7 @@ export default function WhyChoose() {
           <div className="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
             <div className="mb-6 flex items-center flex-col  justify-center px-5">
               <div className="w-16 h-16  bg-red-50 rounded-full flex items-center  justify-center mb-4">
-                <Home className="w-8 h-8 text-[#3c92a9]" />
+                <Home className="w-8 h-8 text-[#20ae9b]" />
               </div>
               
               <h3 className="text-xl   md:text-2xl font-bold text-gray-800 mb-4   w-full">Find Your Perfect Dream <br/> Home Today</h3>
@@ -53,7 +53,7 @@ export default function WhyChoose() {
               </p>
             </div>
             <Link to="/news">
-            <button className="w-full bg-[#3c92a9] hover:bg-[#1d738a] text-[#f8f9f6]  font-semibold py-3 px-6 rounded-lg transition-colors duration-200">
+            <button className="w-full bg-[#20ae9b] hover:bg-[#257268] text-[#f8f9f6]  font-semibold py-3 px-6 rounded-lg transition-colors duration-200">
               Explore Homes
             </button>
             </Link>
@@ -63,7 +63,7 @@ export default function WhyChoose() {
           <div className="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
             <div className="mb-6 flex items-center flex-col  justify-center px-5">
               <div className="w-16 h-16 bg-red-50 rounded-full flex items-center justify-center mb-4">
-                <Handshake className="w-8 h-8 text-[#3c92a9]" />
+                <Handshake className="w-8 h-8 text-[#20ae9b]" />
               </div>
               <h3 className="text-2xl text-left   w-full font-bold text-gray-800 mb-4">Your Trusted Real Estate Partner</h3>
               <p className="text-gray-600 leading-relaxed">
@@ -71,7 +71,7 @@ export default function WhyChoose() {
               </p>
             </div>
              <Link to="/news">
-            <button className="w-full bg-[#3c92a9] hover:bg-[#1e7891] text-[#f8f9f6]  font-semibold py-3 px-6 rounded-lg transition-colors duration-200">
+            <button className="w-full bg-[#20ae9b] hover:bg-[#257167] text-[#f8f9f6]  font-semibold py-3 px-6 rounded-lg transition-colors duration-200">
               Explore Homes
             </button>
              </Link>
@@ -81,7 +81,7 @@ export default function WhyChoose() {
           <div className="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
             <div className="mb-6 flex items-center flex-col  justify-center px-5">
               <div className="w-16 h-16 bg-red-50 rounded-full flex items-center justify-center mb-4">
-                <Key className="w-8 h-8 text-[#3c92a9]" />
+                <Key className="w-8 h-8 text-[#20ae9b]" />
               </div>
               <h3 className="text-2xl text-left  w-full  font-bold text-gray-800 mb-4">Prime Locations, Premium Returns</h3>
               <p className="text-gray-600 leading-relaxed">
@@ -89,7 +89,7 @@ export default function WhyChoose() {
               </p>
             </div>
              <Link to="/news">
-            <button className="w-full bg-[#3c92a9] hover:bg-[#19748d] text-[#f8f9f6]  font-semibold py-3 px-6 rounded-lg transition-colors duration-200">
+            <button className="w-full bg-[#20ae9b] hover:bg-[#297067] text-[#f8f9f6]  font-semibold py-3 px-6 rounded-lg transition-colors duration-200">
               Explore Homes
             </button>
              </Link>

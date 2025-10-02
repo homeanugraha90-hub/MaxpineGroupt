@@ -143,20 +143,7 @@ export default function MedicalDevicePark() {
         </div>
       </div>
 
-      {/* CTA Section */}
-      <div className="bg-gradient-to-r from-teal-600 to-cyan-600 py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold text-white mb-4">
-            Interested in Learning More?
-          </h2>
-          <p className="text-teal-50 text-lg mb-8">
-            Contact us today to discover investment opportunities at Medical Device Park
-          </p>
-          <button className="bg-white text-teal-600 px-8 py-3 rounded-full font-semibold hover:bg-teal-50 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
-            Get in Touch
-          </button>
-        </div>
-      </div>
+    
     </div>
   );
 }

@@ -56,7 +56,7 @@ export default function AmritGrah() {
       <header className="bg-white shadow-sm py-4 px-6">
         <div className="max-w-7xl mx-auto flex items-center justify-between flex-wrap gap-4">
           <div className="flex items-center gap-3">
-            <div className="w-12 h-12 bg-[#3c92a9] rounded-lg flex items-center justify-center">
+            <div className="w-12 h-12 bg-[#20ae9b] rounded-lg flex items-center justify-center">
               <Home className="text-white" size={24} />
             </div>
             <div>
@@ -84,7 +84,7 @@ export default function AmritGrah() {
 
             <div className="bg-white rounded-2xl shadow-lg p-8">
               <h2 className="text-2xl font-bold text-gray-800 mb-4 flex items-center gap-2">
-                <div className="w-1 h-8 bg-[#3c92a9] rounded-full"></div>
+                <div className="w-1 h-8 bg-[#20ae9b] rounded-full"></div>
                 Overview
               </h2>
               <div className="space-y-4 text-gray-600">
@@ -100,7 +100,7 @@ export default function AmritGrah() {
 
             <div className="bg-white rounded-2xl shadow-lg p-8">
               <h2 className="text-2xl font-bold text-gray-800 mb-4 flex items-center gap-2">
-                <div className="w-1 h-8 bg-[#3c92a9] rounded-full"></div>
+                <div className="w-1 h-8 bg-[#20ae9b] rounded-full"></div>
                 Description
               </h2>
               <p className="text-gray-600 leading-relaxed">
@@ -112,7 +112,7 @@ export default function AmritGrah() {
 
             <div className="bg-white rounded-2xl shadow-lg p-8">
               <h2 className="text-2xl font-bold text-gray-800 mb-6 flex items-center gap-2">
-                <div className="w-1 h-8 bg-[#3c92a9] rounded-full"></div>
+                <div className="w-1 h-8 bg-[#20ae9b] rounded-full"></div>
                 Address
               </h2>
               <div className="grid md:grid-cols-2 gap-6">
@@ -137,21 +137,21 @@ export default function AmritGrah() {
 
             <div className="bg-white rounded-2xl shadow-lg p-8">
               <h2 className="text-2xl font-bold text-gray-800 mb-6 flex items-center gap-2">
-                <div className="w-1 h-8 bg-[#3c92a9] rounded-full"></div>
+                <div className="w-1 h-8 bg-[#20ae9b] rounded-full"></div>
                 Details
               </h2>
               <div className="grid md:grid-cols-4 gap-6">
                 <div className="bg-gray-50 p-4 rounded-xl">
                   <p className="text-sm text-gray-500 mb-1">Property Type</p>
-                  <p className="font-semibold text-[#3c92a9]">Amrit Garh</p>
+                  <p className="font-semibold text-[#20ae9b]">Amrit Garh</p>
                 </div>
                 <div className="bg-gray-50 p-4 rounded-xl">
                   <p className="text-sm text-gray-500 mb-1">Property Status</p>
-                  <p className="font-semibold text-[#3c92a9]">Available</p>
+                  <p className="font-semibold text-[#20ae9b]">Available</p>
                 </div>
                 <div className="bg-gray-50 p-4 rounded-xl">
                   <p className="text-sm text-gray-500 mb-1">Licensing Type</p>
-                  <p className="font-semibold text-[#3c92a9]">Approved</p>
+                  <p className="font-semibold text-[#20ae9b]">Approved</p>
                 </div>
                 <div className="bg-gray-50 p-4 rounded-xl">
                   <p className="text-sm text-gray-500 mb-1">Updated</p>
@@ -162,14 +162,14 @@ export default function AmritGrah() {
 
             <div className="bg-white rounded-2xl shadow-lg p-8">
               <h2 className="text-2xl font-bold text-gray-800 mb-6 flex items-center gap-2">
-                <div className="w-1 h-8 bg-[#3c92a9] rounded-full"></div>
+                <div className="w-1 h-8 bg-[#20ae9b] rounded-full"></div>
                 Features
               </h2>
               <div className="grid md:grid-cols-2 gap-4">
                 {amenitiesToShow.map((amenity) => (
                   <div 
                     key={amenity.id}
-                    className="flex items-center gap-3 p-4 bg-gray-50 rounded-xl hover:bg-[#3c92a9] hover:text-white transition-all duration-300 cursor-pointer group"
+                    className="flex items-center gap-3 p-4 bg-gray-50 rounded-xl hover:bg-[#20ae9b] hover:text-white transition-all duration-300 cursor-pointer group"
                   >
                     <span className="text-2xl">{amenity.icon}</span>
                     <span className="font-medium">{amenity.text}</span>
@@ -180,7 +180,7 @@ export default function AmritGrah() {
                 <div className="text-center mt-6">
                   <button
                     onClick={() => setShowAllAmenities(!showAllAmenities)}
-                    className="bg-[#3c92a9] hover:bg-[#217187] text-white font-semibold px-8 py-3 rounded-full transition-all duration-300 hover:shadow-lg hover:scale-105"
+                    className="bg-[#20ae9b] hover:bg-[#2c8579] text-white font-semibold px-8 py-3 rounded-full transition-all duration-300 hover:shadow-lg hover:scale-105"
                   >
                     {showAllAmenities 
                       ? "Show Less Features" 
@@ -194,7 +194,7 @@ export default function AmritGrah() {
             <div className="bg-white rounded-2xl shadow-lg p-8">
               <div className="flex items-center justify-between mb-6">
                 <h2 className="text-2xl font-bold text-gray-800 flex items-center gap-2">
-                  <div className="w-1 h-8 bg-[#3c92a9] rounded-full"></div>
+                  <div className="w-1 h-8 bg-[#20ae9b] rounded-full"></div>
                   Reviews
                 </h2>
                 <div className="flex items-center gap-2">
@@ -230,7 +230,7 @@ export default function AmritGrah() {
                 <div className="text-center mt-6">
                   <button
                     onClick={() => setShowAllReviews(!showAllReviews)}
-                    className="bg-[#3c92a9] hover:bg-[#2e788c] text-white font-semibold px-8 py-3 rounded-full transition-all duration-300 hover:shadow-lg hover:scale-105"
+                    className="bg-[#20ae9b] hover:bg-[#298075] text-white font-semibold px-8 py-3 rounded-full transition-all duration-300 hover:shadow-lg hover:scale-105"
                   >
                     {showAllReviews 
                       ? "Show Less Reviews" 
@@ -246,7 +246,7 @@ export default function AmritGrah() {
             <div className="sticky top-6 space-y-6">
               <div className="bg-white rounded-2xl shadow-lg p-6">
                 <div className="flex items-center gap-4 mb-6">
-                  <div className="w-16 h-16 bg-[#3c92a9] rounded-full flex items-center justify-center">
+                  <div className="w-16 h-16 bg-[#20ae9b] rounded-full flex items-center justify-center">
                     <User className="text-white" size={32} />
                   </div>
                   <div>
@@ -254,7 +254,7 @@ export default function AmritGrah() {
                     <p className="text-sm text-gray-500">Tour Form</p>
                   </div>
                 </div>
-                <button className="w-full bg-[#3c92a9] hover:bg-[#18677d] text-white font-semibold py-3 rounded-lg transition-all duration-300 mb-3">
+                <button className="w-full bg-[#20ae9b] hover:bg-[#2a8478] text-white font-semibold py-3 rounded-lg transition-all duration-300 mb-3">
                   Contact Agent
                 </button>
                 <div className="space-y-3 text-sm">
@@ -274,7 +274,7 @@ export default function AmritGrah() {
                 <div className="space-y-4">
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-2">Tour Type</label>
-                    <select className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#3c92a9] focus:border-transparent">
+                    <select className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#20ae9b] focus:border-transparent">
                       <option>In Person</option>
                       <option>Virtual Tour</option>
                     </select>
@@ -283,31 +283,31 @@ export default function AmritGrah() {
                     <label className="block text-sm font-medium text-gray-700 mb-2">Name</label>
                     <input 
                       type="text"
-                      className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#3c92a9] focus:border-transparent"
+                      className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#20ae9b] focus:border-transparent"
                     />
                   </div>
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-2">Phone</label>
                     <input 
                       type="tel"
-                      className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#3c92a9] focus:border-transparent"
+                      className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#20ae9b] focus:border-transparent"
                     />
                   </div>
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-2">Email</label>
                     <input 
                       type="email"
-                      className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#3c92a9] focus:border-transparent"
+                      className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#20ae9b] focus:border-transparent"
                     />
                   </div>
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-2">Date</label>
                     <input 
                       type="date"
-                      className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#3c92a9] focus:border-transparent"
+                      className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#20ae9b] focus:border-transparent"
                     />
                   </div>
-                  <button className="w-full bg-[#3c92a9] hover:bg-[#1d728a] text-white font-semibold py-3 rounded-lg transition-all duration-300">
+                  <button className="w-full bg-[#20ae9b] hover:bg-[#1b6f64] text-white font-semibold py-3 rounded-lg transition-all duration-300">
                     Submit Request
                   </button>
                 </div>

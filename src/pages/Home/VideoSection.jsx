@@ -1,6 +1,6 @@
 import { Play, Pause, Volume2, VolumeX, Maximize2, X } from "lucide-react";
 import { useState, useRef, useEffect } from "react";
-import vid from "../../assets/video.mp4";
+import vid from "../../assets/All home imgs/video-2.mp4";
 
 export default function VideoSection() {
   const videoRef = useRef(null);
@@ -114,9 +114,9 @@ export default function VideoSection() {
                 <div className="absolute inset-0 flex items-center justify-center">
                   <button
                     onClick={handlePlayPause}
-                    className="group relative w-20 h-20 lg:w-24 lg:h-24 bg-[#3c92a9] hover:bg-[#1d758e] rounded-full flex items-center justify-center transition-all duration-300 transform hover:scale-110 shadow-lg hover:shadow-xl"
+                    className="group relative w-20 h-20 lg:w-24 lg:h-24 bg-[#20ae9b] hover:bg-[#265e57] rounded-full flex items-center justify-center transition-all duration-300 transform hover:scale-110 shadow-lg hover:shadow-xl"
                   >
-                    <div className="absolute inset-0 bg-[#3c92a9] rounded-full animate-ping opacity-75"></div>
+                    <div className="absolute inset-0 bg-[#20ae9b] rounded-full animate-ping opacity-75"></div>
                     <Play
                       className="w-8 h-8 lg:w-10 lg:h-10 text-white ml-1 relative z-10"
                       fill="currentColor"
@@ -133,7 +133,7 @@ export default function VideoSection() {
                   onClick={handleSeek}
                 >
                   <div
-                    className="h-full bg-[#3c92a9] rounded"
+                    className="h-full bg-[#20ae9b] rounded"
                     style={{ width: `${progress}%` }}
                   ></div>
                   <div

@@ -1,5 +1,11 @@
 import React from 'react';
 import { Train, MapPin, Calendar, FileText, ArrowRight, Zap, Clock, Leaf, Users, TrendingUp, CheckCircle2 } from 'lucide-react';
+import { Link } from "react-router-dom"
+import img1 from "../../assets/personal-rapid-transport/1 (1).jpg"
+import img2 from "../../assets/personal-rapid-transport/1 (1).png"
+import img3 from "../../assets/personal-rapid-transport/1 (2).jpg"
+import img4 from "../../assets/personal-rapid-transport/1 (3).jpg"
+
 
 export default function PersonalRapidTransit() {
   const recentPosts = [
@@ -33,20 +39,7 @@ export default function PersonalRapidTransit() {
     }
   ];
 
-  const timeline = [
-    {
-      date: "1 July 2023",
-      event: "RFP floated for DEVELOPMENT OF PASSENGER PERSONAL RAPID TRANSIT (PRT) SYSTEM FROM FILM CITY TO NOIDA INTERNATIONAL AIRPORT, JEWAR (YEIDA), UTTAR PRADESH ON DESIGN, BUILD, FINANCE, OPERATE, AND TRANSFER (DBFOT) BASIS"
-    },
-    {
-      date: "23 August 2023",
-      event: "Corrigendum Uploaded"
-    },
-    {
-      date: "25 October 2023",
-      event: "Last date for submission of bid"
-    }
-  ];
+
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
@@ -96,19 +89,19 @@ export default function PersonalRapidTransit() {
                   Personal Rapid Transit (PRT) System
                 </h2>
               </div>
-              
+
               {/* Image Grid */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
                 <div className="rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow">
-                  <img 
-                    src="/api/placeholder/500/350" 
+                  <img
+                    src={img1}
                     alt="PRT System Overview"
                     className="w-full h-auto hover:scale-105 transition-transform duration-300"
                   />
                 </div>
                 <div className="rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow">
-                  <img 
-                    src="/api/placeholder/500/350" 
+                  <img
+                    src={img3}
                     alt="Pod Station"
                     className="w-full h-auto hover:scale-105 transition-transform duration-300"
                   />
@@ -117,28 +110,21 @@ export default function PersonalRapidTransit() {
 
               {/* Station Cross Section */}
               <div className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-4 mb-6">
-                <img 
-                  src="/api/placeholder/800/300" 
+                <img
+                  src={img4}
                   alt="Station Cross Section"
                   className="w-full h-auto rounded-lg"
                 />
                 <p className="text-center text-sm text-gray-600 mt-3 font-medium">Station Cross Section</p>
               </div>
 
-              <div className="bg-gradient-to-br from-pink-50 to-red-50 rounded-xl p-4">
-                <img 
-                  src="/api/placeholder/800/300" 
-                  alt="Elevation View"
-                  className="w-full h-auto rounded-lg"
-                />
-                <p className="text-center text-sm text-gray-600 mt-3 font-medium">Elevation View</p>
-              </div>
+
             </div>
 
             {/* Key Features */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
               {features.map((feature, index) => (
-                <div 
+                <div
                   key={index}
                   className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-6 border border-purple-100 hover:shadow-lg transition-all hover:-translate-y-1"
                 >
@@ -171,15 +157,17 @@ export default function PersonalRapidTransit() {
                     <div>
                       <h3 className="font-semibold text-gray-900 mb-2">Project Scope</h3>
                       <p className="text-gray-700 text-sm leading-relaxed">
-                        RFP floated for DEVELOPMENT OF PASSENGER PERSONAL RAPID TRANSIT (PRT) SYSTEM FROM FILM CITY TO NOIDA INTERNATIONAL AIRPORT, JEWAR (YEIDA), UTTAR PRADESH ON DESIGN, BUILD, FINANCE, OPERATE, AND TRANSFER (DBFOT) BASIS
+                       <span className='font-semibold'>1. </span> RFP floated for DEVELOPMENT OF PASSENGER PERSONAL RAPID TRANSIT (PRT) SYSTEM FROM FILM CITY TO NOIDA INTERNATIONAL AIRPORT, JEWAR (YEIDA), UTTAR PRADESH ON DESIGN, BUILD, FINANCE, OPERATE, AND TRANSFER (DBFOT) BASIS on 1 July 2023
+                      <br/> <span className='font-semibold'>2. </span> Corrigendum Uploaded on 23 August 2023
+                        <br/><span className='font-semibold'>3. </span> Last date for submission of bid 25 October 2023
                       </p>
                     </div>
                   </div>
                 </div>
 
                 <div className="rounded-xl overflow-hidden shadow-md">
-                  <img 
-                    src="/api/placeholder/400/500" 
+                  <img
+                    src={img2}
                     alt="Route Map"
                     className="w-full h-auto"
                   />
@@ -187,50 +175,8 @@ export default function PersonalRapidTransit() {
               </div>
             </div>
 
-            {/* Timeline */}
-            <div className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl p-8 shadow-xl text-[gray] mb-8">
-              <div className="flex items-center gap-3 mb-6">
-                <Calendar className="w-7 h-7 text-[#3c92a9]" />
-                <h2 className="text-2xl sm:text-3xl font-bold">Project Timeline</h2>
-              </div>
-              <div className="space-y-6">
-                {timeline.map((item, index) => (
-                  <div key={index} className="relative pl-8 pb-6 border-l-2 border-[#3c92a9] last:border-l-0 last:pb-0">
-                    <div className="absolute left-0 top-0 w-4 h-4 bg-[#3c92a9] rounded-full transform -translate-x-[9px]"></div>
-                    <div className="bg-white bg-opacity-10 backdrop-blur-sm rounded-lg p-4">
-                      <div className="flex items-center gap-2 mb-2">
-                        <Calendar className="w-4 h-4 text-[#53a7bf]" />
-                        <span className="text-[#3c92a9] font-semibold text-sm">{item.date}</span>
-                      </div>
-                      <p className="text-gray-600 text-sm leading-relaxed">{item.event}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
 
-            {/* Benefits Section */}
-            <div className="bg-gradient-to-r from-[#3c92a9] to-[#2b7b91] rounded-2xl p-8 text-white shadow-xl">
-              <div className="flex items-center gap-3 mb-6">
-                <TrendingUp className="w-7 h-7" />
-                <h3 className="text-2xl font-bold">Why PRT?</h3>
-              </div>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                {[
-                  "Reduces traffic congestion",
-                  "Environmentally sustainable",
-                  "Cost-effective transport solution",
-                  "Enhances regional connectivity",
-                  "Supports economic growth",
-                  "Future-ready infrastructure"
-                ].map((benefit, index) => (
-                  <div key={index} className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 flex-shrink-0 mt-0.5" />
-                    <span className="text-pink-50">{benefit}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
+
           </div>
 
           {/* Sidebar */}
@@ -275,30 +221,23 @@ export default function PersonalRapidTransit() {
                 </div>
               </div>
             </div>
+            {/* Quick Contact Card */}
+            <div className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl p-6 text-white mt-8">
+              <h3 className="text-xl font-bold mb-4">Need More Information?</h3>
+              <p className="text-gray-300 text-sm mb-6">
+                Get in touch with our team to learn more about investment opportunities at the Logistics Park.
+              </p>
+              <Link to="/contact">
+                <button className="w-full bg-[#3c92a9] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#197a95] transition-all">
+                  Contact Us
+                </button>
+              </Link>
+            </div>
           </div>
         </div>
       </div>
 
-      {/* CTA Section */}
-      <div className="bg-gradient-to-r
-       from-[#3c92a9] via-[#2889a3] to-[#106f89] py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-            Interested in the PRT Project?
-          </h2>
-          <p className="text-pink-50 text-lg mb-8 max-w-2xl mx-auto">
-            Learn more about bidding opportunities and project specifications
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-white text-[#3c92a9] px-8 py-3 rounded-full font-semibold hover:bg-pink-50 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
-              Download RFP
-            </button>
-            <button className="bg-transparent border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-[#3c92a9] transition-all">
-              Contact Us
-            </button>
-          </div>
-        </div>
-      </div>
+
     </div>
   );
 }

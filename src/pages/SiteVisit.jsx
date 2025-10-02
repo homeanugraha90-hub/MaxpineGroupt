@@ -33,10 +33,10 @@ export default function SiteVisit() {
   };
 
   const properties = [
-    { id: 1, name: 'Luxury Villa - Palm Heights', location: 'Downtown District', type: 'Villa' },
-    { id: 2, name: 'Modern Apartment - Sky Tower', location: 'Business Bay', type: 'Apartment' },
-    { id: 3, name: 'Penthouse Suite - Ocean View', location: 'Marina District', type: 'Penthouse' },
-    { id: 4, name: 'Garden Estate - Green Valley', location: 'Suburban Area', type: 'Estate' }
+    { id: 1, name: 'Anugrah Homes', location: 'Downtown District', type: 'Homes' },
+    { id: 2, name: 'Skyline Aera homes', location: 'Business Bay', type: 'Homes' },
+    { id: 3, name: 'Brij Vrinda', location: 'Marina District', type: 'Homes' },
+    { id: 4, name: 'The Club Farm', location: 'Suburban Area', type: 'Homes' }
   ];
 
   const benefits = [
@@ -55,12 +55,12 @@ export default function SiteVisit() {
       }}>
         <div className="absolute inset-0 bg-black/60 opacity-85"></div>
         <div className="relative h-full flex flex-col items-center justify-center text-white px-4">
-          <h1 className="text-5xl md:text-6xl font-bold mb-4 text-center">Schedule a Site Visit</h1>
-          <p className="text-xl md:text-2xl text-blue-100 mb-6 text-center">Experience Your Dream Home in Person</p>
+          <h1 className="text-3xl md:text-6xl font-bold mb-4 text-center">Schedule a Site Visit</h1>
+          <p className="text-lg md:text-2xl text-blue-100 mb-6 text-center">Experience Your Dream Home in Person</p>
           <div className="flex items-center gap-3 text-lg">
             <a href="/" className="hover:text-blue-300 transition-colors">Home</a>
             <span>›</span>
-            <span className="text-[#3c92a9]">Site Visit</span>
+            <span className="text-[#1cbae6]">Site Visit</span>
           </div>
         </div>
       </div>
@@ -71,7 +71,7 @@ export default function SiteVisit() {
           {benefits.map((benefit, idx) => (
             <div key={idx} className="bg-white rounded-xl shadow-md p-6 hover:shadow-xl transition-shadow text-center">
               <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <benefit.icon className="w-8 h-8 text-[#3c92a9]" />
+                <benefit.icon className="w-8 h-8 text-[#20ae9b]" />
               </div>
               <h3 className="text-lg font-semibold text-slate-900 mb-2">{benefit.title}</h3>
               <p className="text-slate-600 text-sm">{benefit.desc}</p>
@@ -84,31 +84,31 @@ export default function SiteVisit() {
           <div className="lg:col-span-2 space-y-6">
             <div className="bg-white rounded-xl shadow-md p-6">
               <h2 className="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
-                <Building2 className="w-6 h-6 text-[#3c92a9]" />
+                <Building2 className="w-6 h-6 text-[#20ae9b]" />
                 Featured Properties
               </h2>
               <div className="space-y-4">
                 {properties.map((property) => (
-                  <div key={property.id} className="border border-slate-200 rounded-lg p-4 hover:border-[#3c92a9] hover:shadow-md transition-all cursor-pointer">
+                  <div key={property.id} className="border border-slate-200 rounded-lg p-4 hover:border-[#20ae9b] hover:shadow-md transition-all cursor-pointer">
                     <div className="flex items-start justify-between">
                       <div className="flex-1">
                         <h3 className="font-semibold text-slate-900 mb-1">{property.name}</h3>
-                        <p className="text-sm text-slate-600 flex items-center gap-1">
+                        {/* <p className="text-sm text-slate-600 flex items-center gap-1">
                           <MapPin className="w-4 h-4" />
                           {property.location}
-                        </p>
-                        <span className="inline-block mt-2 px-3 py-1 bg-blue-50 text-[#3c92a9] text-xs font-medium rounded-full">
+                        </p> */}
+                        <span className="inline-block mt-2 px-3 py-1 bg-blue-50 text-[#20ae9b] text-xs font-medium rounded-full">
                           {property.type}
                         </span>
                       </div>
-                      <ArrowRight className="w-5 h-5 text-[#3c92a9] mt-2" />
+                      <ArrowRight className="w-5 h-5 text-[#20ae9b] mt-2" />
                     </div>
                   </div>
                 ))}
               </div>
             </div>
 
-            <div className="bg-gradient-to-br from-[#3c92a9] to-[#257a92] rounded-xl shadow-md p-6 text-white">
+            <div className="bg-gradient-to-br from-[#20ae9b] to-[#257a92] rounded-xl shadow-md p-6 text-white">
               <h3 className="text-xl font-bold mb-4">Need Help?</h3>
               <p className="text-[#cdd1c7] mb-4 text-sm">Our team is ready to assist you with scheduling and property selection.</p>
               <div className="space-y-3">
@@ -131,7 +131,7 @@ export default function SiteVisit() {
               <p className="text-slate-600 mb-6">Fill out the form below and we'll confirm your appointment within 24 hours</p>
 
               {submitted && (
-                <div className="mb-6 bg-green-50 border-l-4 border-[#3c92a9] text-[#3c92a9] px-4 py-3 rounded">
+                <div className="mb-6 bg-green-50 border-l-4 border-[#20ae9b] text-[#20ae9b] px-4 py-3 rounded">
                   <div className="flex items-center gap-2">
                     <CheckCircle className="w-5 h-5" />
                     <span className="font-semibold">Booking Confirmed!</span>
@@ -154,7 +154,7 @@ export default function SiteVisit() {
                         name="name"
                         value={formData.name}
                         onChange={handleChange}
-                        className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-[#3c92a9] focus:border-transparent outline-none transition"
+                        className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-[#20ae9b] focus:border-transparent outline-none transition"
                         placeholder="John Doe"
                       />
                     </div>
@@ -167,7 +167,7 @@ export default function SiteVisit() {
                         name="phone"
                         value={formData.phone}
                         onChange={handleChange}
-                        className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-[#3c92a9] focus:border-transparent outline-none transition"
+                        className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-[#20ae9b] focus:border-transparent outline-none transition"
                         placeholder="+1 (555) 000-0000"
                       />
                     </div>
@@ -181,7 +181,7 @@ export default function SiteVisit() {
                       name="email"
                       value={formData.email}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-[#3c92a9] focus:border-transparent outline-none transition"
+                      className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-[#20ae9b] focus:border-transparent outline-none transition"
                       placeholder="john@example.com"
                     />
                   </div>
@@ -201,7 +201,7 @@ export default function SiteVisit() {
                         name="date"
                         value={formData.date}
                         onChange={handleChange}
-                        className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-[#3c92a9] focus:border-transparent outline-none transition"
+                        className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-[#20ae9b] focus:border-transparent outline-none transition"
                       />
                     </div>
                     <div>
@@ -213,7 +213,7 @@ export default function SiteVisit() {
                         name="time"
                         value={formData.time}
                         onChange={handleChange}
-                        className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-[#3c92a9] focus:border-transparent outline-none transition"
+                        className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-[#20ae9b] focus:border-transparent outline-none transition"
                       >
                         <option value="">Select time</option>
                         <option value="09:00">09:00 AM</option>
@@ -235,11 +235,13 @@ export default function SiteVisit() {
                       name="property"
                       value={formData.property}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-[#3c92a9] focus:border-transparent outline-none transition"
+                      className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-[#20ae9b] focus:border-transparent outline-none transition"
                     >
                       <option value="">Choose a property</option>
                       {properties.map(p => (
-                        <option key={p.id} value={p.id}>{p.name} - {p.location}</option>
+                        <option key={p.id} value={p.id}>{p.name} 
+                         {/* {p.location} */}
+                         </option>
                       ))}
                     </select>
                   </div>
@@ -253,7 +255,7 @@ export default function SiteVisit() {
                         name="visitors"
                         value={formData.visitors}
                         onChange={handleChange}
-                        className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-[#3c92a9] focus:border-transparent outline-none transition"
+                        className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-[#20ae9b] focus:border-transparent outline-none transition"
                       >
                         <option value="1">1 Person</option>
                         <option value="2">2 People</option>
@@ -270,7 +272,7 @@ export default function SiteVisit() {
                         name="transportation"
                         value={formData.transportation}
                         onChange={handleChange}
-                        className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-[#3c92a9] focus:border-transparent outline-none transition"
+                        className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-[#20ae9b] focus:border-transparent outline-none transition"
                       >
                         <option value="own">Own Transportation</option>
                         <option value="pickup">Need Pickup Service</option>
@@ -289,14 +291,14 @@ export default function SiteVisit() {
                     value={formData.message}
                     onChange={handleChange}
                     rows="4"
-                    className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-[#3c92a9] focus:border-transparent outline-none transition resize-none"
+                    className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-[#20ae9b] focus:border-transparent outline-none transition resize-none"
                     placeholder="Any special requirements or questions?"
                   ></textarea>
                 </div>
 
                 <button
                   onClick={handleSubmit}
-                  className="w-full bg-[#3c92a9] hover:bg-[#3c92a9] text-white font-semibold py-4 px-6 rounded-lg transition-colors flex items-center justify-center gap-2 shadow-lg hover:shadow-xl"
+                  className="w-full bg-[#20ae9b] hover:bg-[#20ae9b] text-white font-semibold py-4 px-6 rounded-lg transition-colors flex items-center justify-center gap-2 shadow-lg hover:shadow-xl"
                 >
                   <Calendar className="w-5 h-5" />
                   Confirm Site Visit
@@ -312,25 +314,7 @@ export default function SiteVisit() {
       </div>
 
       {/* Info Banner */}
-      <div className="bg-slate-900 text-white py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h3 className="text-2xl font-bold mb-4">What to Expect During Your Visit</h3>
-          <div className="grid md:grid-cols-3 gap-8 mt-8">
-            <div>
-              <div className="text-[#3c92a9] text-3xl font-bold mb-2">30-60 min</div>
-              <p className="text-slate-300">Average visit duration per property</p>
-            </div>
-            <div>
-              <div className="text-[#3c92a9] text-3xl font-bold mb-2">Expert Guide</div>
-              <p className="text-slate-300">Dedicated agent throughout your tour</p>
-            </div>
-            <div>
-              <div className="text-[#3c92a9] text-3xl font-bold mb-2">24/7</div>
-              <p className="text-slate-300">Flexible scheduling available</p>
-            </div>
-          </div>
-        </div>
-      </div>
+     
     </div>
   );
 }

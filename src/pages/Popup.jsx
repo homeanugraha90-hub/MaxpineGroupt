@@ -159,7 +159,7 @@ export default function Popup() {
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm">
             <div className="relative w-full max-w-xl bg-white rounded-2xl shadow-2xl max-h-[90vh] overflow-hidden">
                 {/* Header */}
-                <div className="relative bg-gradient-to-r from-[#3c7598] via-[#3c7598] to-[#3c7598] px-6 py-8 text-white">
+                <div className="relative bg-gradient-to-r from-[#20ae9b] via-[#23796d] to-[#0d6256] px-6 py-8 text-white">
                     <button
                         onClick={handleClose}
                         className="absolute top-4 right-4 p-2 hover:bg-white hover:text-[gray] hover:bg-opacity-20 rounded-full transition-all"
@@ -215,7 +215,7 @@ export default function Popup() {
                                         name="firstName"
                                         value={formData.firstName}
                                         onChange={handleChange}
-                                        className={`w-full pl-10 pr-4 py-3 border rounded-lg focus:ring-2 focus:ring-[#3c92a9] focus:border-transparent transition-all outline-none ${
+                                        className={`w-full pl-10 pr-4 py-3 border rounded-lg focus:ring-2 focus:ring-[#20ae9b] focus:border-transparent transition-all outline-none ${
                                             errors.firstName ? 'border-red-500' : 'border-gray-300'
                                         }`}
                                         placeholder="John"
@@ -235,7 +235,7 @@ export default function Popup() {
                                         name="lastName"
                                         value={formData.lastName}
                                         onChange={handleChange}
-                                        className={`w-full pl-10 pr-4 py-3 border rounded-lg focus:ring-2 focus:ring-[#3c92a9] focus:border-transparent transition-all outline-none ${
+                                        className={`w-full pl-10 pr-4 py-3 border rounded-lg focus:ring-2 focus:ring-[#20ae9b] focus:border-transparent transition-all outline-none ${
                                             errors.lastName ? 'border-red-500' : 'border-gray-300'
                                         }`}
                                         placeholder="Doe"
@@ -258,7 +258,7 @@ export default function Popup() {
                                         name="phone"
                                         value={formData.phone}
                                         onChange={handleChange}
-                                        className={`w-full pl-10 pr-4 py-3 border rounded-lg focus:ring-2 focus:ring-[#3c92a9] focus:border-transparent transition-all outline-none ${
+                                        className={`w-full pl-10 pr-4 py-3 border rounded-lg focus:ring-2 focus:ring-[#20ae9b] focus:border-transparent transition-all outline-none ${
                                             errors.phone ? 'border-red-500' : 'border-gray-300'
                                         }`}
                                         placeholder="+91 98765 43210"
@@ -278,7 +278,7 @@ export default function Popup() {
                                         name="city"
                                         value={formData.city}
                                         onChange={handleChange}
-                                        className={`w-full pl-10 pr-4 py-3 border rounded-lg focus:ring-2 focus:ring-[#3c92a9] focus:border-transparent transition-all outline-none ${
+                                        className={`w-full pl-10 pr-4 py-3 border rounded-lg focus:ring-2 focus:ring-[#20ae9b] focus:border-transparent transition-all outline-none ${
                                             errors.city ? 'border-red-500' : 'border-gray-300'
                                         }`}
                                         placeholder="New Delhi"
@@ -300,7 +300,7 @@ export default function Popup() {
                                     name="email"
                                     value={formData.email}
                                     onChange={handleChange}
-                                    className={`w-full pl-10 pr-4 py-3 border rounded-lg focus:ring-2 focus:ring-[#3c92a9] focus:border-transparent transition-all outline-none ${
+                                    className={`w-full pl-10 pr-4 py-3 border rounded-lg focus:ring-2 focus:ring-[#20ae9b] focus:border-transparent transition-all outline-none ${
                                         errors.email ? 'border-red-500' : 'border-gray-300'
                                     }`}
                                     placeholder="john.doe@example.com"
@@ -314,7 +314,7 @@ export default function Popup() {
                             <button
                                 onClick={handleSubmit}
                                 disabled={isSubmitting}
-                                className="flex-1 bg-gradient-to-r from-[#3c92a9] to-[#247c95] text-white px-6 py-3 rounded-lg font-semibold hover:from-[#17718a] hover:to-[#2297b7] transition-all shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+                                className="flex-1 bg-gradient-to-r from-[#20ae9b] to-[#0d7e6f] text-white px-6 py-3 rounded-lg font-semibold hover:from-[#267c71] hover:to-[#0ba18d] transition-all shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
                             >
                                 {isSubmitting ? (
                                     <>
@@ -342,9 +342,9 @@ export default function Popup() {
                     <div className="mt-6 pt-6 border-t border-gray-200">
                         <p className="text-sm text-gray-500 text-center">
                             By submitting this form, you agree to our{' '}
-                            <a href="#" className="text-[#3c92a9] hover:underline">Privacy Policy</a>
+                            <a href="#" className="text-[#20ae9b] hover:underline">Privacy Policy</a>
                             {' '}and{' '}
-                            <a href="#" className="text-[#3c92a9] hover:underline">Terms of Service</a>
+                            <a href="#" className="text-[#20ae9b] hover:underline">Terms of Service</a>
                         </p>
                     </div>
                 </div>

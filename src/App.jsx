@@ -27,6 +27,9 @@ import Popup from "./pages/Popup";
 import FloatingChatbot from "./components/FloatingChatbot";
 import UsePageTitle from "./components/UsePageTitle";
 import AmritGrah from "./pages/Navbar/AmritGrah";
+import AnugrahHome from "./pages/AnugrahHome";
+import BrijVrinda from "./pages/BrijVrinda";
+import ClubFarm from "./pages/ClubFarm";
 
 function App() {
   return (
@@ -57,6 +60,10 @@ function App() {
            <Route path="/personal-rapid-transit" element={<PersonalRapidTransit/>} />
             <Route path="/privacy-policy" element={<PrivacyPolicy/>} />
              <Route path="/amrit-grah" element={<AmritGrah />} />
+              <Route path="/anugrahhomes" element={<AnugrahHome />} />
+               <Route path="/brij-vrinda" element={<BrijVrinda/>} />
+               <Route path="/club-farm" element={<ClubFarm/>} />
+
 
 
 

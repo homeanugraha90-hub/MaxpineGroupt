@@ -90,7 +90,7 @@ export default function Development() {
         <div className="container mx-auto px-4 lg:px-24 py-4">
           <div className="flex items-center text-sm text-gray-600">
             <Home className="w-4 h-4 mr-2" />
-            <a href="/" className="hover:text-[#3c92a9] transition-colors">Home</a>
+            <a href="/" className="hover:text-[#20ae9b] transition-colors">Home</a>
             <span className="mx-2">/</span>
             <span className="text-gray-900 font-medium">Development Updates</span>
           </div>
@@ -98,8 +98,8 @@ export default function Development() {
       </div>
 
       {/* Header */}
-      <div className="bg-gradient-to-r from-[#3c92a9] 
-      to-[#23778e] text-white py-16">
+      <div className="bg-gradient-to-r from-[#20ae9b] 
+      to-[#0e8777] text-white py-16">
         <div className="container mx-auto px-4 lg:px-24">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Development Updates</h1>
           <p className="text-lg text-white/90 max-w-2xl">
@@ -125,8 +125,8 @@ export default function Development() {
                     className="w-full flex items-center justify-between p-6 text-left hover:bg-gray-50 transition-colors"
                   >
                     <div className="flex items-center gap-4">
-                      <div className="bg-[#3c92a9]/10 p-3 rounded-lg">
-                        <Camera className="w-6 h-6 text-[#3c92a9]" />
+                      <div className="bg-[#20ae9b]/10 p-3 rounded-lg">
+                        <Camera className="w-6 h-6 text-[#20ae9b]" />
                       </div>
                       <div>
                         <h3 className="text-lg font-semibold text-gray-900">{update.title}</h3>
@@ -137,7 +137,7 @@ export default function Development() {
                       </div>
                     </div>
                     <ChevronDown
-                      className={`w-6 h-6 text-[#3c92a9] transition-transform duration-300 ${
+                      className={`w-6 h-6 text-[#20ae9b] transition-transform duration-300 ${
                         openSection === update.id ? "rotate-180" : ""
                       }`}
                     />
@@ -184,7 +184,7 @@ export default function Development() {
           {/* Sidebar */}
           <div className="lg:col-span-1">
             <div className="bg-white rounded-lg shadow-md p-6  top-6">
-              <h2 className="text-2xl font-bold text-gray-900 mb-6 pb-4 border-b-2 border-[#3c92a9]">
+              <h2 className="text-2xl font-bold text-gray-900 mb-6 pb-4 border-b-2 border-[#20ae9b]">
                 Recent Posts
               </h2>
               <div className="space-y-4">
@@ -194,21 +194,21 @@ export default function Development() {
                     href={post.link}
                     className="group flex items-start gap-3 p-3 rounded-lg hover:bg-gray-50 transition-colors"
                   >
-                    <ArrowRight className="w-5 h-5 text-[#3c92a9] flex-shrink-0 mt-0.5 group-hover:translate-x-1 transition-transform" />
-                    <p className="text-sm text-gray-700 group-hover:text-[#3c92a9] transition-colors leading-relaxed">
+                    <ArrowRight className="w-5 h-5 text-[#20ae9b] flex-shrink-0 mt-0.5 group-hover:translate-x-1 transition-transform" />
+                    <p className="text-sm text-gray-700 group-hover:text-[#186f63] transition-colors leading-relaxed">
                       {post.title}
                     </p>
                   </a>
                 ))}
               </div>
             </div>
-             <div className="mt-8 bg-gradient-to-br from-[#3c92a9] to-[#206c81] rounded-lg p-6 text-white">
+             <div className="mt-8 bg-gradient-to-br from-[#20ae9b] to-[#0d8a79] rounded-lg p-6 text-white">
                 <h4 className="text-lg font-bold mb-2">Interested in Plots Near Airport?</h4>
                 <p className="text-sm mb-4 text-blue-50">
                   Get exclusive details about our properties near Noida International Airport
                 </p>
                 <Link to="/contact">
-                <button className="w-full bg-white text-[#3c92a9] font-semibold py-3 rounded-lg hover:bg-blue-50 transition">
+                <button className="w-full bg-white text-[#20ae9b] font-semibold py-3 rounded-lg hover:bg-blue-50 transition">
                   Contact Us Today
                 </button>
                 </Link>

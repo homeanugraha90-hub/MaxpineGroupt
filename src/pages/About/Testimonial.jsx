@@ -34,7 +34,7 @@ export default function Testimonial() {
     <section className="py-24 bg-gradient-to-r from-gray-900 to-gray-700 text-white relative">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         {/* Header */}
-        <p className="text-[#3c92a9] font-semibold uppercase tracking-widest text-sm mb-2">
+        <p className="text-[#20ae9b] font-semibold uppercase tracking-widest text-sm mb-2">
           Maxpine Customer Reviews
         </p>
         <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-16 text-white drop-shadow-xl">
@@ -42,9 +42,9 @@ export default function Testimonial() {
         </h2>
 
         {/* Testimonial Card */}
-        <div className="relative bg-gray-800 rounded-3xl p-10 sm:p-14 lg:p-16 shadow-2xl border-2 border-[#3c92a9]">
+        <div className="relative bg-gray-800 rounded-3xl p-10 sm:p-14 lg:p-16 shadow-2xl border-2 border-[#20ae9b]">
           {/* Quote Icon */}
-          <div className="text-[#3c92a9] text-6xl sm:text-7xl lg:text-8xl mb-6">❝</div>
+          <div className="text-[#20ae9b] text-6xl sm:text-7xl lg:text-8xl mb-6">❝</div>
 
           {/* Testimonial Text */}
           <p className="text-lg sm:text-xl lg:text-2xl mb-8 leading-relaxed">
@@ -69,7 +69,7 @@ export default function Testimonial() {
           <h4 className="font-bold text-lg sm:text-xl text-indigo-50">
             {testimonials[currentTestimonial].name}
           </h4>
-          <p className="text-[#3c92a9] text-sm sm:text-base mb-8">
+          <p className="text-[#20ae9b] text-sm sm:text-base mb-8">
             {testimonials[currentTestimonial].role}
           </p>
 
@@ -81,7 +81,7 @@ export default function Testimonial() {
                 onClick={() => setCurrentTestimonial(index)}
                 className={`w-3 h-3 sm:w-4 sm:h-4 rounded-full transition-all ${
                   currentTestimonial === index
-                    ? "bg-[#3c92a9] w-6 sm:w-8 h-3 sm:h-4 shadow-lg"
+                    ? "bg-[#20ae9b] w-6 sm:w-8 h-3 sm:h-4 shadow-lg"
                     : "bg-white bg-opacity-30"
                 }`}
               />
