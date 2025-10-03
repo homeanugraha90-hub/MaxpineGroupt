@@ -15,7 +15,7 @@ import skylogo from "../../assets/skyline/2.png"
 import vid from "../../assets/video.mp4";
 import anu from "../../assets/All home imgs/Gate-1170x785.png"
 import brij from "../../assets/BrijVrinda/1.jpg"
-import sky from "../../assets/All home imgs/update-04.jpeg"
+import sky from "../../assets/skyline/skylogo.jpeg"
 
 const slides = [
   // {
@@ -157,7 +157,7 @@ export default function Banner() {
                       {slide.price} <span className="text-lg text-[gray]">{slide.acer}</span>
                     </p>
                     <p className="text-gray-400 text-sm">
-                      *Prices may vary based on unit and floor
+                      *Prices may vary based on acre.
                     </p>
                     
                   </div>
