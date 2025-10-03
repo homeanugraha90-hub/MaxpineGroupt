@@ -11,6 +11,7 @@ import { useState, useRef, useEffect } from "react";
 
 import anulogo from "../../assets/All home imgs/logo-2.png"
 import brijlogo from "../../assets/BrijVrinda/Brij-Vrindra-removebg-preview.png"
+import skylogo from "../../assets/skyline/2.png"
 import vid from "../../assets/video.mp4";
 import anu from "../../assets/All home imgs/Gate-1170x785.png"
 import brij from "../../assets/All home imgs/1-1-1170x785.jpg"
@@ -34,6 +35,7 @@ const slides = [
     price: "₹52,50,000",
     description: "Strategic locations with high appreciation potential and premium amenities",
     acer:"100 acre",
+    logo:anulogo,
     video: vid,
   },
   {
@@ -44,6 +46,8 @@ const slides = [
     price: "₹32,50,000",
     description: "Spacious layouts, modern design, and premium finishes in every detail",
      acer:"100 acre",
+     logo:skylogo,
+
     video: vid,
   },
   {
@@ -54,6 +58,7 @@ const slides = [
     price: "₹52,00,000",
     description: "Strategic locations with high appreciation potential and premium amenities",
      acer:"100 acre",
+     logo:brijlogo,
     video: vid,
   },
 ];
@@ -109,8 +114,9 @@ export default function Banner() {
                   transition={{ duration: 0.8 }}
                   className="border-4 border-[#20ae9b] p-8 md:p-10 max-w-2xl bg-black/20 backdrop-blur-sm"
                 >
-                  <span className="text-[#20ae9b] font-semibold text-lg tracking-wide mb-2 inline-block">
+                  <span className="text-[#20ae9b]  font-semibold text-lg tracking-wide mb-2 flex justify-between items-center">
                     {slide.subtitle}
+                  <img  src={slide.logo} className=" w-30" alt="" />
                   </span>
                   <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-4">
                     {slide.title}

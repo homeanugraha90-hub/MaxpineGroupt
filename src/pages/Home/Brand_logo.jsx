@@ -5,6 +5,7 @@ import img3 from "../../assets/ClubFarm.png";
 import img4 from "../../assets/LeafShade.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
+import skylogo from "../../assets/skyline/2.jpeg"
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -23,22 +24,31 @@ export default function Brand_logo() {
       name: "Brij Vrinda",
       logo: img1,
       status: "Brij Vrinda",
-      url: "https://anugrahhomes.com",
+      url: "#",
     },
     {
       id: 3,
-      name: "The Club Farm",
-      logo: img3,
-      status: "The Club Farm",
-      url: "https://anugrahhomes.com",
+      name: "Skyline Aero homes",
+      logo: skylogo,
+      status: "Skyline Aero homes",
+      url: "#",
     },
+    
     {
       id: 4,
       name: "LeafShade",
       logo: img4,
       status: "LeafShade",
-      url: "https://anugrahhomes.com",
+      url: "#",
     },
+    {
+      id: 5,
+      name: "The Club Farm",
+      logo: img3,
+      status: "The Club Farm",
+      url: "#",
+    },
+    
    
   ];
 

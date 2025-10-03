@@ -156,7 +156,7 @@ export default function Footer() {
       <div className="border-t border-gray-700 bg-gray-800/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 py-6 space-y-6">
           <h1 className="text-sm sm:text-base text-gray-300 text-center">
-            © 2025 Maxpine Group. All rights reserved.
+            © 2024 Maxpine Group. All rights reserved.
           </h1>
           <div className="bg-gray-800 rounded-lg p-4 sm:p-6 lg:p-10">
             <h4 className="text-base font-semibold text-[#20ae9b] mb-3">

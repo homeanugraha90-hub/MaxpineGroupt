@@ -56,7 +56,7 @@ export default function Navbar() {
         name: "Upcoming Projects",
         href: "#",
         sub: [
-          { name: "Visit Site", href: "/upcomingPJ" },
+         
           { name: "Leafshade", href: "/upcomingPJ" },
           { name: "Amrit Garh", href: "/amrit-grah" },
           { name: "Development Updates", href: "/development" },
