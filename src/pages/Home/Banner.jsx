@@ -14,8 +14,8 @@ import brijlogo from "../../assets/BrijVrinda/Brij-Vrindra-removebg-preview.png"
 import skylogo from "../../assets/skyline/2.png"
 import vid from "../../assets/video.mp4";
 import anu from "../../assets/All home imgs/Gate-1170x785.png"
-import brij from "../../assets/All home imgs/brijVrinda.jpg"
-// import sky from "../../assets/All home imgs/Green-and-White-Modern-Land-Plot-Sale-Promotion-Instagram-Post-1080-x-650-px-2.jpg"
+import brij from "../../assets/BrijVrinda/1 (1).jpg"
+import sky from "../../assets/All home imgs/update-04.jpeg"
 
 const slides = [
   // {
@@ -28,7 +28,7 @@ const slides = [
   //   video: vid,
   // },
   {
-    id: 2,
+    id: 1,
     img: anu,
     title: "Anugrah Homes",
     subtitle: "Anugrah Homes",
@@ -39,8 +39,8 @@ const slides = [
     video: vid,
   },
   {
-    id: 3,
-    img: anu,
+    id: 2,
+    img: sky,
     title: "SkyLine Aero Homes",
     subtitle: "SkyLine Aero Homes",
     price: "₹32,50,000",
@@ -51,7 +51,7 @@ const slides = [
     video: vid,
   },
   {
-    id: 4,
+    id: 3,
     img: brij,
     title: "Brij Vrinda",
     subtitle: "Brij Vrinda",
