@@ -47,7 +47,7 @@ export default function PersonalRapidTransit() {
       <div className="bg-white border-b">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <div className="flex items-center text-sm text-gray-600">
-            <span className="hover:text-[#3c92a9] cursor-pointer">Home</span>
+            <span className="hover:text-[#20ae9b] cursor-pointer">Home</span>
             <span className="mx-2">/</span>
             <span className="text-gray-900 font-medium">Personal Rapid Transit – Pod Taxi</span>
           </div>
@@ -55,7 +55,7 @@ export default function PersonalRapidTransit() {
       </div>
 
       {/* Hero Section */}
-      <div className="relative bg-gradient-to-r from-[#3c92a9] via-[#2d7f96] to-[#2889a3] text-white py-16 sm:py-24 overflow-hidden">
+      <div className="relative bg-gradient-to-r from-[#20ae9b] via-[#129886] to-[#067768] text-white py-16 sm:py-24 overflow-hidden">
         <div className="absolute inset-0 bg-black opacity-10"></div>
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-black opacity-30"></div>
@@ -84,7 +84,7 @@ export default function PersonalRapidTransit() {
             {/* PRT System Overview */}
             <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 mb-8">
               <div className="flex items-center gap-3 mb-6">
-                <Train className="w-7 h-7 text-[#3c92a9]" />
+                <Train className="w-7 h-7 text-[#20ae9b]" />
                 <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">
                   Personal Rapid Transit (PRT) System
                 </h2>
@@ -128,7 +128,7 @@ export default function PersonalRapidTransit() {
                   key={index}
                   className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-6 border border-purple-100 hover:shadow-lg transition-all hover:-translate-y-1"
                 >
-                  <div className="bg-gradient-to-r from-[#3c92a9] to-[#206a7e] text-white w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+                  <div className="bg-gradient-to-r from-[#20ae9b] to-[#0c8979] text-white w-12 h-12 rounded-lg flex items-center justify-center mb-4">
                     {feature.icon}
                   </div>
                   <h3 className="text-lg font-bold text-gray-900 mb-2">
@@ -144,7 +144,7 @@ export default function PersonalRapidTransit() {
             {/* Route Information */}
             <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 mb-8">
               <div className="flex items-center gap-3 mb-6">
-                <MapPin className="w-7 h-7 text-[#3c92a9]" />
+                <MapPin className="w-7 h-7 text-[#20ae9b]" />
                 <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">
                   PRT Alignment - Film City To Jewar International Airport
                 </h2>
@@ -153,7 +153,7 @@ export default function PersonalRapidTransit() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div className="space-y-4">
                   <div className="flex items-start gap-3">
-                    <FileText className="w-5 h-5 text-[#3c92a9] flex-shrink-0 mt-1" />
+                    <FileText className="w-5 h-5 text-[#20ae9b] flex-shrink-0 mt-1" />
                     <div>
                       <h3 className="font-semibold text-gray-900 mb-2">Project Scope</h3>
                       <p className="text-gray-700 text-sm leading-relaxed">
@@ -193,8 +193,8 @@ export default function PersonalRapidTransit() {
                     className="block group"
                   >
                     <div className="flex items-start gap-3 p-3 rounded-lg hover:bg-purple-50 transition-colors">
-                      <ArrowRight className="w-5 h-5 text-[#3c92a9] flex-shrink-0 mt-0.5 group-hover:translate-x-1 transition-transform" />
-                      <span className="text-gray-700 text-sm leading-relaxed group-hover:text-[#3c92a9] transition-colors">
+                      <ArrowRight className="w-5 h-5 text-[#20ae9b] flex-shrink-0 mt-0.5 group-hover:translate-x-1 transition-transform" />
+                      <span className="text-gray-700 text-sm leading-relaxed group-hover:text-[#20ae9b] transition-colors">
                         {post}
                       </span>
                     </div>
@@ -204,7 +204,7 @@ export default function PersonalRapidTransit() {
             </div>
 
             {/* Info Card */}
-            <div className="bg-gradient-to-br from-[#3c92a9] to-[#2b829a] rounded-2xl p-6 text-[#2a2929] shadow-xl">
+            <div className="bg-gradient-to-br from-[#20ae9b] to-[#149887] rounded-2xl p-6 text-[#ebebeb] shadow-xl">
               <h3 className="text-xl font-bold mb-4">Project Highlights</h3>
               <div className="space-y-4">
                 <div className="bg-white bg-opacity-20 backdrop-blur-sm rounded-lg p-4">
@@ -228,7 +228,7 @@ export default function PersonalRapidTransit() {
                 Get in touch with our team to learn more about investment opportunities at the Logistics Park.
               </p>
               <Link to="/contact">
-                <button className="w-full bg-[#3c92a9] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#197a95] transition-all">
+                <button className="w-full bg-[#20ae9b] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#138475] transition-all">
                   Contact Us
                 </button>
               </Link>

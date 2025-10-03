@@ -34,7 +34,7 @@ export default function SiteVisit() {
 
   const properties = [
     { id: 1, name: 'Anugrah Homes', location: 'Downtown District', type: 'Homes' },
-    { id: 2, name: 'Skyline Aera homes', location: 'Business Bay', type: 'Homes' },
+    { id: 2, name: 'Skyline Aero homes', location: 'Business Bay', type: 'Homes' },
     { id: 3, name: 'Brij Vrinda', location: 'Marina District', type: 'Homes' },
     { id: 4, name: 'The Club Farm', location: 'Suburban Area', type: 'Homes' }
   ];
