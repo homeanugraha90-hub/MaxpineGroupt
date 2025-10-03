@@ -23,7 +23,6 @@ import MedicalDevicePark from "./pages/Navbar/MedicalDevicePark";
 import LogisticsPark from "./pages/Navbar/LogisticsPark";
 import PersonalRapidTransit from "./pages/Navbar/PersonalRapidTransit";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
-import Popup from "./pages/Popup";
 import FloatingChatbot from "./components/FloatingChatbot";
 import UsePageTitle from "./components/UsePageTitle";
 import AmritGrah from "./pages/Navbar/AmritGrah";
@@ -38,7 +37,7 @@ function App() {
       <UsePageTitle/>
       <Navbar />
       <FloatingChatbot/>
-      <Popup/>
+      
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />

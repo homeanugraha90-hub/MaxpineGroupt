@@ -7,12 +7,14 @@ import HomeparkLiving from './Home/HomeParkLiving'
 import PropertyGallery from './Home/PropertyGallery'
 import VideoSection from './Home/VideoSection'
 import Faqs from './Home/Faqs'
+import Popup from "./Popup";
+
 import Brand_logo from './Home/Brand_logo'
 
 export default  function Home() {
   return (
     <div className="w-full relative">
-        
+        <Popup/>
         <Banner/>
         <About/>
         <WhyChoose/>
