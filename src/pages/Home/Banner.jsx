@@ -14,7 +14,7 @@ import brijlogo from "../../assets/BrijVrinda/Brij-Vrindra-removebg-preview.png"
 import skylogo from "../../assets/skyline/2.png"
 import vid from "../../assets/video.mp4";
 import anu from "../../assets/All home imgs/Gate-1170x785.png"
-import brij from "../../assets/BrijVrinda/1 (1).jpg"
+import brij from "../../assets/BrijVrinda/1.jpg"
 import sky from "../../assets/All home imgs/update-04.jpeg"
 
 const slides = [
