@@ -17,6 +17,7 @@ import anu from "../../assets/All home imgs/Gate-1170x785.png"
 import brij from "../../assets/BrijVrinda/1.jpg"
 import sky from "../../assets/skyline/skylogo.jpeg"
 
+
 const slides = [
   // {
   //   id: 1,
@@ -36,6 +37,7 @@ const slides = [
     description: "Strategic locations with high appreciation potential and premium amenities",
     acer:"100 acre",
     logo:anulogo,
+    wedt:true,
     video: vid,
   },
   {
@@ -116,7 +118,9 @@ export default function Banner() {
                 >
                   <span className="text-[#20ae9b]  font-semibold text-lg tracking-wide mb-2 flex justify-between items-center">
                     {slide.subtitle}
-                    <span className="bg-white/98 rounded p-4"> 
+                    <span className={ `bg-white/98 rounded p-4 ${
+    slide.wedt ? "py-8 pb-10 " : "py-4"
+  }`}> 
 
                   <img  src={slide.logo} className=" w-30" alt="" />
                     </span>
