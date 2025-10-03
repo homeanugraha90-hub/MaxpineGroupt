@@ -14,7 +14,7 @@ import brijlogo from "../../assets/BrijVrinda/Brij-Vrindra-removebg-preview.png"
 import skylogo from "../../assets/skyline/2.png"
 import vid from "../../assets/video.mp4";
 import anu from "../../assets/All home imgs/Gate-1170x785.png"
-import brij from "../../assets/All home imgs/1-1-1170x785.jpg"
+import brij from "../../assets/All home imgs/brijVrinda.jpg"
 // import sky from "../../assets/All home imgs/Green-and-White-Modern-Land-Plot-Sale-Promotion-Instagram-Post-1080-x-650-px-2.jpg"
 
 const slides = [
@@ -31,7 +31,7 @@ const slides = [
     id: 2,
     img: anu,
     title: "Anugrah Homes",
-    subtitle: "Anugrah Homes - Building Your Future",
+    subtitle: "Anugrah Homes",
     price: "₹52,50,000",
     description: "Strategic locations with high appreciation potential and premium amenities",
     acer:"100 acre",
@@ -41,8 +41,8 @@ const slides = [
   {
     id: 3,
     img: anu,
-    title: "SkyLine Aero homes",
-    subtitle: "SkyLine Aero homes",
+    title: "SkyLine Aero Homes",
+    subtitle: "SkyLine Aero Homes",
     price: "₹32,50,000",
     description: "Spacious layouts, modern design, and premium finishes in every detail",
      acer:"100 acre",
@@ -54,7 +54,7 @@ const slides = [
     id: 4,
     img: brij,
     title: "Brij Vrinda",
-    subtitle: "Brij Vrinda- Building Your Future",
+    subtitle: "Brij Vrinda",
     price: "₹45,50,000",
     description: "Strategic locations with high appreciation potential and premium amenities",
      acer:"100 acre",
@@ -121,7 +121,7 @@ export default function Banner() {
                   <img  src={slide.logo} className=" w-30" alt="" />
                     </span>
                   </span>
-                  <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-4">
+                  <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-4">
                     {slide.title}
                   </h1>
                   <p className="text-gray-200 text-lg mb-6">{slide.description}</p>

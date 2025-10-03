@@ -31,7 +31,7 @@ export default function Brand_logo() {
       name: "Skyline Aero homes",
       logo: skylogo,
       status: "Skyline Aero homes",
-      url: "#",
+      url: "https://skylineaerohomes.com/",
     },
     
     {
