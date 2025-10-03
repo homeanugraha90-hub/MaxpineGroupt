@@ -33,9 +33,9 @@ const slides = [
     img: anu,
     title: "Anugrah Homes",
     subtitle: "Anugrah Homes",
-    price: "₹52,50,000",
+    price: "₹52,500",
     description: "Strategic locations with high appreciation potential and premium amenities",
-    acer:"100 acre",
+    acer:"Per Sq. Yards",
     logo:anulogo,
     wedt:true,
     video: vid,
@@ -45,9 +45,9 @@ const slides = [
     img: sky,
     title: "SkyLine Aero Homes",
     subtitle: "SkyLine Aero Homes",
-    price: "₹32,50,000",
+    price: "₹32,500",
     description: "Spacious layouts, modern design, and premium finishes in every detail",
-     acer:"100 acre",
+     acer:"Per Sq. Yards",
      logo:skylogo,
 
     video: vid,
@@ -57,9 +57,9 @@ const slides = [
     img: brij,
     title: "Brij Vrinda",
     subtitle: "Brij Vrinda",
-    price: "₹45,50,000",
+    price: "₹45,500",
     description: "Strategic locations with high appreciation potential and premium amenities",
-     acer:"100 acre",
+     acer:"Per Sq. Yards",
      logo:brijlogo,
     video: vid,
   },
@@ -119,10 +119,10 @@ export default function Banner() {
                   <span className="text-[#20ae9b]  font-semibold text-lg tracking-wide mb-2 flex justify-between items-center">
                     {slide.subtitle}
                     <span className={ `bg-white/98 rounded p-4 ${
-    slide.wedt ? "py-8 pb-10 " : "py-4"
+    slide.wedt ? "py-4 pb-6 md:py-8 md:pb-10 " : "py-4"
   }`}> 
 
-                  <img  src={slide.logo} className=" w-30" alt="" />
+                  <img  src={slide.logo} className="w-10 md:w-30" alt="" />
                     </span>
                   </span>
                   <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-4">
@@ -132,7 +132,7 @@ export default function Banner() {
 
                   <div className="flex items-center gap-4">
                     <Link to="/site-visit">
-                    <button className="bg-[#20ae9b] text-white font-semibold px-8 py-3 rounded-lg shadow-lg hover:bg-[#21635a]  transition-all duration-300 hover:shadow-xl">
+                    <button className="bg-[#20ae9b] text-white font-semibold px-4 md:px-8 py-3 rounded-lg shadow-lg hover:bg-[#21635a]  transition-all duration-300 hover:shadow-xl">
                       Schedule a Visit
                     </button>
                     </Link>

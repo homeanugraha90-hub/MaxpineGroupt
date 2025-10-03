@@ -16,21 +16,21 @@ export default function Brand_logo() {
       id: 1,
       name: "Anugrah Homes",
       logo: img2,
-      status: "Anugrah Homes",
+      status: "",
       url: "https://anugrahhomes.com",
     },
     {
       id: 2,
       name: "Brij Vrinda",
       logo: img1,
-      status: "Brij Vrinda",
+      status: "",
       url: "#",
     },
     {
       id: 3,
       name: "Skyline Aero homes",
       logo: skylogo,
-      status: "Skyline Aero homes",
+      status: "",
       url: "https://skylineaerohomes.com/",
     },
     
@@ -38,14 +38,14 @@ export default function Brand_logo() {
       id: 4,
       name: "LeafShade",
       logo: img4,
-      status: "LeafShade",
+      status: "",
       url: "#",
     },
     {
       id: 5,
       name: "The Club Farm",
       logo: img3,
-      status: "The Club Farm",
+      status: "",
       url: "#",
     },
     
@@ -57,7 +57,7 @@ export default function Brand_logo() {
       <div className="max-w-7xl mx-auto">
         {/* Header Section */}
         <div className="text-center mb-16">
-          <h1 className="text-3xl md:text-4xl font-serif text-gray-800 mb-6 tracking-wide">
+          <h1 className="text-2xl md:text-4xl font-serif text-gray-800 mb-6 tracking-wide">
             PRESTIGE REDEFINED: A LEGACY OF EXCEPTIONAL PROJECTS
           </h1>
           <p className="text-gray-600 text-lg max-w-4xl mx-auto leading-relaxed">
@@ -87,7 +87,7 @@ export default function Brand_logo() {
             <SwiperSlide key={project.id}>
               <div className="group cursor-pointer">
                 {/* Logo Card */}
-                <div className="bg-gray-300 aspect-square rounded-lg shadow-lg overflow-hidden mb-4 transition-all duration-300 group-hover:shadow-2xl group-hover:-translate-y-2">
+                <div className="bg-gray-300 aspect-square rounded-lg shadow-lg overflow-hidden mb-8 transition-all duration-300 group-hover:shadow-2xl group-hover:-translate-y-2">
                   <div className="w-full h-full flex items-center justify-center p-8 bg-gradient-to-br from-gray-200 to-gray-300">
                     <a
                       href={project.url}
@@ -99,12 +99,13 @@ export default function Brand_logo() {
                         alt={project.name}
                         className="w-full h-full object-contain"
                       />
+                      <p className="text-center font-semibold">{project.name}</p>
                     </a>
                   </div>
                 </div>
 
                 {/* Project Status */}
-                <p className="text-center text-gray-600 text-lg font-bold tracking-wide">
+                <p className="text-center  text-gray-600 text-lg font-bold tracking-wide">
                   {project.status}
                 </p>
               </div>

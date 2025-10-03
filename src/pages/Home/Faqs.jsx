@@ -54,7 +54,7 @@ export default function Faqs() {
               <img 
                 src={img1}
                 alt="Professional real estate consultant"
-                className="w-full h-[500px] lg:h-[600px] object-cover"
+                className="w-full h-[400px] lg:h-[600px] object-cover"
               />
               
               {/* Overlay with construction site background */}
@@ -88,7 +88,7 @@ export default function Faqs() {
                 <span>FREQUENTLY ASKED QUESTIONS</span>
               </div>
               
-              <h2 className="text-4xl lg:text-5xl font-bold text-gray-800 leading-tight">
+              <h2 className="text-2xl lg:text-5xl font-bold text-gray-800 leading-tight">
                 Have Any Questions
               </h2>
             </div>
@@ -108,7 +108,7 @@ export default function Faqs() {
                       <span className="text-[#20ae9b] font-bold text-lg min-w-[2rem]">
                         {index + 1}.
                       </span>
-                      <h3 className="font-semibold text-gray-800 text-lg">
+                      <h3 className="font-semibold text-gray-800  text-sm md:text-lg">
                         {faq.question}
                       </h3>
                     </div>

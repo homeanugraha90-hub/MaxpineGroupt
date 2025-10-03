@@ -23,7 +23,7 @@ export default function WhyChoose() {
       <div className="container mx-auto px-4 py-16 lg:py-24">
         {/* Header Section */}
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-16">
-          <div className="mb-8 lg:mb-0">
+          <div className="mb-0 lg:mb-0">
             <div className="flex items-center gap-2 mb-4">
               <div className="w-8 h-0.5 bg-[#20ae9b]"></div>
               <span className="text-[#20ae9b] font-medium text-sm lg:text-base">Why Choose Us</span>
@@ -39,15 +39,15 @@ export default function WhyChoose() {
         </div>
 
         {/* Cards Section */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ">
           {/* Find Your Home */}
-          <div className="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+          <div className="bg-white rounded-2xl p-2 md:p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
             <div className="mb-6 flex items-center flex-col  justify-center px-5">
               <div className="w-16 h-16  bg-red-50 rounded-full flex items-center  justify-center mb-4">
                 <Home className="w-8 h-8 text-[#20ae9b]" />
               </div>
               
-              <h3 className="text-xl   md:text-2xl font-bold text-gray-800 mb-4   w-full">Find Your Perfect Dream <br/> Home Today</h3>
+              <h3 className="text-xl   md:text-2xl font-bold text-gray-800 mb-4  ">Find Your Perfect Dream  Home Today</h3>
               <p className="text-gray-600 leading-relaxed">
                 Browse premium apartments, villas, and townhouses in prime locations.
               </p>
@@ -60,7 +60,7 @@ export default function WhyChoose() {
           </div>
 
           {/* Sell Property */}
-          <div className="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+          <div className="bg-white rounded-2xl p-1 md:p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
             <div className="mb-6 flex items-center flex-col  justify-center px-5">
               <div className="w-16 h-16 bg-red-50 rounded-full flex items-center justify-center mb-4">
                 <Handshake className="w-8 h-8 text-[#20ae9b]" />
@@ -78,7 +78,7 @@ export default function WhyChoose() {
           </div>
 
           {/* Rent a Home */}
-          <div className="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+          <div className="bg-white rounded-2xl p-1 md:p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
             <div className="mb-6 flex items-center flex-col  justify-center px-5">
               <div className="w-16 h-16 bg-red-50 rounded-full flex items-center justify-center mb-4">
                 <Key className="w-8 h-8 text-[#20ae9b]" />
