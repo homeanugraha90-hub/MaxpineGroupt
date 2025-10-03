@@ -39,20 +39,7 @@ export default function Brand_logo() {
       status: "LeafShade",
       url: "https://anugrahhomes.com",
     },
-    {
-      id: 3,
-      name: "The Club Farm",
-      logo: img3,
-      status: "The Club Farm",
-      url: "https://anugrahhomes.com",
-    },
-    {
-      id: 4,
-      name: "LeafShade",
-      logo: img4,
-      status: "LeafShade",
-      url: "https://anugrahhomes.com",
-    }
+   
   ];
 
   return (

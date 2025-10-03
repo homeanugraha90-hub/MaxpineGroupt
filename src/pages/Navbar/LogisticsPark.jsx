@@ -60,7 +60,7 @@ export default function LogisticsPark() {
       </div>
 
       {/* Hero Section */}
-      <div className="relative bg-gradient-to-r from-[#3c92a9] via-[#35a7c7] to-[#2e7f96] text-white py-16 sm:py-24 overflow-hidden">
+      <div className="relative bg-gradient-to-r from-[#20ae9b] via-[#11a18e] to-[#118172] text-white py-16 sm:py-24 overflow-hidden">
         <div className="absolute inset-0 bg-black opacity-10"></div>
         <div className="absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-black opacity-20"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -87,7 +87,7 @@ export default function LogisticsPark() {
             {/* Featured Maps Section */}
             <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-lg border border-gray-100 mb-8">
               <div className="flex items-center gap-3 mb-6">
-                <MapPin className="w-7 h-7 text-[#3c92a9]" />
+                <MapPin className="w-7 h-7 text-[#20ae9b]" />
                 <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">
                   Strategic Location
                 </h2>
@@ -112,7 +112,7 @@ export default function LogisticsPark() {
                   key={index}
                   className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-6 border border-blue-100 hover:shadow-lg transition-all hover:-translate-y-1"
                 >
-                  <div className="bg-[#3c92a9] text-white w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+                  <div className="bg-[#20ae9b] text-white w-12 h-12 rounded-lg flex items-center justify-center mb-4">
                     {feature.icon}
                   </div>
                   <h3 className="text-lg font-bold text-gray-900 mb-2">
@@ -128,12 +128,12 @@ export default function LogisticsPark() {
             {/* Overview Section */}
             <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 mb-8">
               <div className="flex items-center gap-3 mb-6">
-                <Building className="w-7 h-7 text-[#3c92a9]" />
+                <Building className="w-7 h-7 text-[#20ae9b]" />
                 <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">Project Overview</h2>
               </div>
               <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed">
                 <p className="mb-4">
-                  The Yamuna Expressway Industrial Development Authority has proposed to develop a <span className="font-semibold text-[#3c92a9]">Multimodal Logistics Park (MMLP)</span> facility at Tappal Bajna located within YEIDA. This is with the objective to optimize the present potential, enhance investment climate and promote the economic development of the area with major thrust on industrial activities.
+                  The Yamuna Expressway Industrial Development Authority has proposed to develop a <span className="font-semibold text-[#20ae9b]">Multimodal Logistics Park (MMLP)</span> facility at Tappal Bajna located within YEIDA. This is with the objective to optimize the present potential, enhance investment climate and promote the economic development of the area with major thrust on industrial activities.
                 </p>
                 <p>
                   The MMLP shall provide excellent transport links via rail and road, custom clearance facilities, single-window services, and value-added services. Given the freight profile and upcoming industrial development potential of the proposed site, the MMLP is expected to have potential to develop as a storage and warehousing hub.
@@ -142,7 +142,7 @@ export default function LogisticsPark() {
             </div>
 
             {/* Benefits Section */}
-            <div className="bg-gradient-to-br from-[#3c92a9] to-[#27768c] rounded-2xl p-8 shadow-xl text-white">
+            <div className="bg-gradient-to-br from-[#20ae9b] to-[#13907f] rounded-2xl p-8 shadow-xl text-white">
               <div className="flex items-center gap-3 mb-6">
                 <TrendingUp className="w-7 h-7 text-blue-300" />
                 <h2 className="text-2xl sm:text-3xl font-bold">Key Benefits</h2>
@@ -153,7 +153,7 @@ export default function LogisticsPark() {
                     key={index}
                     className="flex items-start gap-3 bg-white bg-opacity-10 rounded-xl p-4 backdrop-blur-sm hover:bg-opacity-15 transition-all"
                   >
-                    <CheckCircle2 className="w-6 h-6 text-[#3c92a9] flex-shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-6 h-6 text-[#20ae9b] flex-shrink-0 mt-0.5" />
                     <span className="text-gray-500">{benefit}</span>
                   </div>
                 ))}
@@ -178,8 +178,8 @@ export default function LogisticsPark() {
                     className="block group"
                   >
                     <div className="flex items-start gap-3 p-3 rounded-lg hover:bg-blue-50 transition-colors">
-                      <ArrowRight className="w-5 h-5 text-[#3c92a9] flex-shrink-0 mt-0.5 group-hover:translate-x-1 transition-transform" />
-                      <span className="text-gray-700 text-sm leading-relaxed group-hover:text-[#2a96b4] transition-colors">
+                      <ArrowRight className="w-5 h-5 text-[#20ae9b] flex-shrink-0 mt-0.5 group-hover:translate-x-1 transition-transform" />
+                      <span className="text-gray-700 text-sm leading-relaxed group-hover:text-[#148777] transition-colors">
                         {post}
                       </span>
                     </div>
@@ -195,7 +195,7 @@ export default function LogisticsPark() {
                 Get in touch with our team to learn more about investment opportunities at the Logistics Park.
               </p>
               <Link to="/contact">
-              <button className="w-full bg-[#3c92a9] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#197a95] transition-all">
+              <button className="w-full bg-[#20ae9b] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#1b766a] transition-all">
                 Contact Us
               </button>
               </Link>

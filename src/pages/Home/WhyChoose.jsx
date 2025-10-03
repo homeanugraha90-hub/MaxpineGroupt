@@ -85,7 +85,7 @@ export default function WhyChoose() {
               </div>
               <h3 className="text-2xl text-left  w-full  font-bold text-gray-800 mb-4">Prime Locations, Premium Returns</h3>
               <p className="text-gray-600 leading-relaxed">
-                Flexible rental options for apartments, villas, and commercial spaces with trusted agreements.
+               We choose prime locations with great connectivity and growth—ensuring premium returns.
               </p>
             </div>
              <Link to="/news">

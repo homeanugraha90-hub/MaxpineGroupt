@@ -46,21 +46,21 @@ const KeyPlayBV = () => {
               Latest Updates
             </h2>
             <ul className="space-y-3 text-gray-600">
-              <li className="hover:text-blue-600 cursor-pointer transition">
+              <li className="hover:text-[#20ae9b] cursor-pointer transition">
                 Buy Plots Near Jewar Airport – Anugrah Homes by Maxpine Group
               </li>
-              <li className="hover:text-blue-600 cursor-pointer transition">
+              <li className="hover:text-[#20ae9b] cursor-pointer transition">
                 A Joyous Celebration at Anugrah Homes: Family Carnival Success!
               </li>
-              <li className="hover:text-blue-600 cursor-pointer transition">
+              <li className="hover:text-[#20ae9b] cursor-pointer transition">
                 Lights, Camera, Action: Progress at International Film City
                 (YEIDA)
               </li>
-              <li className="hover:text-blue-600 cursor-pointer transition">
+              <li className="hover:text-[#20ae9b] cursor-pointer transition">
                 Residential Plots Near Noida International Airport: A New Gateway
                 to Global Connectivity
               </li>
-              <li className="hover:text-blue-600 cursor-pointer transition">
+              <li className="hover:text-[#20ae9b] cursor-pointer transition">
                 A Festive Affair: Diwali at Maxpine Group
               </li>
             </ul>
@@ -69,13 +69,13 @@ const KeyPlayBV = () => {
 
          
          
-           <div className="mt-8 bg-gradient-to-br from-[#3c92a9] to-[#206c81] rounded-lg p-6 text-white">
+           <div className="mt-8 bg-gradient-to-br from-[#20ae9b] to-[#0c8070] rounded-lg p-6 text-white">
                 <h4 className="text-lg font-bold mb-2">Interested in Plots Near Airport?</h4>
                 <p className="text-sm mb-4 text-blue-50">
                   Get exclusive details about our properties near Noida International Airport
                 </p>
                  <Link to="/contact">
-                <button className="w-full bg-white text-[#3c92a9] font-semibold py-3 rounded-lg hover:bg-blue-50 transition">
+                <button className="w-full bg-white text-[#20ae9b] font-semibold py-3 rounded-lg hover:bg-blue-50 transition">
                   Contact Us Today
                 </button>
                  </Link>

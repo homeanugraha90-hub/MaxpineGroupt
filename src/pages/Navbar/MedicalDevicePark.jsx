@@ -25,7 +25,7 @@ export default function MedicalDevicePark() {
       <div className="bg-white border-b">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <div className="flex items-center text-sm text-gray-600">
-            <span className="hover:text-teal-600 cursor-pointer">Home</span>
+            <span className="hover:text-[#20ae9b] cursor-pointer">Home</span>
             <span className="mx-2">/</span>
             <span className="text-gray-900 font-medium">Medical Device Park</span>
           </div>
@@ -33,7 +33,7 @@ export default function MedicalDevicePark() {
       </div>
 
       {/* Hero Section */}
-      <div className="relative bg-gradient-to-r from-teal-600 to-cyan-600 text-white py-16 sm:py-24">
+      <div className="relative bg-gradient-to-r from-[#20ae9b] to-[#0c8a79] text-white py-16 sm:py-24">
         <div className="absolute inset-0 bg-black opacity-10"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
@@ -97,7 +97,7 @@ export default function MedicalDevicePark() {
                     key={index}
                     className="flex items-start gap-3 bg-white bg-opacity-10 rounded-xl p-4 backdrop-blur-sm hover:bg-opacity-15 transition-all"
                   >
-                    <CheckCircle2 className="w-6 h-6 text-teal-400 flex-shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-6 h-6 text-[#20ae9b] flex-shrink-0 mt-0.5" />
                     <span className="text-gray-800">{area}</span>
                   </div>
                 ))}
@@ -105,7 +105,7 @@ export default function MedicalDevicePark() {
             </div>
 
             {/* Vision Statement */}
-            <div className="bg-gradient-to-r from-teal-600 to-cyan-600 rounded-2xl p-8 text-white shadow-lg">
+            <div className="bg-gradient-to-r from-teal-600 to-[#0f8978] rounded-2xl p-8 text-white shadow-lg">
               <div className="flex items-center gap-3 mb-4">
                 <TrendingUp className="w-7 h-7" />
                 <h3 className="text-xl sm:text-2xl font-bold">Our Vision</h3>

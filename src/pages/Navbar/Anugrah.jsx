@@ -12,8 +12,8 @@ export default function AnugrahCard() {
         <h3 className="text-lg font-semibold">Anugrah Homes</h3>
         <p className="flex items-center text-sm text-gray-600">
           <MapPin className="w-6 h-6 mr-1" /> Anugrah Homes, Jattari,
-Aligarh Palwal Road,
-Uttar Pradesh 202137
+          Aligarh Palwal Road,
+          Uttar Pradesh 202137
         </p>
         <p className="flex items-center text-sm text-gray-600">
           <Home className="w-4 h-4 mr-1" /> 100 , 200 , 300 Sq. Yards Plot
@@ -25,9 +25,9 @@ Uttar Pradesh 202137
           <CheckCircle className="w-4 h-4 mr-1" /> Under Construction
         </p>
         <a href="https://anugrahhomes.com" target="_blank">
-        <button className="mt-3 w-full bg-[#20ae9b] text-white py-2 rounded-lg hover:bg-[#25796e] transition">
-          View Details
-        </button>
+          <button className="mt-3 w-full bg-[#20ae9b] text-white py-2 rounded-lg hover:bg-[#25796e] transition">
+            View Details
+          </button>
         </a>
       </div>
     </div>

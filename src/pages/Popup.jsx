@@ -85,9 +85,9 @@ export default function Popup() {
         setStatus({ type: '', message: '' });
 
         // EmailJS configuration - Replace these with your actual values
-        const serviceId = 'YOUR_SERVICE_ID';
-        const templateId = 'YOUR_TEMPLATE_ID';
-        const publicKey = 'YOUR_PUBLIC_KEY';
+        const serviceId = 'service_cnlusd3';
+        const templateId = 'template_fvbpbue';
+        const publicKey = 'jr9fqioLswz6tdy46';
 
         try {
             const response = await fetch('https://api.emailjs.com/api/v1.0/email/send', {

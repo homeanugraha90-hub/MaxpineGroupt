@@ -36,31 +36,31 @@ export default function PropertyGallery() {
       id: 1,
       category: "anugrahHome",
       image: img1,
-      title: "Modern Living Room"
+      title: "Garden View"
     },
     {
       id: 6,
       category: "maxpine",
       image: img2,
-      title: "Modern Architecture"
+      title: "Garden View"
     },
     {
       id: 7,
       category: "maxpine",
       image: img3,
-      title: "Contemporary Facade"
+      title: "Garden View"
     },
     {
       id: 8,
       category: "skyLine",
       image: img4,
-      title: "Swimming Pool"
+      title: "Garden View"
     },
     {
       id: 9,
       category: "anugrahHome",
       image: img5,
-      title: "Office Space"
+      title: "Garden View"
     },
     {
       id: 10,
@@ -72,7 +72,7 @@ export default function PropertyGallery() {
       id: 11,
       category: "skyLine",
       image: img2,
-      title: "Fitness Center"
+      title: "Garden View"
     },
     {
       id: 12,

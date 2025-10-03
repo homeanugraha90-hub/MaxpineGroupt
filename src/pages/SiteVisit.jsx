@@ -60,7 +60,7 @@ export default function SiteVisit() {
           <div className="flex items-center gap-3 text-lg">
             <a href="/" className="hover:text-blue-300 transition-colors">Home</a>
             <span>›</span>
-            <span className="text-[#1cbae6]">Site Visit</span>
+            <span className="text-[#20ae9b]">Site Visit</span>
           </div>
         </div>
       </div>
@@ -108,7 +108,7 @@ export default function SiteVisit() {
               </div>
             </div>
 
-            <div className="bg-gradient-to-br from-[#20ae9b] to-[#257a92] rounded-xl shadow-md p-6 text-white">
+            <div className="bg-gradient-to-br from-[#20ae9b] to-[#10907f] rounded-xl shadow-md p-6 text-white">
               <h3 className="text-xl font-bold mb-4">Need Help?</h3>
               <p className="text-[#cdd1c7] mb-4 text-sm">Our team is ready to assist you with scheduling and property selection.</p>
               <div className="space-y-3">
@@ -298,7 +298,7 @@ export default function SiteVisit() {
 
                 <button
                   onClick={handleSubmit}
-                  className="w-full bg-[#20ae9b] hover:bg-[#20ae9b] text-white font-semibold py-4 px-6 rounded-lg transition-colors flex items-center justify-center gap-2 shadow-lg hover:shadow-xl"
+                  className="w-full bg-[#20ae9b] hover:bg-[#177468] text-white font-semibold py-4 px-6 rounded-lg transition-colors flex items-center justify-center gap-2 shadow-lg hover:shadow-xl"
                 >
                   <Calendar className="w-5 h-5" />
                   Confirm Site Visit

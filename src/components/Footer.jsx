@@ -14,15 +14,15 @@ export default function Footer() {
   const legalPages = [
     { name: "Home", href: "/" },
     { name: "About", href: "/about" },
-    { name: "Anugrah Home", href: "https://anugrahhomes.com" },
+    { name: "Anugrah Home", href: "/anugrahhomes" },
     { name: "Brij Brinda", href: "/keyPlan" },
     { name: "The Club Farm", href: "/keyplanCF" },
     { name: "Upcoming Projects", href: "/skyline" },
     { name: "Noida International", href: "/noida-international" },
     { name: "International Film City", href: "/international-film-city" },
     { name: "Medical Device Park", href: "/medical-device-Park" },
-    { name: "Logistics Park", href: "#" },
-    { name: "Pod Taxi", href: "#" },
+    { name: "Logistics Park", href: "/logistics-park" },
+    
     { name: "Site Visit", href: "/site-visit" },
     { name: "News Letter", href: "/news" },
     { name: "Contact", href: "/contact" },
@@ -141,7 +141,7 @@ export default function Footer() {
                 <input
                   type="email"
                   placeholder="Your email"
-                  className="flex-1 px-3 py-2 bg-gray-700 text-white rounded text-xs focus:outline-none focus:ring-1 focus:ring-[#20ae9b]"
+                  className="flex-1 px-3 py-3 bg-gray-700 text-white rounded text-xs focus:outline-none focus:ring-1 focus:ring-[#20ae9b]"
                 />
                 <button className="px-3 py-2 bg-[#20ae9b] hover:bg-[#157165] rounded transition-colors text-xs font-medium">
                   Subscribe

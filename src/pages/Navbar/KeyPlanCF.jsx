@@ -15,16 +15,16 @@ export default function KeyPlanCF() {
     { title: "A Festive Affair: Diwali at Maxpine Group", link: "#" }
   ];
 
-  const landmarks = [
-    { name: "Hapur", position: "top-8 left-12" },
-    { name: "Garhi Mukteshwar", position: "top-12 left-1/3" },
-    { name: "Towards Moradabad", position: "top-16 right-32" },
-    { name: "Garhuda", position: "top-8 right-16" },
-    { name: "Bulandshahr", position: "bottom-32 left-24" },
-    { name: "Pahnada", position: "bottom-16 left-1/3" },
-    { name: "Bhighat", position: "top-1/2 right-32" },
-    { name: "Brightol Toll Plaza", position: "top-20 right-48" }
-  ];
+  // const landmarks = [
+  //   { name: "Hapur", position: "top-8 left-12" },
+  //   { name: "Garhi Mukteshwar", position: "top-12 left-1/3" },
+  //   { name: "Towards Moradabad", position: "top-16 right-32" },
+  //   { name: "Garhuda", position: "top-8 right-16" },
+  //   { name: "Bulandshahr", position: "bottom-32 left-24" },
+  //   { name: "Pahnada", position: "bottom-16 left-1/3" },
+  //   { name: "Bhighat", position: "top-1/2 right-32" },
+  //   { name: "Brightol Toll Plaza", position: "top-20 right-48" }
+  // ];
 
   const handleZoomIn = () => setZoom(prev => Math.min(prev + 0.2, 3));
   const handleZoomOut = () => setZoom(prev => Math.max(prev - 0.2, 0.5));
@@ -58,7 +58,7 @@ export default function KeyPlanCF() {
         <div className="container mx-auto px-4 lg:px-24 py-4">
           <div className="flex items-center text-sm text-gray-600">
             <Home className="w-4 h-4 mr-2" />
-            <a href="/" className="hover:text-[#3c92a9] transition-colors">Home</a>
+            <a href="/" className="hover:text-[#20ae9b] transition-colors">Home</a>
             <span className="mx-2">/</span>
             <span className="text-gray-900 font-medium">Key Plan</span>
           </div>
@@ -66,8 +66,8 @@ export default function KeyPlanCF() {
       </div>
 
       {/* Header */}
-      <div className="bg-gradient-to-r from-[#3c92a9]
-       to-[#1e7289] text-white py-16">
+      <div className="bg-gradient-to-r from-[#20ae9b]
+       to-[#0d917f] text-white py-16">
         <div className="container mx-auto px-4 lg:px-24">
           <div className="flex items-center gap-3 mb-4">
             <Navigation className="w-10 h-10" />
@@ -88,7 +88,7 @@ export default function KeyPlanCF() {
               {/* Controls Bar */}
               <div className="bg-gradient-to-r from-gray-800 to-gray-900 px-6 py-4 flex items-center justify-between">
                 <div className="flex items-center gap-2 text-white">
-                  <MapPin className="w-5 h-5 text-[#3c92a9]" />
+                  <MapPin className="w-5 h-5 text-[#20ae9b]" />
                   <span className="font-semibold">Location Map</span>
                 </div>
                 <div className="flex items-center gap-2">
@@ -156,7 +156,7 @@ export default function KeyPlanCF() {
               {/* Key Landmarks */}
               <div className="border-t bg-gray-50 p-6">
                 <h3 className="font-semibold text-gray-900 mb-4 flex items-center gap-2">
-                  <MapPin className="w-5 h-5 text-[#3c92a9]" />
+                  <MapPin className="w-5 h-5 text-[#20ae9b]" />
                   Nearby Landmarks
                 </h3>
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
@@ -181,7 +181,7 @@ export default function KeyPlanCF() {
               download
               className="px-6 py-3  text-white font-medium rounded-lg shadow  transition"
             >
-                <button className="w-full md:w-auto flex items-center justify-center gap-3 bg-[#3c92a9] hover:bg-[#1e6e85] text-white font-semibold px-8 py-4 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+                <button className="w-full md:w-auto flex items-center justify-center gap-3 bg-[#20ae9b] hover:bg-[#0f7b6d] text-white font-semibold px-8 py-4 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
                   <Download className="w-5 h-5" />
                   Download Key Plan
                 </button>
@@ -193,7 +193,7 @@ export default function KeyPlanCF() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
               <div className="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition-shadow">
                 <div className="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mb-4">
-                  <Navigation className="w-6 h-6 text-blue-600" />
+                  <Navigation className="w-6 h-6 text-[#20ae9b]" />
                 </div>
                 <h4 className="font-semibold text-gray-900 mb-2">Prime Location</h4>
                 <p className="text-sm text-gray-600">Strategically located near major highways and upcoming developments</p>
@@ -220,7 +220,7 @@ export default function KeyPlanCF() {
           {/* Sidebar */}
           <div className="lg:col-span-1">
             <div className="bg-white rounded-lg shadow-md p-6 sticky top-6">
-              <h2 className="text-2xl font-bold text-gray-900 mb-6 pb-4 border-b-2 border-[#3c92a9]">
+              <h2 className="text-2xl font-bold text-gray-900 mb-6 pb-4 border-b-2 border-[#20ae9b]">
                 Recent Posts
               </h2>
               <div className="space-y-4">
@@ -230,8 +230,8 @@ export default function KeyPlanCF() {
                     href={post.link}
                     className="group flex items-start gap-3 p-3 rounded-lg hover:bg-gray-50 transition-colors"
                   >
-                    <ArrowRight className="w-5 h-5 text-[#3c92a9] flex-shrink-0 mt-0.5 group-hover:translate-x-1 transition-transform" />
-                    <p className="text-sm text-gray-700 group-hover:text-[#3c92a9] transition-colors leading-relaxed">
+                    <ArrowRight className="w-5 h-5 text-[#20ae9b] flex-shrink-0 mt-0.5 group-hover:translate-x-1 transition-transform" />
+                    <p className="text-sm text-gray-700 group-hover:text-[#0f7d6e] transition-colors leading-relaxed">
                       {post.title}
                     </p>
                   </a>

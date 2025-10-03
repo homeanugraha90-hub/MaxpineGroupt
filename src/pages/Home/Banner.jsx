@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
 import {Link} from "react-router-dom"
 import "swiper/css";
-import img from "../../assets/All home imgs/video-placeholder.jpg";
+// import img from "../../assets/All home imgs/video-placeholder.jpg";
 import "swiper/css/navigation";
 import { motion } from "framer-motion";
 import { useState, useRef, useEffect } from "react";
@@ -27,17 +27,19 @@ const slides = [
     img: anu,
     title: "Anugrah Homes",
     subtitle: "Anugrah Homes - Building Your Future",
-    price: "₹52,00,000",
+    price: "₹52,50,000",
     description: "Strategic locations with high appreciation potential and premium amenities",
+    acer:"100 acre",
     video: vid,
   },
   {
     id: 3,
     img: anu,
-    title: "SkyLine Township",
-    subtitle: "SkyLine Township",
-    price: "₹85,00,000",
+    title: "SkyLine Aerahomes",
+    subtitle: "SkyLine Aerahomes",
+    price: "₹32,50,000",
     description: "Spacious layouts, modern design, and premium finishes in every detail",
+     acer:"100 acre",
     video: vid,
   },
   {
@@ -47,6 +49,7 @@ const slides = [
     subtitle: "Brij Vrinda- Building Your Future",
     price: "₹52,00,000",
     description: "Strategic locations with high appreciation potential and premium amenities",
+     acer:"100 acre",
     video: vid,
   },
 ];
@@ -138,7 +141,7 @@ export default function Banner() {
                       Starting Price
                     </p>
                     <p className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#20ae9b] mb-3">
-                      {slide.price}
+                      {slide.price} <span className="text-lg text-[gray]">{slide.acer}</span>
                     </p>
                     <p className="text-gray-400 text-sm">
                       *Prices may vary based on unit and floor

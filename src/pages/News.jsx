@@ -75,13 +75,13 @@ export default function News() {
               </div>
 
               {/* Meta Info */}
-              <div className="flex items-center gap-2 text-sm text-[#3c92a9] mb-3">
+              <div className="flex items-center gap-2 text-sm text-[#20ae9b] mb-3">
                 <span className="text-gray-600">{post.author} on</span>
                 <span>{post.date}</span>
               </div>
 
               {/* Title */}
-              <h3 className="text-xl font-bold text-gray-900 mb-3 leading-tight group-hover:text-[#3c92a9] transition-colors">
+              <h3 className="text-xl font-bold text-gray-900 mb-3 leading-tight group-hover:text-[#20ae9b] transition-colors">
                 {post.title}
               </h3>
 
@@ -91,8 +91,8 @@ export default function News() {
               </p>
 
               {/* Read More Link */}
-              {/* <button className="flex items-center gap-2 text-gray-900 font-medium group-hover:text-[#3c92a9] transition-colors">
-                <span className="w-8 h-8 rounded-full bg-gray-900 group-hover:bg-[#3c92a9] flex items-center justify-center transition-colors">
+              {/* <button className="flex items-center gap-2 text-gray-900 font-medium group-hover:text-[#20ae9b] transition-colors">
+                <span className="w-8 h-8 rounded-full bg-gray-900 group-hover:bg-[#20ae9b] flex items-center justify-center transition-colors">
                   <ArrowRight className="w-4 h-4 text-white" />
                 </span>
               </button> */}
@@ -105,7 +105,7 @@ export default function News() {
           <button 
             onClick={() => handlePageChange(currentPage - 1)}
             disabled={currentPage === 1}
-            className="w-10 h-10 rounded-full bg-gray-900 text-white flex items-center justify-center hover:bg-[#3c92a9] transition-colors disabled:opacity-50"
+            className="w-10 h-10 rounded-full bg-gray-900 text-white flex items-center justify-center hover:bg-[#20ae9b] transition-colors disabled:opacity-50"
           >
             <ChevronLeft className="w-5 h-5" />
           </button>
@@ -127,7 +127,7 @@ export default function News() {
           <button 
             onClick={() => handlePageChange(currentPage + 1)}
             disabled={currentPage === totalPages}
-            className="w-10 h-10 rounded-full bg-gray-900 text-white flex items-center justify-center hover:bg-[#3c92a9] transition-colors disabled:opacity-50"
+            className="w-10 h-10 rounded-full bg-gray-900 text-white flex items-center justify-center hover:bg-[#20ae9b] transition-colors disabled:opacity-50"
           >
             <ChevronRight className="w-5 h-5" />
           </button>
