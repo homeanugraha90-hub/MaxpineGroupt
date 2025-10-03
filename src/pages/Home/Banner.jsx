@@ -7,6 +7,10 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { motion } from "framer-motion";
 import { useState, useRef, useEffect } from "react";
+
+
+import anulogo from "../../assets/All home imgs/logo-2.png"
+import brijlogo from "../../assets/BrijVrinda/Brij-Vrindra-removebg-preview.png"
 import vid from "../../assets/video.mp4";
 import anu from "../../assets/All home imgs/Gate-1170x785.png"
 import brij from "../../assets/All home imgs/1-1-1170x785.jpg"
@@ -35,8 +39,8 @@ const slides = [
   {
     id: 3,
     img: anu,
-    title: "SkyLine Aerahomes",
-    subtitle: "SkyLine Aerahomes",
+    title: "SkyLine Aero homes",
+    subtitle: "SkyLine Aero homes",
     price: "₹32,50,000",
     description: "Spacious layouts, modern design, and premium finishes in every detail",
      acer:"100 acre",

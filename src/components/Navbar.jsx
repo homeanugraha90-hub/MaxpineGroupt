@@ -23,7 +23,7 @@ export default function Navbar() {
         ],
       },
       {
-        name: "Skyline Aerahomes",
+        name: "Skyline Aero homes",
         href: "/skyline",
         sub: [
           { name: "Visit Site", href: "/keyPlan" },
