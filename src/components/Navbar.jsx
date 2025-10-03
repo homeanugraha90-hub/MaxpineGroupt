@@ -26,7 +26,7 @@ export default function Navbar() {
         name: "Skyline Aero homes",
         href: "/skyline",
         sub: [
-          { name: "Visit Site", href: "/keyPlan" },
+          { name: "Visit Site", href: "https://skylineaerohomes.com/" },
           { name: "Key Play ", href: "/keyPlan" },
           { name: "Layout ", href: "/layout" },
           { name: "Development Updates", href: "/development" },

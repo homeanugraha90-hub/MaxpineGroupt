@@ -55,7 +55,7 @@ const slides = [
     img: brij,
     title: "Brij Vrinda",
     subtitle: "Brij Vrinda- Building Your Future",
-    price: "₹52,00,000",
+    price: "₹45,50,000",
     description: "Strategic locations with high appreciation potential and premium amenities",
      acer:"100 acre",
      logo:brijlogo,
@@ -116,7 +116,10 @@ export default function Banner() {
                 >
                   <span className="text-[#20ae9b]  font-semibold text-lg tracking-wide mb-2 flex justify-between items-center">
                     {slide.subtitle}
+                    <span className="bg-white/98 rounded p-4"> 
+
                   <img  src={slide.logo} className=" w-30" alt="" />
+                    </span>
                   </span>
                   <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-4">
                     {slide.title}
